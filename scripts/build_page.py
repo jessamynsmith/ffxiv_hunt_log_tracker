@@ -1,6 +1,51 @@
-<title>FFXIV Hunt Log Tracker</title>
+"""Render data/hunting_log.json into index.html: a single sortable,
+filterable table of every class hunting log entry, with per-row done
+tracking persisted to localStorage.
+
+Run extract_data.py first to produce the JSON this reads.
+"""
+import json
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+IN_JSON = REPO_ROOT / "data" / "hunting_log.json"
+OUT_HTML = REPO_ROOT / "index.html"
+
+PAGE_TITLE = "FFXIV Hunt Log Tracker"
+STORAGE_KEY = "ffxivHuntLogTrackerDone"
+
+CLASS_ORDER = [
+    "Gladiator", "Marauder", "Lancer", "Pugilist", "Rogue",
+    "Archer", "Conjurer", "Thaumaturge", "Arcanist",
+    "Maelstrom", "Order of the Twin Adder", "Immortal Flames",
+]
+class_idx = {c: i for i, c in enumerate(CLASS_ORDER)}
+
+rows = json.loads(IN_JSON.read_text())
+
+zones_sorted = sorted(set(r["zone"] for r in rows))
+
+rows.sort(key=lambda r: (
+    zones_sorted.index(r["zone"]), class_idx.get(r["class"], 99),
+    r["rank"], r["monster"],
+))
+
+
+total_entries = len(rows)
+total_zones = len(zones_sorted)
+
+# The table body is populated client-side from data/hunting_log.csv (see the
+# fetch() in the inline <script> below) rather than baked into this HTML, so
+# CSV_PATH is the only thing that needs to change if the data file moves.
+CSV_PATH = "data/hunting_log.csv"
+
+zone_filter_buttons = "\n".join(
+    f'<button data-zone="{z}">{z}</button>' for z in zones_sorted
+)
+
+html = f'''<title>{PAGE_TITLE}</title>
 <style>
-:root {
+:root {{
   --bg: #eef1ea;
   --surface: #ffffff;
   --surface-2: #e4e8de;
@@ -15,10 +60,10 @@
   --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
   --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   --font-mono: ui-monospace, 'SF Mono', 'Cascadia Mono', Consolas, monospace;
-}
+}}
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
+@media (prefers-color-scheme: dark) {{
+  :root:not([data-theme="light"]) {{
     --bg: #12160f;
     --surface: #1a2016;
     --surface-2: #212a1c;
@@ -30,10 +75,10 @@
     --line: #2c3524;
     --line-strong: #3c4732;
     --focus: #9bc17f;
-  }
-}
+  }}
+}}
 
-:root[data-theme="dark"] {
+:root[data-theme="dark"] {{
   --bg: #12160f;
   --surface: #1a2016;
   --surface-2: #212a1c;
@@ -45,64 +90,64 @@
   --line: #2c3524;
   --line-strong: #3c4732;
   --focus: #9bc17f;
-}
+}}
 
-* { box-sizing: border-box; }
+* {{ box-sizing: border-box; }}
 
-body {
+body {{
   margin: 0;
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-body);
   line-height: 1.45;
   min-height: 100vh;
-}
+}}
 
-.page {
+.page {{
   max-width: 1040px;
   margin: 0 auto;
   padding: 0 1.5rem 4rem;
-}
+}}
 
-header.masthead {
+header.masthead {{
   padding: 3rem 0 1.75rem;
   border-bottom: 1px solid var(--line-strong);
   margin-bottom: 1.75rem;
-}
+}}
 
-.eyebrow {
+.eyebrow {{
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent);
   margin: 0 0 0.6rem;
-}
+}}
 
-h1 {
+h1 {{
   font-family: var(--font-display);
   font-weight: 600;
   font-size: clamp(2.1rem, 4.5vw, 2.9rem);
   margin: 0 0 0.5rem;
   text-wrap: balance;
   letter-spacing: -0.01em;
-}
+}}
 
-.subhead {
+.subhead {{
   color: var(--ink-soft);
   font-size: 1.02rem;
   max-width: 62ch;
   margin: 0 0 0.25rem;
-}
+}}
 
-.subhead .note {
+.subhead .note {{
   display: block;
   margin-top: 0.5rem;
   font-size: 0.88rem;
   color: var(--ink-faint);
-}
+}}
 
-.controls {
+.controls {{
   position: sticky;
   top: 0;
   z-index: 5;
@@ -110,15 +155,15 @@ h1 {
   padding: 1rem 0;
   border-bottom: 1px solid var(--line);
   margin-bottom: 1.5rem;
-}
+}}
 
-.search-row {
+.search-row {{
   display: flex;
   gap: 0.6rem;
   margin-bottom: 0.85rem;
-}
+}}
 
-#search {
+#search {{
   flex: 1;
   font-family: var(--font-body);
   font-size: 0.95rem;
@@ -127,23 +172,23 @@ h1 {
   border: 1px solid var(--line-strong);
   background: var(--surface);
   color: var(--ink);
-}
+}}
 
-#search:focus-visible, .filter-row button:focus-visible {
+#search:focus-visible, .filter-row button:focus-visible {{
   outline: 2px solid var(--focus);
   outline-offset: 2px;
-}
+}}
 
-#search::placeholder { color: var(--ink-faint); }
+#search::placeholder {{ color: var(--ink-faint); }}
 
-.filter-row {
+.filter-row {{
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
   margin-bottom: 0.5rem;
-}
+}}
 
-.filter-row button {
+.filter-row button {{
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.03em;
@@ -154,17 +199,17 @@ h1 {
   color: var(--ink-soft);
   cursor: pointer;
   white-space: nowrap;
-}
+}}
 
-.filter-row button:hover { border-color: var(--accent-soft); color: var(--ink); }
+.filter-row button:hover {{ border-color: var(--accent-soft); color: var(--ink); }}
 
-.filter-row button.active {
+.filter-row button.active {{
   background: var(--accent);
   border-color: var(--accent);
   color: var(--surface);
-}
+}}
 
-.filters-toggle {
+.filters-toggle {{
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -178,48 +223,48 @@ h1 {
   color: var(--ink-soft);
   cursor: pointer;
   white-space: nowrap;
-}
+}}
 
-.filters-toggle:hover { border-color: var(--accent-soft); color: var(--ink); }
+.filters-toggle:hover {{ border-color: var(--accent-soft); color: var(--ink); }}
 
-.filters-count {
+.filters-count {{
   font-family: var(--font-mono);
   font-size: 0.7rem;
   color: var(--accent);
-}
+}}
 
-.filters-toggle .chevron {
+.filters-toggle .chevron {{
   display: inline-block;
   font-size: 1.1em;
   line-height: 1;
   transition: transform 0.12s ease;
-}
+}}
 
-.filters-toggle[aria-expanded="true"] .chevron { transform: rotate(180deg); }
+.filters-toggle[aria-expanded="true"] .chevron {{ transform: rotate(180deg); }}
 
-.filters-body {
+.filters-body {{
   display: none;
-}
+}}
 
-.filters-body.open {
+.filters-body.open {{
   display: block;
-}
+}}
 
-.table-wrap {
+.table-wrap {{
   overflow-x: auto;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
-}
+}}
 
-table {
+table {{
   width: 100%;
   border-collapse: collapse;
   font-size: 0.92rem;
   min-width: 600px;
-}
+}}
 
-thead th {
+thead th {{
   text-align: left;
   font-family: var(--font-mono);
   font-size: 0.68rem;
@@ -229,66 +274,66 @@ thead th {
   padding: 0.55rem 0.8rem;
   border-bottom: 1px solid var(--line-strong);
   background: var(--surface-2);
-}
+}}
 
-thead th.sortable { cursor: pointer; user-select: none; }
-thead th.sortable:hover { color: var(--ink); }
+thead th.sortable {{ cursor: pointer; user-select: none; }}
+thead th.sortable:hover {{ color: var(--ink); }}
 
-.sort-arrow {
+.sort-arrow {{
   display: inline-block;
   width: 0.9em;
   color: var(--accent);
-}
+}}
 
-tbody td {
+tbody td {{
   padding: 0.5rem 0.8rem;
   border-bottom: 1px solid var(--line);
   vertical-align: baseline;
-}
+}}
 
-tbody tr:last-child td { border-bottom: none; }
+tbody tr:last-child td {{ border-bottom: none; }}
 
-tbody tr.hidden { display: none; }
+tbody tr.hidden {{ display: none; }}
 
-.col-zone { white-space: nowrap; }
+.col-zone {{ white-space: nowrap; }}
 
-.col-rank {
+.col-rank {{
   font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
   color: var(--ink-soft);
   width: 3.5rem;
-}
+}}
 
-.col-monster { font-weight: 500; }
+.col-monster {{ font-weight: 500; }}
 
-.col-area { color: var(--ink-soft); }
+.col-area {{ color: var(--ink-soft); }}
 
-.col-done {
+.col-done {{
   width: 2.4rem;
   text-align: center;
-}
+}}
 
-.done-check {
+.done-check {{
   width: 1.05rem;
   height: 1.05rem;
   accent-color: var(--accent);
   cursor: pointer;
   vertical-align: middle;
-}
+}}
 
-tbody tr.done td {
+tbody tr.done td {{
   color: var(--ink-faint);
-}
+}}
 
 tbody tr.done .col-monster,
-tbody tr.done .class-tag {
+tbody tr.done .class-tag {{
   text-decoration: line-through;
   text-decoration-color: var(--ink-faint);
-}
+}}
 
-tbody tr.done.hide-done { display: none; }
+tbody tr.done.hide-done {{ display: none; }}
 
-.sr-only {
+.sr-only {{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -298,39 +343,39 @@ tbody tr.done.hide-done { display: none; }
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
-}
+}}
 
-.progress-row {
+.progress-row {{
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
   margin-bottom: 0.85rem;
-}
+}}
 
-.progress-text {
+.progress-text {{
   font-family: var(--font-mono);
   font-size: 0.78rem;
   color: var(--ink-soft);
   white-space: nowrap;
-}
+}}
 
-.progress-bar {
+.progress-bar {{
   flex: 1;
   height: 5px;
   background: var(--surface-2);
   border-radius: 3px;
   overflow: hidden;
   border: 1px solid var(--line);
-}
+}}
 
-.progress-fill {
+.progress-fill {{
   height: 100%;
   background: var(--accent);
   width: 0%;
-}
+}}
 
-.hide-toggle {
+.hide-toggle {{
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -340,50 +385,50 @@ tbody tr.done.hide-done { display: none; }
   cursor: pointer;
   white-space: nowrap;
   user-select: none;
-}
+}}
 
-.hide-toggle input {
+.hide-toggle input {{
   accent-color: var(--accent);
   cursor: pointer;
-}
+}}
 
-.class-tag {
+.class-tag {{
   font-family: var(--font-mono);
   font-size: 0.72rem;
   color: var(--accent);
   white-space: nowrap;
-}
+}}
 
-#empty-state {
+#empty-state {{
   display: none;
   padding: 2.5rem 0;
   text-align: center;
   color: var(--ink-faint);
   font-family: var(--font-display);
   font-size: 1.05rem;
-}
+}}
 
-#empty-state.show { display: block; }
+#empty-state.show {{ display: block; }}
 
-footer {
+footer {{
   margin-top: 3rem;
   padding-top: 1.25rem;
   border-top: 1px solid var(--line);
   color: var(--ink-faint);
   font-size: 0.8rem;
-}
+}}
 
-@media (prefers-reduced-motion: no-preference) {
-  .filter-row button { transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease; }
-}
+@media (prefers-reduced-motion: no-preference) {{
+  .filter-row button {{ transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease; }}
+}}
 </style>
 
 <div class="page">
   <header class="masthead">
     <p class="eyebrow">Eorzea &middot; Field Reference</p>
-    <h1>FFXIV Hunt Log Tracker</h1>
+    <h1>{PAGE_TITLE}</h1>
     <p class="subhead">Every class and Grand Company hunting log entry from A Realm Reborn,
-      in one sortable table &mdash; 664 entries across 21 zones,
+      in one sortable table &mdash; {total_entries} entries across {total_zones} zones,
       9 classes, and 3 Grand Companies.
       <span class="note">Source: FFXIV Console Games Wiki, Hunting Log and per-class/
       per-company log pages. Where the wiki listed several possible zones for one
@@ -394,7 +439,7 @@ footer {
 
   <div class="controls">
     <div class="progress-row">
-      <span class="progress-text" id="progress-text">0 / 664 done</span>
+      <span class="progress-text" id="progress-text">0 / {total_entries} done</span>
       <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
       <label class="hide-toggle">
         <input type="checkbox" id="hide-done">
@@ -410,33 +455,13 @@ footer {
     </div>
     <div class="filters-body" id="filters-body">
       <div class="filter-row" id="class-filter">
-        <button data-class="Gladiator">Gladiator</button><button data-class="Marauder">Marauder</button><button data-class="Lancer">Lancer</button><button data-class="Pugilist">Pugilist</button><button data-class="Rogue">Rogue</button><button data-class="Archer">Archer</button><button data-class="Conjurer">Conjurer</button><button data-class="Thaumaturge">Thaumaturge</button><button data-class="Arcanist">Arcanist</button><button data-class="Maelstrom">Maelstrom</button><button data-class="Order of the Twin Adder">Order of the Twin Adder</button><button data-class="Immortal Flames">Immortal Flames</button>
+        {"".join(f'<button data-class="{c}">{c}</button>' for c in CLASS_ORDER)}
       </div>
       <div class="filter-row" id="rank-filter">
-        <button data-rank="1">Rank 1</button><button data-rank="2">Rank 2</button><button data-rank="3">Rank 3</button><button data-rank="4">Rank 4</button><button data-rank="5">Rank 5</button>
+        {"".join(f'<button data-rank="{n}">Rank {n}</button>' for n in range(1, 6))}
       </div>
       <div class="filter-row" id="zone-filter">
-        <button data-zone="Central Shroud">Central Shroud</button>
-<button data-zone="Central Thanalan">Central Thanalan</button>
-<button data-zone="Coerthas Central Highlands">Coerthas Central Highlands</button>
-<button data-zone="Cutter's Cry">Cutter's Cry</button>
-<button data-zone="East Shroud">East Shroud</button>
-<button data-zone="Eastern La Noscea">Eastern La Noscea</button>
-<button data-zone="Eastern Thanalan">Eastern Thanalan</button>
-<button data-zone="Halatali">Halatali</button>
-<button data-zone="Lower La Noscea">Lower La Noscea</button>
-<button data-zone="Middle La Noscea">Middle La Noscea</button>
-<button data-zone="Mor Dhona">Mor Dhona</button>
-<button data-zone="North Shroud">North Shroud</button>
-<button data-zone="Northern Thanalan">Northern Thanalan</button>
-<button data-zone="Outer La Noscea">Outer La Noscea</button>
-<button data-zone="South Shroud">South Shroud</button>
-<button data-zone="Southern Thanalan">Southern Thanalan</button>
-<button data-zone="The Sunken Temple of Qarn">The Sunken Temple of Qarn</button>
-<button data-zone="The Wanderer's Palace">The Wanderer's Palace</button>
-<button data-zone="Upper La Noscea">Upper La Noscea</button>
-<button data-zone="Western La Noscea">Western La Noscea</button>
-<button data-zone="Western Thanalan">Western Thanalan</button>
+        {zone_filter_buttons}
       </div>
     </div>
   </div>
@@ -464,8 +489,8 @@ footer {
 </div>
 
 <script>
-(function () {
-  const STORAGE_KEY = 'ffxivHuntLogTrackerDone';
+(function () {{
+  const STORAGE_KEY = '{STORAGE_KEY}';
   const search = document.getElementById('search');
   const classButtons = document.querySelectorAll('#class-filter button');
   const rankButtons = document.querySelectorAll('#rank-filter button');
@@ -485,87 +510,87 @@ footer {
   const activeZones = new Set();
   let hideDone = false;
 
-  function loadDone() {
-    try {
-      return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
-    } catch (e) {
-      return {};
-    }
-  }
+  function loadDone() {{
+    try {{
+      return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{{}}');
+    }} catch (e) {{
+      return {{}};
+    }}
+  }}
 
-  function saveDone(done) {
+  function saveDone(done) {{
     localStorage.setItem(STORAGE_KEY, JSON.stringify(done));
-  }
+  }}
 
   let doneMap = loadDone();
 
-  function escapeHtml(str) {
+  function escapeHtml(str) {{
     return String(str)
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
-  }
+  }}
 
-  function parseCsv(text) {
+  function parseCsv(text) {{
     const rows = [];
     let row = [];
     let field = '';
     let inQuotes = false;
-    for (let i = 0; i < text.length; i++) {
+    for (let i = 0; i < text.length; i++) {{
       const c = text[i];
-      if (inQuotes) {
-        if (c === '"') {
-          if (text[i + 1] === '"') { field += '"'; i++; }
-          else { inQuotes = false; }
-        } else {
+      if (inQuotes) {{
+        if (c === '"') {{
+          if (text[i + 1] === '"') {{ field += '"'; i++; }}
+          else {{ inQuotes = false; }}
+        }} else {{
           field += c;
-        }
-      } else if (c === '"') {
+        }}
+      }} else if (c === '"') {{
         inQuotes = true;
-      } else if (c === ',') {
+      }} else if (c === ',') {{
         row.push(field);
         field = '';
-      } else if (c === '\n' || c === '\r') {
-        if (c === '\r' && text[i + 1] === '\n') i++;
+      }} else if (c === '\\n' || c === '\\r') {{
+        if (c === '\\r' && text[i + 1] === '\\n') i++;
         row.push(field);
         rows.push(row);
         row = [];
         field = '';
-      } else {
+      }} else {{
         field += c;
-      }
-    }
-    if (field !== '' || row.length) {
+      }}
+    }}
+    if (field !== '' || row.length) {{
       row.push(field);
       rows.push(row);
-    }
+    }}
     return rows;
-  }
+  }}
 
-  function idPart(str) {
-    return str.toLowerCase().replace(/'/g, '').replace(/\s+/g, '_');
-  }
+  function idPart(str) {{
+    return str.toLowerCase().replace(/'/g, '').replace(/\\s+/g, '_');
+  }}
 
-  function buildRows(records) {
+  function buildRows(records) {{
     const usedIds = Object.create(null);
-    return records.map(function (r) {
+    return records.map(function (r) {{
       const zone = r[0], cls = r[1], rank = r[2], monster = r[3], area = r[4] || '';
       const base = [idPart(cls), idPart(zone), rank, idPart(monster), idPart(area)].join('|');
       let id = base;
       let suffix = 2;
-      while (usedIds[id]) {
+      while (usedIds[id]) {{
         id = base + '_' + suffix;
         suffix++;
-      }
+      }}
       usedIds[id] = true;
-      return { zone: zone, cls: cls, rank: rank, monster: monster, area: area, id: id };
-    });
-  }
+      return {{ zone: zone, cls: cls, rank: rank, monster: monster, area: area, id: id }};
+    }});
+  }}
 
-  function renderRows(rows) {
-    tbody.innerHTML = rows.map(function (r) {
-      const areaDisplay = r.area ? escapeHtml(r.area) : '\u2014';
+  function renderRows(rows) {{
+    tbody.innerHTML = rows.map(function (r) {{
+      const areaDisplay = r.area ? escapeHtml(r.area) : '\\u2014';
       return '<tr data-zone="' + escapeHtml(r.zone) + '" data-class="' + escapeHtml(r.cls) +
         '" data-monster="' + escapeHtml(r.monster) + '" data-area="' + escapeHtml(r.area) +
         '" data-id="' + escapeHtml(r.id) + '" data-rank="' + escapeHtml(r.rank) + '">' +
@@ -577,33 +602,33 @@ footer {
         '<td class="col-monster">' + escapeHtml(r.monster) + '</td>' +
         '<td class="col-area">' + areaDisplay + '</td>' +
         '</tr>';
-    }).join('');
-  }
+    }}).join('');
+  }}
 
-  function updateProgress() {
-    const doneCount = Object.keys(doneMap).filter(function (k) {
+  function updateProgress() {{
+    const doneCount = Object.keys(doneMap).filter(function (k) {{
       return doneMap[k];
-    }).length;
+    }}).length;
     progressText.textContent = doneCount + ' / ' + totalCount + ' done';
     progressFill.style.width = (totalCount ? (doneCount / totalCount * 100) : 0) + '%';
-  }
+  }}
 
-  function applyDoneState() {
-    allRows.forEach(function (row) {
+  function applyDoneState() {{
+    allRows.forEach(function (row) {{
       const id = row.getAttribute('data-id');
       const isDone = !!doneMap[id];
       row.classList.toggle('done', isDone);
       row.classList.toggle('hide-done', isDone && hideDone);
       const box = row.querySelector('.done-check');
       if (box) box.checked = isDone;
-    });
+    }});
     updateProgress();
-  }
+  }}
 
-  function applyFilter() {
+  function applyFilter() {{
     const q = search.value.trim().toLowerCase();
     let anyVisible = false;
-    allRows.forEach(function (row) {
+    allRows.forEach(function (row) {{
       const cls = row.getAttribute('data-class');
       const rank = row.getAttribute('data-rank');
       const zone = row.getAttribute('data-zone');
@@ -618,128 +643,128 @@ footer {
       const show = classOk && rankOk && zoneOk && textOk && doneOk;
       row.classList.toggle('hidden', !show);
       if (show) anyVisible = true;
-    });
+    }});
     emptyState.classList.toggle('show', !anyVisible);
-  }
+  }}
 
-  function toggleButton(btn, attr, activeSet) {
+  function toggleButton(btn, attr, activeSet) {{
     const v = btn.getAttribute(attr);
-    if (btn.classList.contains('active')) {
+    if (btn.classList.contains('active')) {{
       btn.classList.remove('active');
       activeSet.delete(v);
-    } else {
+    }} else {{
       btn.classList.add('active');
       activeSet.add(v);
-    }
-  }
+    }}
+  }}
 
-  function updateFiltersCount() {
+  function updateFiltersCount() {{
     const n = activeClasses.size + activeRanks.size + activeZones.size;
     filtersCount.textContent = n ? ' (' + n + ')' : '';
-  }
+  }}
 
-  function attachEvents() {
+  function attachEvents() {{
     search.addEventListener('input', applyFilter);
 
-    filtersToggle.addEventListener('click', function () {
+    filtersToggle.addEventListener('click', function () {{
       const open = filtersBody.classList.toggle('open');
       filtersToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
+    }});
 
-    classButtons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
+    classButtons.forEach(function (btn) {{
+      btn.addEventListener('click', function () {{
         toggleButton(btn, 'data-class', activeClasses);
         updateFiltersCount();
         applyFilter();
-      });
-    });
+      }});
+    }});
 
-    rankButtons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
+    rankButtons.forEach(function (btn) {{
+      btn.addEventListener('click', function () {{
         toggleButton(btn, 'data-rank', activeRanks);
         updateFiltersCount();
         applyFilter();
-      });
-    });
+      }});
+    }});
 
-    zoneButtons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
+    zoneButtons.forEach(function (btn) {{
+      btn.addEventListener('click', function () {{
         toggleButton(btn, 'data-zone', activeZones);
         updateFiltersCount();
         applyFilter();
-      });
-    });
+      }});
+    }});
 
-    document.querySelectorAll('.done-check').forEach(function (box) {
-      box.addEventListener('change', function () {
+    document.querySelectorAll('.done-check').forEach(function (box) {{
+      box.addEventListener('change', function () {{
         const id = box.getAttribute('data-id');
-        if (box.checked) {
+        if (box.checked) {{
           doneMap[id] = true;
-        } else {
+        }} else {{
           delete doneMap[id];
-        }
+        }}
         saveDone(doneMap);
         applyDoneState();
         applyFilter();
-      });
-    });
+      }});
+    }});
 
-    hideDoneToggle.addEventListener('change', function () {
+    hideDoneToggle.addEventListener('change', function () {{
       hideDone = hideDoneToggle.checked;
       applyDoneState();
       applyFilter();
-    });
+    }});
 
     // Sorting
     const sortHeaders = document.querySelectorAll('th.sortable');
-    let currentSort = { key: null, dir: 'asc' };
+    let currentSort = {{ key: null, dir: 'asc' }};
 
-    function updateSortArrows() {
-      sortHeaders.forEach(function (th) {
+    function updateSortArrows() {{
+      sortHeaders.forEach(function (th) {{
         const arrow = th.querySelector('.sort-arrow');
-        if (th.getAttribute('data-sort') === currentSort.key) {
-          arrow.textContent = currentSort.dir === 'asc' ? '\u25b2' : '\u25bc';
-        } else {
+        if (th.getAttribute('data-sort') === currentSort.key) {{
+          arrow.textContent = currentSort.dir === 'asc' ? '\\u25b2' : '\\u25bc';
+        }} else {{
           arrow.textContent = '';
-        }
-      });
-    }
+        }}
+      }});
+    }}
 
-    sortHeaders.forEach(function (th) {
-      th.addEventListener('click', function () {
+    sortHeaders.forEach(function (th) {{
+      th.addEventListener('click', function () {{
         const key = th.getAttribute('data-sort');
         const dir = (currentSort.key === key && currentSort.dir === 'asc') ? 'desc' : 'asc';
-        currentSort = { key: key, dir: dir };
+        currentSort = {{ key: key, dir: dir }};
         const numeric = key === 'rank';
         const rowsArr = Array.from(tbody.querySelectorAll('tr'));
-        rowsArr.sort(function (a, b) {
+        rowsArr.sort(function (a, b) {{
           let av = a.getAttribute('data-' + key);
           let bv = b.getAttribute('data-' + key);
-          if (numeric) {
+          if (numeric) {{
             av = Number(av);
             bv = Number(bv);
             return dir === 'asc' ? av - bv : bv - av;
-          }
+          }}
           av = av.toLowerCase();
           bv = bv.toLowerCase();
           if (av < bv) return dir === 'asc' ? -1 : 1;
           if (av > bv) return dir === 'asc' ? 1 : -1;
           return 0;
-        });
-        rowsArr.forEach(function (row) { tbody.appendChild(row); });
+        }});
+        rowsArr.forEach(function (row) {{ tbody.appendChild(row); }});
         updateSortArrows();
-      });
-    });
-  }
+      }});
+    }});
+  }}
 
-  function init() {
-    fetch('data/hunting_log.csv')
-      .then(function (res) {
+  function init() {{
+    fetch('{CSV_PATH}')
+      .then(function (res) {{
         if (!res.ok) throw new Error('HTTP ' + res.status);
         return res.text();
-      })
-      .then(function (text) {
-        const allRecords = parseCsv(text).filter(function (r) { return r.length === 5; });
+      }})
+      .then(function (text) {{
+        const allRecords = parseCsv(text).filter(function (r) {{ return r.length === 5; }});
         const records = allRecords.slice(1);
         renderRows(buildRows(records));
         allRows = document.querySelectorAll('tbody tr[data-id]');
@@ -747,14 +772,18 @@ footer {
         attachEvents();
         applyDoneState();
         applyFilter();
-      })
-      .catch(function (err) {
-        emptyState.textContent = 'Failed to load hunting log data (data/hunting_log.csv).';
+      }})
+      .catch(function (err) {{
+        emptyState.textContent = 'Failed to load hunting log data ({CSV_PATH}).';
         emptyState.classList.add('show');
         console.error(err);
-      });
-  }
+      }});
+  }}
 
   init();
-})();
+}})();
 </script>
+'''
+
+OUT_HTML.write_text(html)
+print(f"wrote {OUT_HTML} ({len(html)} bytes)")
