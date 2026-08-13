@@ -13,13 +13,14 @@ OUT_HTML = REPO_ROOT / "index.html"
 
 PAGE_TITLE = "FFXIV Hunt Log Tracker"
 STORAGE_KEY = "ffxivHuntLogTrackerDone"
+FILTERS_STORAGE_KEY = "ffxivHuntLogTrackerFilters"
 
 CLASS_ORDER = [
     "Gladiator", "Marauder", "Lancer", "Pugilist", "Rogue",
     "Archer", "Conjurer", "Thaumaturge", "Arcanist",
-    "Maelstrom", "Order of the Twin Adder", "Immortal Flames",
 ]
-class_idx = {c: i for i, c in enumerate(CLASS_ORDER)}
+GC_ORDER = ["Immortal Flames", "Maelstrom", "Order of the Twin Adder"]
+class_idx = {c: i for i, c in enumerate(CLASS_ORDER + GC_ORDER)}
 
 rows = json.loads(IN_JSON.read_text())
 
@@ -442,7 +443,7 @@ footer {{
       <span class="progress-text" id="progress-text">0 / {total_entries} done</span>
       <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
       <label class="hide-toggle">
-        <input type="checkbox" id="hide-done">
+        <input type="checkbox" id="hide-done" autocomplete="off">
         Hide done
       </label>
     </div>
@@ -455,7 +456,10 @@ footer {{
     </div>
     <div class="filters-body" id="filters-body">
       <div class="filter-row" id="class-filter">
-        {"".join(f'<button data-class="{c}">{c}</button>' for c in CLASS_ORDER)}
+        {"".join(f'<button data-class="{c}">{c}</button>' for c in sorted(CLASS_ORDER))}
+      </div>
+      <div class="filter-row" id="gc-filter">
+        {"".join(f'<button data-class="{c}">{c}</button>' for c in sorted(GC_ORDER))}
       </div>
       <div class="filter-row" id="rank-filter">
         {"".join(f'<button data-rank="{n}">Rank {n}</button>' for n in range(1, 6))}
@@ -491,8 +495,9 @@ footer {{
 <script>
 (function () {{
   const STORAGE_KEY = '{STORAGE_KEY}';
+  const FILTERS_STORAGE_KEY = '{FILTERS_STORAGE_KEY}';
   const search = document.getElementById('search');
-  const classButtons = document.querySelectorAll('#class-filter button');
+  const classButtons = document.querySelectorAll('#class-filter button, #gc-filter button');
   const rankButtons = document.querySelectorAll('#rank-filter button');
   const zoneButtons = document.querySelectorAll('#zone-filter button');
   const filtersToggle = document.getElementById('filters-toggle');
@@ -523,6 +528,24 @@ footer {{
   }}
 
   let doneMap = loadDone();
+
+  function loadFilters() {{
+    try {{
+      return JSON.parse(localStorage.getItem(FILTERS_STORAGE_KEY) || '{{}}');
+    }} catch (e) {{
+      return {{}};
+    }}
+  }}
+
+  function saveFilters() {{
+    localStorage.setItem(FILTERS_STORAGE_KEY, JSON.stringify({{
+      hideDone: hideDone,
+      search: search.value,
+      classes: Array.from(activeClasses),
+      ranks: Array.from(activeRanks),
+      zones: Array.from(activeZones)
+    }}));
+  }}
 
   function escapeHtml(str) {{
     return String(str)
@@ -573,10 +596,41 @@ footer {{
   }}
 
   function buildRows(records) {{
-    const usedIds = Object.create(null);
-    return records.map(function (r) {{
+    // A monster valid in several zones for the same class+rank hunting log
+    // entry was split into one CSV row per zone (see NOTES.md); only one
+    // kill is actually required, so merge those rows back into a single
+    // checkable entry listing every valid zone. Rows are only merged when
+    // every candidate has an empty area, since that's the split's signature
+    // (a real area means it's a distinct, independently-tracked entry).
+    const groups = new Map();
+    records.forEach(function (r, idx) {{
       const zone = r[0], cls = r[1], rank = r[2], monster = r[3], area = r[4] || '';
-      const base = [idPart(cls), idPart(zone), rank, idPart(monster), idPart(area)].join('|');
+      const key = [cls, rank, monster].join('\\u0001');
+      if (!groups.has(key)) groups.set(key, {{ cls: cls, rank: rank, monster: monster, entries: [] }});
+      groups.get(key).entries.push({{ zone: zone, area: area, idx: idx }});
+    }});
+
+    const specs = [];
+    groups.forEach(function (g) {{
+      const entries = g.entries;
+      const mergeable = entries.length > 1 && entries.every(function (e) {{ return e.area === ''; }});
+      if (mergeable) {{
+        specs.push({{
+          idx: entries.reduce(function (m, e) {{ return Math.min(m, e.idx); }}, entries[0].idx),
+          zone: entries.map(function (e) {{ return e.zone; }}).join(' / '),
+          cls: g.cls, rank: g.rank, monster: g.monster, area: ''
+        }});
+      }} else {{
+        entries.forEach(function (e) {{
+          specs.push({{ idx: e.idx, zone: e.zone, cls: g.cls, rank: g.rank, monster: g.monster, area: e.area }});
+        }});
+      }}
+    }});
+    specs.sort(function (a, b) {{ return a.idx - b.idx; }});
+
+    const usedIds = Object.create(null);
+    return specs.map(function (s) {{
+      const base = [idPart(s.cls), idPart(s.zone), s.rank, idPart(s.monster), idPart(s.area)].join('|');
       let id = base;
       let suffix = 2;
       while (usedIds[id]) {{
@@ -584,7 +638,7 @@ footer {{
         suffix++;
       }}
       usedIds[id] = true;
-      return {{ zone: zone, cls: cls, rank: rank, monster: monster, area: area, id: id }};
+      return {{ zone: s.zone, cls: s.cls, rank: s.rank, monster: s.monster, area: s.area, id: id }};
     }});
   }}
 
@@ -636,7 +690,7 @@ footer {{
       const area = row.getAttribute('data-area').toLowerCase();
       const classOk = activeClasses.size === 0 || activeClasses.has(cls);
       const rankOk = activeRanks.size === 0 || activeRanks.has(rank);
-      const zoneOk = activeZones.size === 0 || activeZones.has(zone);
+      const zoneOk = activeZones.size === 0 || zone.split(' / ').some(function (z) {{ return activeZones.has(z); }});
       const textOk = !q || monster.includes(q) || area.includes(q) ||
         zone.toLowerCase().includes(q) || cls.toLowerCase().includes(q);
       const doneOk = !(hideDone && row.classList.contains('done'));
@@ -663,8 +717,41 @@ footer {{
     filtersCount.textContent = n ? ' (' + n + ')' : '';
   }}
 
+  function restoreFilters() {{
+    const saved = loadFilters();
+
+    hideDone = !!saved.hideDone;
+    hideDoneToggle.checked = hideDone;
+
+    search.value = saved.search || '';
+
+    function restoreGroup(buttons, attr, values, activeSet) {{
+      const wanted = new Set(values || []);
+      buttons.forEach(function (btn) {{
+        const v = btn.getAttribute(attr);
+        if (wanted.has(v)) {{
+          btn.classList.add('active');
+          activeSet.add(v);
+        }}
+      }});
+    }}
+
+    restoreGroup(classButtons, 'data-class', saved.classes, activeClasses);
+    restoreGroup(rankButtons, 'data-rank', saved.ranks, activeRanks);
+    restoreGroup(zoneButtons, 'data-zone', saved.zones, activeZones);
+    updateFiltersCount();
+
+    if (activeClasses.size || activeRanks.size || activeZones.size) {{
+      filtersBody.classList.add('open');
+      filtersToggle.setAttribute('aria-expanded', 'true');
+    }}
+  }}
+
   function attachEvents() {{
-    search.addEventListener('input', applyFilter);
+    search.addEventListener('input', function () {{
+      applyFilter();
+      saveFilters();
+    }});
 
     filtersToggle.addEventListener('click', function () {{
       const open = filtersBody.classList.toggle('open');
@@ -676,6 +763,7 @@ footer {{
         toggleButton(btn, 'data-class', activeClasses);
         updateFiltersCount();
         applyFilter();
+        saveFilters();
       }});
     }});
 
@@ -684,6 +772,7 @@ footer {{
         toggleButton(btn, 'data-rank', activeRanks);
         updateFiltersCount();
         applyFilter();
+        saveFilters();
       }});
     }});
 
@@ -692,12 +781,17 @@ footer {{
         toggleButton(btn, 'data-zone', activeZones);
         updateFiltersCount();
         applyFilter();
+        saveFilters();
       }});
     }});
 
     document.querySelectorAll('.done-check').forEach(function (box) {{
       box.addEventListener('change', function () {{
         const id = box.getAttribute('data-id');
+        // Re-read before writing so a stale in-memory doneMap (e.g. this
+        // page left open in another tab) can't clobber done-state saved
+        // elsewhere since this tab loaded.
+        doneMap = loadDone();
         if (box.checked) {{
           doneMap[id] = true;
         }} else {{
@@ -713,6 +807,7 @@ footer {{
       hideDone = hideDoneToggle.checked;
       applyDoneState();
       applyFilter();
+      saveFilters();
     }});
 
     // Sorting
@@ -769,6 +864,7 @@ footer {{
         renderRows(buildRows(records));
         allRows = document.querySelectorAll('tbody tr[data-id]');
         totalCount = allRows.length;
+        restoreFilters();
         attachEvents();
         applyDoneState();
         applyFilter();
