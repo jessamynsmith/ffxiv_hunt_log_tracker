@@ -41,13 +41,19 @@ Known caveats baked into the data:
 
 ```
 index.html            generated page — open this in a browser
-data/hunting_log.csv   raw data (zone, class, rank, monster, area), one row per entry
+data/hunting_log.csv   raw data (zone, class, rank, monster, area), fetched by
+                        index.html at runtime to populate the table
 data/hunting_log.json  intermediate data used to generate index.html and the CSV
 scripts/
   extract_data.py      parses raw wiki text into data/hunting_log.json
   build_page.py         renders data/hunting_log.json into index.html
   export_csv.py         exports data/hunting_log.json into data/hunting_log.csv
 ```
+
+`index.html` doesn't embed the table data — it fetches `data/hunting_log.csv`
+client-side on load and renders the rows from that. So `data/hunting_log.csv`
+must exist (and be current) before opening `index.html`, or the page loads
+with an empty table and an error in place of the "no entries match" message.
 
 ## Regenerating the data
 
@@ -59,13 +65,16 @@ Run from the repo root, in order:
 # 1. Parse raw wiki text into data/hunting_log.json
 python3 scripts/extract_data.py
 
-# 2. Render data/hunting_log.json into index.html
-python3 scripts/build_page.py
-
-# 3. Export data/hunting_log.json into data/hunting_log.csv
+# 2. Export data/hunting_log.json into data/hunting_log.csv — index.html
+#    fetches this at runtime, so it must exist before you open the page
 python3 scripts/export_csv.py
+
+# 3. Render data/hunting_log.json into index.html
+python3 scripts/build_page.py
 ```
 
 `extract_data.py` must run first — the other two scripts both read its
-`data/hunting_log.json` output. `build_page.py` and `export_csv.py` can then
-run in either order.
+`data/hunting_log.json` output. `build_page.py` doesn't itself read the CSV,
+so it will still run fine before `export_csv.py` — but run `export_csv.py`
+first anyway, since `index.html` won't have anything to show until
+`data/hunting_log.csv` exists.
