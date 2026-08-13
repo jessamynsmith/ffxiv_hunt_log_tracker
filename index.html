@@ -152,7 +152,7 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-.filter-row button {
+:where(.filter-row button) {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.03em;
@@ -173,22 +173,14 @@ h1 {
   color: var(--surface);
 }
 
-.filter-row button[data-badge] {
-  --badge-color: var(--ink-faint);
-  border-color: color-mix(in srgb, var(--badge-color) 65%, var(--line-strong));
-  color: var(--badge-color);
+/* Filter buttons for classes/zones reuse .badge (below) so they match the
+   table's badges exactly; only their interactive states live here. */
+.filter-row button.badge:hover {
+  border-color: var(--badge-color);
+  background: color-mix(in srgb, var(--badge-color) 26%, var(--surface));
 }
 
-.filter-row button[data-badge="tank"] { --badge-color: var(--badge-tank); }
-.filter-row button[data-badge="healer"] { --badge-color: var(--badge-healer); }
-.filter-row button[data-badge="dps"] { --badge-color: var(--badge-dps); }
-.filter-row button[data-badge="maelstrom"] { --badge-color: var(--badge-tank); }
-.filter-row button[data-badge="adder"] { --badge-color: var(--badge-healer); }
-.filter-row button[data-badge="flames"] { --badge-color: var(--accent); }
-
-.filter-row button[data-badge]:hover { border-color: var(--badge-color); color: var(--ink); }
-
-.filter-row button[data-badge].active {
+.filter-row button.badge.active {
   background: var(--badge-color);
   border-color: var(--badge-color);
   color: var(--surface);
@@ -385,12 +377,13 @@ tbody tr.done.hide-done { display: none; }
   padding: 0.22rem 0.5rem;
   border-radius: 5px;
   border: 2px solid;
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.03em;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
   white-space: nowrap;
   --badge-color: var(--ink-faint);
-  color: var(--badge-color);
+  color: color-mix(in srgb, var(--badge-color) 70%, var(--ink) 30%);
   border-color: color-mix(in srgb, var(--badge-color) 65%, var(--line-strong));
   background: var(--surface);
 }
@@ -464,36 +457,36 @@ footer {
     </div>
     <div class="filters-body" id="filters-body">
       <div class="filter-row" id="class-filter">
-        <button data-class="Arcanist" data-badge="dps">Arcanist</button><button data-class="Archer" data-badge="dps">Archer</button><button data-class="Conjurer" data-badge="healer">Conjurer</button><button data-class="Gladiator" data-badge="tank">Gladiator</button><button data-class="Lancer" data-badge="dps">Lancer</button><button data-class="Marauder" data-badge="tank">Marauder</button><button data-class="Pugilist" data-badge="dps">Pugilist</button><button data-class="Rogue" data-badge="dps">Rogue</button><button data-class="Thaumaturge" data-badge="dps">Thaumaturge</button>
+        <button data-class="Arcanist" class="badge badge-dps">Arcanist</button><button data-class="Archer" class="badge badge-dps">Archer</button><button data-class="Conjurer" class="badge badge-healer">Conjurer</button><button data-class="Gladiator" class="badge badge-tank">Gladiator</button><button data-class="Lancer" class="badge badge-dps">Lancer</button><button data-class="Marauder" class="badge badge-tank">Marauder</button><button data-class="Pugilist" class="badge badge-dps">Pugilist</button><button data-class="Rogue" class="badge badge-dps">Rogue</button><button data-class="Thaumaturge" class="badge badge-dps">Thaumaturge</button>
       </div>
       <div class="filter-row" id="gc-filter">
-        <button data-class="Immortal Flames" data-badge="flames">Immortal Flames</button><button data-class="Maelstrom" data-badge="maelstrom">Maelstrom</button><button data-class="Order of the Twin Adder" data-badge="adder">Order of the Twin Adder</button>
+        <button data-class="Immortal Flames" class="badge badge-flames">Immortal Flames</button><button data-class="Maelstrom" class="badge badge-maelstrom">Maelstrom</button><button data-class="Order of the Twin Adder" class="badge badge-adder">Order of the Twin Adder</button>
       </div>
       <div class="filter-row" id="rank-filter">
         <button data-rank="1">Rank 1</button><button data-rank="2">Rank 2</button><button data-rank="3">Rank 3</button><button data-rank="4">Rank 4</button><button data-rank="5">Rank 5</button>
       </div>
       <div class="filter-row" id="zone-filter">
-        <button data-zone="Central Shroud" data-badge="adder">Central Shroud</button>
-<button data-zone="Central Thanalan" data-badge="flames">Central Thanalan</button>
-<button data-zone="Coerthas Central Highlands" data-badge="neutral">Coerthas Central Highlands</button>
-<button data-zone="Cutter's Cry" data-badge="neutral">Cutter's Cry</button>
-<button data-zone="East Shroud" data-badge="adder">East Shroud</button>
-<button data-zone="Eastern La Noscea" data-badge="maelstrom">Eastern La Noscea</button>
-<button data-zone="Eastern Thanalan" data-badge="flames">Eastern Thanalan</button>
-<button data-zone="Halatali" data-badge="neutral">Halatali</button>
-<button data-zone="Lower La Noscea" data-badge="maelstrom">Lower La Noscea</button>
-<button data-zone="Middle La Noscea" data-badge="maelstrom">Middle La Noscea</button>
-<button data-zone="Mor Dhona" data-badge="neutral">Mor Dhona</button>
-<button data-zone="North Shroud" data-badge="adder">North Shroud</button>
-<button data-zone="Northern Thanalan" data-badge="flames">Northern Thanalan</button>
-<button data-zone="Outer La Noscea" data-badge="maelstrom">Outer La Noscea</button>
-<button data-zone="South Shroud" data-badge="adder">South Shroud</button>
-<button data-zone="Southern Thanalan" data-badge="flames">Southern Thanalan</button>
-<button data-zone="The Sunken Temple of Qarn" data-badge="neutral">The Sunken Temple of Qarn</button>
-<button data-zone="The Wanderer's Palace" data-badge="neutral">The Wanderer's Palace</button>
-<button data-zone="Upper La Noscea" data-badge="maelstrom">Upper La Noscea</button>
-<button data-zone="Western La Noscea" data-badge="maelstrom">Western La Noscea</button>
-<button data-zone="Western Thanalan" data-badge="flames">Western Thanalan</button>
+        <button data-zone="Central Shroud" class="badge badge-adder">Central Shroud</button>
+<button data-zone="Central Thanalan" class="badge badge-flames">Central Thanalan</button>
+<button data-zone="Coerthas Central Highlands" class="badge badge-neutral">Coerthas Central Highlands</button>
+<button data-zone="Cutter's Cry" class="badge badge-neutral">Cutter's Cry</button>
+<button data-zone="East Shroud" class="badge badge-adder">East Shroud</button>
+<button data-zone="Eastern La Noscea" class="badge badge-maelstrom">Eastern La Noscea</button>
+<button data-zone="Eastern Thanalan" class="badge badge-flames">Eastern Thanalan</button>
+<button data-zone="Halatali" class="badge badge-neutral">Halatali</button>
+<button data-zone="Lower La Noscea" class="badge badge-maelstrom">Lower La Noscea</button>
+<button data-zone="Middle La Noscea" class="badge badge-maelstrom">Middle La Noscea</button>
+<button data-zone="Mor Dhona" class="badge badge-neutral">Mor Dhona</button>
+<button data-zone="North Shroud" class="badge badge-adder">North Shroud</button>
+<button data-zone="Northern Thanalan" class="badge badge-flames">Northern Thanalan</button>
+<button data-zone="Outer La Noscea" class="badge badge-maelstrom">Outer La Noscea</button>
+<button data-zone="South Shroud" class="badge badge-adder">South Shroud</button>
+<button data-zone="Southern Thanalan" class="badge badge-flames">Southern Thanalan</button>
+<button data-zone="The Sunken Temple of Qarn" class="badge badge-neutral">The Sunken Temple of Qarn</button>
+<button data-zone="The Wanderer's Palace" class="badge badge-neutral">The Wanderer's Palace</button>
+<button data-zone="Upper La Noscea" class="badge badge-maelstrom">Upper La Noscea</button>
+<button data-zone="Western La Noscea" class="badge badge-maelstrom">Western La Noscea</button>
+<button data-zone="Western Thanalan" class="badge badge-flames">Western Thanalan</button>
       </div>
     </div>
   </div>

@@ -64,7 +64,7 @@ total_zones = len(zones_sorted)
 CSV_PATH = "data/hunting_log.csv"
 
 zone_filter_buttons = "\n".join(
-    f'<button data-zone="{z}" data-badge="{zone_badge(z)}">{z}</button>' for z in zones_sorted
+    f'<button data-zone="{z}" class="badge badge-{zone_badge(z)}">{z}</button>' for z in zones_sorted
 )
 
 html = f'''<title>{PAGE_TITLE}</title>
@@ -221,7 +221,7 @@ h1 {{
   margin-bottom: 0.5rem;
 }}
 
-.filter-row button {{
+:where(.filter-row button) {{
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.03em;
@@ -242,22 +242,14 @@ h1 {{
   color: var(--surface);
 }}
 
-.filter-row button[data-badge] {{
-  --badge-color: var(--ink-faint);
-  border-color: color-mix(in srgb, var(--badge-color) 65%, var(--line-strong));
-  color: var(--badge-color);
+/* Filter buttons for classes/zones reuse .badge (below) so they match the
+   table's badges exactly; only their interactive states live here. */
+.filter-row button.badge:hover {{
+  border-color: var(--badge-color);
+  background: color-mix(in srgb, var(--badge-color) 26%, var(--surface));
 }}
 
-.filter-row button[data-badge="tank"] {{ --badge-color: var(--badge-tank); }}
-.filter-row button[data-badge="healer"] {{ --badge-color: var(--badge-healer); }}
-.filter-row button[data-badge="dps"] {{ --badge-color: var(--badge-dps); }}
-.filter-row button[data-badge="maelstrom"] {{ --badge-color: var(--badge-tank); }}
-.filter-row button[data-badge="adder"] {{ --badge-color: var(--badge-healer); }}
-.filter-row button[data-badge="flames"] {{ --badge-color: var(--accent); }}
-
-.filter-row button[data-badge]:hover {{ border-color: var(--badge-color); color: var(--ink); }}
-
-.filter-row button[data-badge].active {{
+.filter-row button.badge.active {{
   background: var(--badge-color);
   border-color: var(--badge-color);
   color: var(--surface);
@@ -454,12 +446,13 @@ tbody tr.done.hide-done {{ display: none; }}
   padding: 0.22rem 0.5rem;
   border-radius: 5px;
   border: 2px solid;
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.03em;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
   white-space: nowrap;
   --badge-color: var(--ink-faint);
-  color: var(--badge-color);
+  color: color-mix(in srgb, var(--badge-color) 70%, var(--ink) 30%);
   border-color: color-mix(in srgb, var(--badge-color) 65%, var(--line-strong));
   background: var(--surface);
 }}
@@ -533,10 +526,10 @@ footer {{
     </div>
     <div class="filters-body" id="filters-body">
       <div class="filter-row" id="class-filter">
-        {"".join(f'<button data-class="{c}" data-badge="{CLASS_BADGE[c]}">{c}</button>' for c in sorted(CLASS_ORDER))}
+        {"".join(f'<button data-class="{c}" class="badge badge-{CLASS_BADGE[c]}">{c}</button>' for c in sorted(CLASS_ORDER))}
       </div>
       <div class="filter-row" id="gc-filter">
-        {"".join(f'<button data-class="{c}" data-badge="{CLASS_BADGE[c]}">{c}</button>' for c in sorted(GC_ORDER))}
+        {"".join(f'<button data-class="{c}" class="badge badge-{CLASS_BADGE[c]}">{c}</button>' for c in sorted(GC_ORDER))}
       </div>
       <div class="filter-row" id="rank-filter">
         {"".join(f'<button data-rank="{n}">Rank {n}</button>' for n in range(1, 6))}
