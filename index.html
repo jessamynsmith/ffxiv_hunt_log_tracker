@@ -12,6 +12,9 @@
   --line: #d3d9c9;
   --line-strong: #b9c2ac;
   --focus: #6f8c5a;
+  --badge-tank: #3568c9;
+  --badge-healer: #2f8f52;
+  --badge-dps: #c9463a;
   --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
   --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   --font-mono: ui-monospace, 'SF Mono', 'Cascadia Mono', Consolas, monospace;
@@ -30,6 +33,9 @@
     --line: #2c3524;
     --line-strong: #3c4732;
     --focus: #9bc17f;
+    --badge-tank: #7aa8f2;
+    --badge-healer: #5fcf8a;
+    --badge-dps: #f0796c;
   }
 }
 
@@ -45,6 +51,9 @@
   --line: #2c3524;
   --line-strong: #3c4732;
   --focus: #9bc17f;
+  --badge-tank: #7aa8f2;
+  --badge-healer: #5fcf8a;
+  --badge-dps: #f0796c;
 }
 
 * { box-sizing: border-box; }
@@ -149,7 +158,7 @@ h1 {
   letter-spacing: 0.03em;
   padding: 0.32rem 0.6rem;
   border-radius: 5px;
-  border: 1px solid var(--line-strong);
+  border: 2px solid var(--line-strong);
   background: var(--surface);
   color: var(--ink-soft);
   cursor: pointer;
@@ -161,6 +170,27 @@ h1 {
 .filter-row button.active {
   background: var(--accent);
   border-color: var(--accent);
+  color: var(--surface);
+}
+
+.filter-row button[data-badge] {
+  --badge-color: var(--ink-faint);
+  border-color: color-mix(in srgb, var(--badge-color) 65%, var(--line-strong));
+  color: var(--badge-color);
+}
+
+.filter-row button[data-badge="tank"] { --badge-color: var(--badge-tank); }
+.filter-row button[data-badge="healer"] { --badge-color: var(--badge-healer); }
+.filter-row button[data-badge="dps"] { --badge-color: var(--badge-dps); }
+.filter-row button[data-badge="maelstrom"] { --badge-color: var(--badge-tank); }
+.filter-row button[data-badge="adder"] { --badge-color: var(--badge-healer); }
+.filter-row button[data-badge="flames"] { --badge-color: var(--accent); }
+
+.filter-row button[data-badge]:hover { border-color: var(--badge-color); color: var(--ink); }
+
+.filter-row button[data-badge].active {
+  background: var(--badge-color);
+  border-color: var(--badge-color);
   color: var(--surface);
 }
 
@@ -250,7 +280,7 @@ tbody tr:last-child td { border-bottom: none; }
 
 tbody tr.hidden { display: none; }
 
-.col-zone { white-space: nowrap; }
+.col-zone { min-width: 9rem; }
 
 .col-rank {
   font-family: var(--font-mono);
@@ -285,6 +315,8 @@ tbody tr.done .class-tag {
   text-decoration: line-through;
   text-decoration-color: var(--ink-faint);
 }
+
+tbody tr.done .badge { opacity: 0.55; }
 
 tbody tr.done.hide-done { display: none; }
 
@@ -347,11 +379,33 @@ tbody tr.done.hide-done { display: none; }
   cursor: pointer;
 }
 
-.class-tag {
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.22rem 0.5rem;
+  border-radius: 5px;
+  border: 2px solid;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--accent);
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
   white-space: nowrap;
+  --badge-color: var(--ink-faint);
+  color: var(--badge-color);
+  border-color: color-mix(in srgb, var(--badge-color) 65%, var(--line-strong));
+  background: var(--surface);
+}
+
+.badge-tank { --badge-color: var(--badge-tank); }
+.badge-healer { --badge-color: var(--badge-healer); }
+.badge-dps { --badge-color: var(--badge-dps); }
+.badge-maelstrom { --badge-color: var(--badge-tank); }
+.badge-adder { --badge-color: var(--badge-healer); }
+.badge-flames { --badge-color: var(--accent); }
+
+.zone-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
 }
 
 #empty-state {
@@ -410,36 +464,36 @@ footer {
     </div>
     <div class="filters-body" id="filters-body">
       <div class="filter-row" id="class-filter">
-        <button data-class="Arcanist">Arcanist</button><button data-class="Archer">Archer</button><button data-class="Conjurer">Conjurer</button><button data-class="Gladiator">Gladiator</button><button data-class="Lancer">Lancer</button><button data-class="Marauder">Marauder</button><button data-class="Pugilist">Pugilist</button><button data-class="Rogue">Rogue</button><button data-class="Thaumaturge">Thaumaturge</button>
+        <button data-class="Arcanist" data-badge="dps">Arcanist</button><button data-class="Archer" data-badge="dps">Archer</button><button data-class="Conjurer" data-badge="healer">Conjurer</button><button data-class="Gladiator" data-badge="tank">Gladiator</button><button data-class="Lancer" data-badge="dps">Lancer</button><button data-class="Marauder" data-badge="tank">Marauder</button><button data-class="Pugilist" data-badge="dps">Pugilist</button><button data-class="Rogue" data-badge="dps">Rogue</button><button data-class="Thaumaturge" data-badge="dps">Thaumaturge</button>
       </div>
       <div class="filter-row" id="gc-filter">
-        <button data-class="Immortal Flames">Immortal Flames</button><button data-class="Maelstrom">Maelstrom</button><button data-class="Order of the Twin Adder">Order of the Twin Adder</button>
+        <button data-class="Immortal Flames" data-badge="flames">Immortal Flames</button><button data-class="Maelstrom" data-badge="maelstrom">Maelstrom</button><button data-class="Order of the Twin Adder" data-badge="adder">Order of the Twin Adder</button>
       </div>
       <div class="filter-row" id="rank-filter">
         <button data-rank="1">Rank 1</button><button data-rank="2">Rank 2</button><button data-rank="3">Rank 3</button><button data-rank="4">Rank 4</button><button data-rank="5">Rank 5</button>
       </div>
       <div class="filter-row" id="zone-filter">
-        <button data-zone="Central Shroud">Central Shroud</button>
-<button data-zone="Central Thanalan">Central Thanalan</button>
-<button data-zone="Coerthas Central Highlands">Coerthas Central Highlands</button>
-<button data-zone="Cutter's Cry">Cutter's Cry</button>
-<button data-zone="East Shroud">East Shroud</button>
-<button data-zone="Eastern La Noscea">Eastern La Noscea</button>
-<button data-zone="Eastern Thanalan">Eastern Thanalan</button>
-<button data-zone="Halatali">Halatali</button>
-<button data-zone="Lower La Noscea">Lower La Noscea</button>
-<button data-zone="Middle La Noscea">Middle La Noscea</button>
-<button data-zone="Mor Dhona">Mor Dhona</button>
-<button data-zone="North Shroud">North Shroud</button>
-<button data-zone="Northern Thanalan">Northern Thanalan</button>
-<button data-zone="Outer La Noscea">Outer La Noscea</button>
-<button data-zone="South Shroud">South Shroud</button>
-<button data-zone="Southern Thanalan">Southern Thanalan</button>
-<button data-zone="The Sunken Temple of Qarn">The Sunken Temple of Qarn</button>
-<button data-zone="The Wanderer's Palace">The Wanderer's Palace</button>
-<button data-zone="Upper La Noscea">Upper La Noscea</button>
-<button data-zone="Western La Noscea">Western La Noscea</button>
-<button data-zone="Western Thanalan">Western Thanalan</button>
+        <button data-zone="Central Shroud" data-badge="adder">Central Shroud</button>
+<button data-zone="Central Thanalan" data-badge="flames">Central Thanalan</button>
+<button data-zone="Coerthas Central Highlands" data-badge="neutral">Coerthas Central Highlands</button>
+<button data-zone="Cutter's Cry" data-badge="neutral">Cutter's Cry</button>
+<button data-zone="East Shroud" data-badge="adder">East Shroud</button>
+<button data-zone="Eastern La Noscea" data-badge="maelstrom">Eastern La Noscea</button>
+<button data-zone="Eastern Thanalan" data-badge="flames">Eastern Thanalan</button>
+<button data-zone="Halatali" data-badge="neutral">Halatali</button>
+<button data-zone="Lower La Noscea" data-badge="maelstrom">Lower La Noscea</button>
+<button data-zone="Middle La Noscea" data-badge="maelstrom">Middle La Noscea</button>
+<button data-zone="Mor Dhona" data-badge="neutral">Mor Dhona</button>
+<button data-zone="North Shroud" data-badge="adder">North Shroud</button>
+<button data-zone="Northern Thanalan" data-badge="flames">Northern Thanalan</button>
+<button data-zone="Outer La Noscea" data-badge="maelstrom">Outer La Noscea</button>
+<button data-zone="South Shroud" data-badge="adder">South Shroud</button>
+<button data-zone="Southern Thanalan" data-badge="flames">Southern Thanalan</button>
+<button data-zone="The Sunken Temple of Qarn" data-badge="neutral">The Sunken Temple of Qarn</button>
+<button data-zone="The Wanderer's Palace" data-badge="neutral">The Wanderer's Palace</button>
+<button data-zone="Upper La Noscea" data-badge="maelstrom">Upper La Noscea</button>
+<button data-zone="Western La Noscea" data-badge="maelstrom">Western La Noscea</button>
+<button data-zone="Western Thanalan" data-badge="flames">Western Thanalan</button>
       </div>
     </div>
   </div>
@@ -569,6 +623,28 @@ footer {
     return str.toLowerCase().replace(/'/g, '').replace(/\s+/g, '_');
   }
 
+  // Mirrors CLASS_BADGE / zone_badge in build_page.py.
+  const CLASS_BADGE = {
+    'Gladiator': 'tank', 'Marauder': 'tank',
+    'Conjurer': 'healer',
+    'Lancer': 'dps', 'Pugilist': 'dps', 'Rogue': 'dps',
+    'Archer': 'dps', 'Thaumaturge': 'dps', 'Arcanist': 'dps',
+    'Maelstrom': 'maelstrom',
+    'Order of the Twin Adder': 'adder',
+    'Immortal Flames': 'flames'
+  };
+
+  function classBadge(cls) {
+    return CLASS_BADGE[cls] || 'neutral';
+  }
+
+  function zoneBadge(zone) {
+    if (zone.indexOf('Shroud') !== -1) return 'adder';
+    if (zone.indexOf('Thanalan') !== -1) return 'flames';
+    if (zone.indexOf('La Noscea') !== -1) return 'maelstrom';
+    return 'neutral';
+  }
+
   function buildRows(records) {
     // A monster valid in several zones for the same class+rank hunting log
     // entry was split into one CSV row per zone (see NOTES.md); only one
@@ -619,13 +695,16 @@ footer {
   function renderRows(rows) {
     tbody.innerHTML = rows.map(function (r) {
       const areaDisplay = r.area ? escapeHtml(r.area) : '\u2014';
+      const zoneBadges = r.zone.split(' / ').map(function (z) {
+        return '<span class="badge badge-' + zoneBadge(z) + '">' + escapeHtml(z) + '</span>';
+      }).join('');
       return '<tr data-zone="' + escapeHtml(r.zone) + '" data-class="' + escapeHtml(r.cls) +
         '" data-monster="' + escapeHtml(r.monster) + '" data-area="' + escapeHtml(r.area) +
         '" data-id="' + escapeHtml(r.id) + '" data-rank="' + escapeHtml(r.rank) + '">' +
         '<td class="col-done"><input type="checkbox" class="done-check" data-id="' + escapeHtml(r.id) +
         '" aria-label="Mark ' + escapeHtml(r.monster) + ' done"></td>' +
-        '<td class="col-zone">' + escapeHtml(r.zone) + '</td>' +
-        '<td class="col-class"><span class="class-tag">' + escapeHtml(r.cls) + '</span></td>' +
+        '<td class="col-zone"><span class="zone-badges">' + zoneBadges + '</span></td>' +
+        '<td class="col-class"><span class="badge badge-' + classBadge(r.cls) + ' class-tag">' + escapeHtml(r.cls) + '</span></td>' +
         '<td class="col-rank">' + escapeHtml(r.rank) + '</td>' +
         '<td class="col-monster">' + escapeHtml(r.monster) + '</td>' +
         '<td class="col-area">' + areaDisplay + '</td>' +

@@ -22,6 +22,29 @@ CLASS_ORDER = [
 GC_ORDER = ["Immortal Flames", "Maelstrom", "Order of the Twin Adder"]
 class_idx = {c: i for i, c in enumerate(CLASS_ORDER + GC_ORDER)}
 
+# Badge colors follow the game's own conventions (ffxiv.consolegameswiki.com/wiki/Class):
+# role colors for classes (tank/healer/DPS), and each Grand Company's home-city
+# color for the company itself and for zones in that city's home region.
+CLASS_BADGE = {
+    "Gladiator": "tank", "Marauder": "tank",
+    "Conjurer": "healer",
+    "Lancer": "dps", "Pugilist": "dps", "Rogue": "dps",
+    "Archer": "dps", "Thaumaturge": "dps", "Arcanist": "dps",
+    "Maelstrom": "maelstrom",
+    "Order of the Twin Adder": "adder",
+    "Immortal Flames": "flames",
+}
+
+
+def zone_badge(zone):
+    if "Shroud" in zone:
+        return "adder"
+    if "Thanalan" in zone:
+        return "flames"
+    if "La Noscea" in zone:
+        return "maelstrom"
+    return "neutral"
+
 rows = json.loads(IN_JSON.read_text())
 
 zones_sorted = sorted(set(r["zone"] for r in rows))
@@ -41,7 +64,7 @@ total_zones = len(zones_sorted)
 CSV_PATH = "data/hunting_log.csv"
 
 zone_filter_buttons = "\n".join(
-    f'<button data-zone="{z}">{z}</button>' for z in zones_sorted
+    f'<button data-zone="{z}" data-badge="{zone_badge(z)}">{z}</button>' for z in zones_sorted
 )
 
 html = f'''<title>{PAGE_TITLE}</title>
@@ -58,6 +81,9 @@ html = f'''<title>{PAGE_TITLE}</title>
   --line: #d3d9c9;
   --line-strong: #b9c2ac;
   --focus: #6f8c5a;
+  --badge-tank: #3568c9;
+  --badge-healer: #2f8f52;
+  --badge-dps: #c9463a;
   --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
   --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   --font-mono: ui-monospace, 'SF Mono', 'Cascadia Mono', Consolas, monospace;
@@ -76,6 +102,9 @@ html = f'''<title>{PAGE_TITLE}</title>
     --line: #2c3524;
     --line-strong: #3c4732;
     --focus: #9bc17f;
+    --badge-tank: #7aa8f2;
+    --badge-healer: #5fcf8a;
+    --badge-dps: #f0796c;
   }}
 }}
 
@@ -91,6 +120,9 @@ html = f'''<title>{PAGE_TITLE}</title>
   --line: #2c3524;
   --line-strong: #3c4732;
   --focus: #9bc17f;
+  --badge-tank: #7aa8f2;
+  --badge-healer: #5fcf8a;
+  --badge-dps: #f0796c;
 }}
 
 * {{ box-sizing: border-box; }}
@@ -195,7 +227,7 @@ h1 {{
   letter-spacing: 0.03em;
   padding: 0.32rem 0.6rem;
   border-radius: 5px;
-  border: 1px solid var(--line-strong);
+  border: 2px solid var(--line-strong);
   background: var(--surface);
   color: var(--ink-soft);
   cursor: pointer;
@@ -207,6 +239,27 @@ h1 {{
 .filter-row button.active {{
   background: var(--accent);
   border-color: var(--accent);
+  color: var(--surface);
+}}
+
+.filter-row button[data-badge] {{
+  --badge-color: var(--ink-faint);
+  border-color: color-mix(in srgb, var(--badge-color) 65%, var(--line-strong));
+  color: var(--badge-color);
+}}
+
+.filter-row button[data-badge="tank"] {{ --badge-color: var(--badge-tank); }}
+.filter-row button[data-badge="healer"] {{ --badge-color: var(--badge-healer); }}
+.filter-row button[data-badge="dps"] {{ --badge-color: var(--badge-dps); }}
+.filter-row button[data-badge="maelstrom"] {{ --badge-color: var(--badge-tank); }}
+.filter-row button[data-badge="adder"] {{ --badge-color: var(--badge-healer); }}
+.filter-row button[data-badge="flames"] {{ --badge-color: var(--accent); }}
+
+.filter-row button[data-badge]:hover {{ border-color: var(--badge-color); color: var(--ink); }}
+
+.filter-row button[data-badge].active {{
+  background: var(--badge-color);
+  border-color: var(--badge-color);
   color: var(--surface);
 }}
 
@@ -296,7 +349,7 @@ tbody tr:last-child td {{ border-bottom: none; }}
 
 tbody tr.hidden {{ display: none; }}
 
-.col-zone {{ white-space: nowrap; }}
+.col-zone {{ min-width: 9rem; }}
 
 .col-rank {{
   font-family: var(--font-mono);
@@ -331,6 +384,8 @@ tbody tr.done .class-tag {{
   text-decoration: line-through;
   text-decoration-color: var(--ink-faint);
 }}
+
+tbody tr.done .badge {{ opacity: 0.55; }}
 
 tbody tr.done.hide-done {{ display: none; }}
 
@@ -393,11 +448,33 @@ tbody tr.done.hide-done {{ display: none; }}
   cursor: pointer;
 }}
 
-.class-tag {{
+.badge {{
+  display: inline-flex;
+  align-items: center;
+  padding: 0.22rem 0.5rem;
+  border-radius: 5px;
+  border: 2px solid;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--accent);
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
   white-space: nowrap;
+  --badge-color: var(--ink-faint);
+  color: var(--badge-color);
+  border-color: color-mix(in srgb, var(--badge-color) 65%, var(--line-strong));
+  background: var(--surface);
+}}
+
+.badge-tank {{ --badge-color: var(--badge-tank); }}
+.badge-healer {{ --badge-color: var(--badge-healer); }}
+.badge-dps {{ --badge-color: var(--badge-dps); }}
+.badge-maelstrom {{ --badge-color: var(--badge-tank); }}
+.badge-adder {{ --badge-color: var(--badge-healer); }}
+.badge-flames {{ --badge-color: var(--accent); }}
+
+.zone-badges {{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
 }}
 
 #empty-state {{
@@ -456,10 +533,10 @@ footer {{
     </div>
     <div class="filters-body" id="filters-body">
       <div class="filter-row" id="class-filter">
-        {"".join(f'<button data-class="{c}">{c}</button>' for c in sorted(CLASS_ORDER))}
+        {"".join(f'<button data-class="{c}" data-badge="{CLASS_BADGE[c]}">{c}</button>' for c in sorted(CLASS_ORDER))}
       </div>
       <div class="filter-row" id="gc-filter">
-        {"".join(f'<button data-class="{c}">{c}</button>' for c in sorted(GC_ORDER))}
+        {"".join(f'<button data-class="{c}" data-badge="{CLASS_BADGE[c]}">{c}</button>' for c in sorted(GC_ORDER))}
       </div>
       <div class="filter-row" id="rank-filter">
         {"".join(f'<button data-rank="{n}">Rank {n}</button>' for n in range(1, 6))}
@@ -595,6 +672,28 @@ footer {{
     return str.toLowerCase().replace(/'/g, '').replace(/\\s+/g, '_');
   }}
 
+  // Mirrors CLASS_BADGE / zone_badge in build_page.py.
+  const CLASS_BADGE = {{
+    'Gladiator': 'tank', 'Marauder': 'tank',
+    'Conjurer': 'healer',
+    'Lancer': 'dps', 'Pugilist': 'dps', 'Rogue': 'dps',
+    'Archer': 'dps', 'Thaumaturge': 'dps', 'Arcanist': 'dps',
+    'Maelstrom': 'maelstrom',
+    'Order of the Twin Adder': 'adder',
+    'Immortal Flames': 'flames'
+  }};
+
+  function classBadge(cls) {{
+    return CLASS_BADGE[cls] || 'neutral';
+  }}
+
+  function zoneBadge(zone) {{
+    if (zone.indexOf('Shroud') !== -1) return 'adder';
+    if (zone.indexOf('Thanalan') !== -1) return 'flames';
+    if (zone.indexOf('La Noscea') !== -1) return 'maelstrom';
+    return 'neutral';
+  }}
+
   function buildRows(records) {{
     // A monster valid in several zones for the same class+rank hunting log
     // entry was split into one CSV row per zone (see NOTES.md); only one
@@ -645,13 +744,16 @@ footer {{
   function renderRows(rows) {{
     tbody.innerHTML = rows.map(function (r) {{
       const areaDisplay = r.area ? escapeHtml(r.area) : '\\u2014';
+      const zoneBadges = r.zone.split(' / ').map(function (z) {{
+        return '<span class="badge badge-' + zoneBadge(z) + '">' + escapeHtml(z) + '</span>';
+      }}).join('');
       return '<tr data-zone="' + escapeHtml(r.zone) + '" data-class="' + escapeHtml(r.cls) +
         '" data-monster="' + escapeHtml(r.monster) + '" data-area="' + escapeHtml(r.area) +
         '" data-id="' + escapeHtml(r.id) + '" data-rank="' + escapeHtml(r.rank) + '">' +
         '<td class="col-done"><input type="checkbox" class="done-check" data-id="' + escapeHtml(r.id) +
         '" aria-label="Mark ' + escapeHtml(r.monster) + ' done"></td>' +
-        '<td class="col-zone">' + escapeHtml(r.zone) + '</td>' +
-        '<td class="col-class"><span class="class-tag">' + escapeHtml(r.cls) + '</span></td>' +
+        '<td class="col-zone"><span class="zone-badges">' + zoneBadges + '</span></td>' +
+        '<td class="col-class"><span class="badge badge-' + classBadge(r.cls) + ' class-tag">' + escapeHtml(r.cls) + '</span></td>' +
         '<td class="col-rank">' + escapeHtml(r.rank) + '</td>' +
         '<td class="col-monster">' + escapeHtml(r.monster) + '</td>' +
         '<td class="col-area">' + areaDisplay + '</td>' +
