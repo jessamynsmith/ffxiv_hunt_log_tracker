@@ -365,93 +365,125 @@ Fat Dodo -> Western La Noscea
 Moraby Mole -> Lower La Noscea
 Qiqirn Eggdigger -> Lower La Noscea
 Rhotano Buccaneer -> Western La Noscea
-Dusk Bat, Puk Hatchling, Hedgemole -> Western La Noscea
+Dusk Bat -> Western La Noscea
+Puk Hatchling -> Western La Noscea
+Hedgemole -> Western La Noscea
 Rothlyt Pelican -> Western La Noscea
 Killer Mantis -> Western La Noscea
 Wild Wolf -> Upper La Noscea""",
 3: """Stoneshell -> Upper La Noscea
 Diseased Treant -> East Shroud
-Yarzon Scavenger -> Western Thanalan / North Shroud
+Yarzon Scavenger -> Western Thanalan
+Yarzon Scavenger -> North Shroud
 Redbelly Larcener -> South Shroud
 Shroud Hare -> North Shroud
 Sabotender -> Southern Thanalan
-Balloon, Phurble, Sandskin Peiste -> North Shroud / Eastern Thanalan / Southern Thanalan
+Balloon -> North Shroud
+Phurble -> Eastern Thanalan
+Sandskin Peiste -> Southern Thanalan
 Axe Beak -> Eastern Thanalan
 Toadstool -> Central Shroud
 Floating Eye -> Central Shroud""",
-4: """Stroper -> South Shroud / Central Shroud
-Adamantoise, Smoke Bomb, Grass Raptor -> South Shroud / Southern Thanalan / Eastern La Noscea
+4: """Stroper -> South Shroud
+Stroper -> Central Shroud
+Adamantoise -> South Shroud
+Smoke Bomb -> Southern Thanalan
+Grass Raptor -> Eastern La Noscea
 Snipper -> Eastern La Noscea
 Bloodshore Bell -> Eastern La Noscea
 Jungle Coeurl -> Eastern La Noscea
 Snow Wolf Pup -> Coerthas Central Highlands
-Redhorn Ogre, Ornery Karakul, Highland Goobbue -> Coerthas Central Highlands
+Redhorn Ogre -> Coerthas Central Highlands
+Ornery Karakul -> Coerthas Central Highlands
+Highland Goobbue -> Coerthas Central Highlands
 Downy Aevis -> Coerthas Central Highlands
 Snowstorm Goobbue -> Coerthas Central Highlands
 Grenade -> Outer La Noscea""",
 5: """Molted Ziz -> East Shroud (Larkscall)
-Quartz Doblyn, Dead Man's Moan, Morbol -> Eastern Thanalan / Western La Noscea / East Shroud
+Quartz Doblyn -> Eastern Thanalan (The Burning Wall)
+Dead Man's Moan -> Western La Noscea (The Isles of Umbra)
+Morbol -> East Shroud (Larkscall)
 Crater Golem -> Central Shroud (The Standing Corses)
 Wild Hog -> South Shroud (Urth's Gift)
 Biast -> Coerthas Central Highlands (Boulder Downs)
 5th Cohort Signifer -> Mor Dhona (Fogfens)
-Synthetic Doblyn, Watchwolf, Iron Tortoise -> Outer La Noscea / North Shroud / Southern Thanalan
+Synthetic Doblyn -> Outer La Noscea (U'Ghamaro Mines)
+Watchwolf -> North Shroud (Proud Creek)
+Iron Tortoise -> Southern Thanalan (Zanr'ak)
 Milkroot Cluster -> East Shroud (Sylphlands)
 4th Cohort Secutor -> Western Thanalan (Cape Westwind)
 2nd Cohort Laquearius -> Eastern La Noscea (Agelyss Wise)""",
 }
 
 pugilist = {
-1: """Huge Hornet -- Central Thanalan
-Star Marmot -- Central Thanalan
-Cactuar -- Western Thanalan
-Snapping Shrew -- Central Thanalan
-Orobon -- Central Thanalan
-Nesting Buzzard -- Western Thanalan
-Spriggan Graverobber -- Central Thanalan
-Goblin Mugger -- Western Thanalan
-Sandtoad -- Western Thanalan
-Eft, Sun Midge Swarm, Desert Peiste -- Central/Western Thanalan""",
-2: """Bomb -- Western Thanalan
-Cochineal Cactuar -- Central Thanalan
-Antling Sentry -- Central Thanalan
-Giant Tortoise -- Western Thanalan
-Arbor Buzzard, Scaphite, Thickshell -- Western Thanalan
-Tuco-tuco -- Eastern Thanalan
-Myotragus Nanny -- Eastern Thanalan
-Blowfly Swarm -- Eastern Thanalan
-Vandalous Imp -- Eastern Thanalan
-Bloated Bogy, Rotting Corpse, Rotting Noble -- Western/Eastern Thanalan""",
-3: """Overgrown Ivy -- East Shroud
-Smallmouth Orobon -- South Shroud
-Forest Yarzon -- Upper La Noscea
-Coeurl Pup -- Upper La Noscea
-Shroud Hare, Bark Eft, Fallen Mage -- North Shroud/South Shroud/Southern Thanalan
-Ziz -- North Shroud
-Corpse Brigade Knuckledancer -- Southern Thanalan
-Clay Golem -- North Shroud
-Coeurlclaw Hunter -- South Shroud
-Lindwurm, Bigmouth Orobon, Apkallu -- Central Shroud/South Shroud/Eastern La Noscea""",
-4: """Mamool Ja Breeder -- Upper La Noscea
-Russet Yarzon -- Southern Thanalan
-Smoke Bomb -- Southern Thanalan
-Deathgaze -- Central Shroud
-Jungle Coeurl, Goobbue, Basalt Golem -- Eastern/Outer La Noscea
-Velociraptor -- Outer La Noscea
-Highland Goobbue -- Coerthas Central Highlands
-Feral Croc -- Coerthas Central Highlands
-Redhorn Ogre -- Coerthas Central Highlands
-Ochu, Molted Ziz, Snowstorm Goobbue -- East Shroud/Coerthas Central Highlands""",
-5: """Quartz Doblyn -- Eastern Thanalan
-Dead Man's Moan -- Western La Noscea
-3rd Cohort Signifer -- East Shroud
-Wild Hog -- South Shroud
-Raging Harrier, Biast, Gigas Shramana -- Mor Dhona/Coerthas Central Highlands
-Snow Wolf -- Coerthas Central Highlands
-5th Cohort Hoplomachus -- Mor Dhona
-Dreamtoad -- East Shroud
-Hapalit -- Mor Dhona
-Zahar'ak Battle Drake, Basilisk, Shelfclaw Reaver -- Southern/Northern Thanalan/Western La Noscea""",
+1: """Huge Hornet -> Central Thanalan
+Star Marmot -> Central Thanalan
+Cactuar -> Western Thanalan
+Snapping Shrew -> Central Thanalan
+Orobon -> Central Thanalan
+Nesting Buzzard -> Western Thanalan
+Spriggan Graverobber -> Central Thanalan
+Goblin Mugger -> Western Thanalan
+Sandtoad -> Western Thanalan
+Eft -> Central Thanalan
+Sun Midge Swarm -> Western Thanalan
+Desert Peiste -> Western Thanalan""",
+2: """Bomb -> Western Thanalan
+Cochineal Cactuar -> Central Thanalan
+Antling Sentry -> Central Thanalan
+Giant Tortoise -> Western Thanalan
+Arbor Buzzard -> Western Thanalan
+Scaphite -> Western Thanalan
+Thickshell -> Western Thanalan
+Tuco-tuco -> Eastern Thanalan
+Myotragus Nanny -> Eastern Thanalan
+Blowfly Swarm -> Eastern Thanalan
+Vandalous Imp -> Eastern Thanalan
+Bloated Bogy -> Western Thanalan
+Rotting Corpse -> Eastern Thanalan
+Rotting Noble -> Eastern Thanalan""",
+3: """Overgrown Ivy -> East Shroud
+Smallmouth Orobon -> South Shroud
+Forest Yarzon -> Upper La Noscea
+Coeurl Pup -> Upper La Noscea
+Shroud Hare -> North Shroud
+Bark Eft -> South Shroud
+Fallen Mage -> Southern Thanalan
+Ziz -> North Shroud
+Corpse Brigade Knuckledancer -> Southern Thanalan
+Clay Golem -> North Shroud
+Coeurlclaw Hunter -> South Shroud
+Lindwurm -> Central Shroud
+Bigmouth Orobon -> South Shroud
+Apkallu -> Eastern La Noscea""",
+4: """Mamool Ja Breeder -> Upper La Noscea
+Russet Yarzon -> Southern Thanalan
+Smoke Bomb -> Southern Thanalan
+Deathgaze -> Central Shroud
+Jungle Coeurl -> Eastern La Noscea
+Goobbue -> Eastern La Noscea
+Basalt Golem -> Outer La Noscea
+Velociraptor -> Outer La Noscea
+Highland Goobbue -> Coerthas Central Highlands
+Feral Croc -> Coerthas Central Highlands
+Redhorn Ogre -> Coerthas Central Highlands
+Ochu -> East Shroud
+Molted Ziz -> East Shroud
+Snowstorm Goobbue -> Coerthas Central Highlands""",
+5: """Quartz Doblyn -> Eastern Thanalan
+Dead Man's Moan -> Western La Noscea (The Isles of Umbra)
+3rd Cohort Signifer -> East Shroud
+Wild Hog -> South Shroud
+Raging Harrier -> Mor Dhona
+Biast -> Coerthas Central Highlands
+Gigas Shramana -> Mor Dhona
+Snow Wolf -> Coerthas Central Highlands
+5th Cohort Hoplomachus -> Mor Dhona (Fogfens)
+Dreamtoad -> East Shroud
+Hapalit -> Mor Dhona
+Zahar'ak Battle Drake -> Southern Thanalan
+Basilisk -> Northern Thanalan
+Shelfclaw Reaver -> Western La Noscea""",
 }
 
 rogue = {
@@ -523,56 +555,72 @@ Hapalit -> Mor Dhona
 }
 
 thaumaturge = {
-1: """Little Ladybug - Western Thanalan
-Huge Hornet - Central Thanalan
-Cactuar - Western Thanalan
-Snapping Shrew - Central Thanalan
-Syrphid Cloud - Central Thanalan
-Yarzon Feeder - Western Thanalan
-Rusty Coblyn - Western Thanalan
-Spriggan Graverobber - Central Thanalan
-Qiqirn Shellsweeper - Central Thanalan
-Sun Bat - Central Thanalan""",
-2: """Copper Coblyn, Bomb - Western Thanalan
-Cochineal Cactuar, Quiveron Attendant - Central Thanalan
-Giant Tortoise, Antling Sentry - Western Thanalan / Central Thanalan
-Thickshell - Western Thanalan
-Toxic Toad - Central Thanalan
-Tuco-tuco - Eastern Thanalan
-Myotragus Nanny - Eastern Thanalan
-Blowfly Swarm - Eastern Thanalan
-Rotting Corpse - Eastern Thanalan
-Bloated Bogy - Western Thanalan""",
-3: """Kedtrap, Overgrown Ivy - South Shroud / East Shroud
-Yarzon Scavenger, Forest Yarzon - Western Thanalan / Upper La Noscea
-Laughing Toad, Bark Eft - Western Thanalan / South Shroud
-Jumping Djigga, Glowfly - East Shroud
-River Yarzon - South Shroud
-Potter Wasp Swarm - Southern Thanalan
-Phurble - Eastern Thanalan
-Corpse Brigade Knuckledancer - Southern Thanalan
-Fire Sprite - Southern Thanalan
-Stroper - Central Shroud""",
-4: """Adamantoise, Mamool Ja Executioner - South Shroud / Upper La Noscea
-Revenant, Russet Yarzon - Central Shroud / Southern Thanalan
-Smoke Bomb, Dung Midge Swarm - Southern Thanalan / Eastern La Noscea
-Gigantoad, Spriggan - Eastern La Noscea / Central Shroud
-Salamander - Upper La Noscea
-Plasmoid - Outer La Noscea
-Ice Sprite - Coerthas Central Highlands
-Feral Croc - Coerthas Central Highlands
-Will-o'-the-wisp - South Shroud
-Golden Fleece - Eastern Thanalan""",
-5: """Oldgrowth Treant, Dragonfly - East Shroud / Coerthas Central Highlands
-Crater Golem, Dead Man's Moan - Central Shroud / Western La Noscea
-3rd Cohort Secutor, Morbol - East Shroud
-Nix, Lesser Kalong - Mor Dhona / South Shroud
-Gigas Sozu, Giant Logger - Mor Dhona / Coerthas Central Highlands
-Iron Tortoise - Southern Thanalan
-Synthetic Doblyn - Outer La Noscea
-Ked - South Shroud
-4th Cohort Hoplomachus - Western Thanalan
-2nd Cohort Signifer - Eastern La Noscea""",
+1: """Little Ladybug -> Western Thanalan
+Huge Hornet -> Central Thanalan
+Cactuar -> Western Thanalan
+Snapping Shrew -> Central Thanalan
+Syrphid Cloud -> Central Thanalan
+Yarzon Feeder -> Western Thanalan
+Rusty Coblyn -> Western Thanalan
+Spriggan Graverobber -> Central Thanalan
+Qiqirn Shellsweeper -> Central Thanalan
+Sun Bat -> Central Thanalan""",
+2: """Copper Coblyn -> Western Thanalan
+Bomb -> Western Thanalan
+Cochineal Cactuar -> Central Thanalan
+Quiveron Attendant -> Central Thanalan
+Giant Tortoise -> Western Thanalan
+Antling Sentry -> Central Thanalan
+Thickshell -> Western Thanalan
+Toxic Toad -> Central Thanalan
+Tuco-tuco -> Eastern Thanalan
+Myotragus Nanny -> Eastern Thanalan
+Blowfly Swarm -> Eastern Thanalan
+Rotting Corpse -> Eastern Thanalan
+Bloated Bogy -> Western Thanalan""",
+3: """Kedtrap -> South Shroud (Upper Paths)
+Overgrown Ivy -> East Shroud (Nine Ivies)
+Yarzon Scavenger -> Western Thanalan (Cape Westwind)
+Forest Yarzon -> Upper La Noscea (Oakwood)
+Laughing Toad -> Western Thanalan (The Footfalls)
+Bark Eft -> South Shroud (Upper Paths)
+Jumping Djigga -> East Shroud (The Bramble Patch)
+Glowfly -> East Shroud (The Bramble Patch)
+River Yarzon -> South Shroud (Silent Arbor)
+Potter Wasp Swarm -> Southern Thanalan
+Phurble -> Eastern Thanalan (Wellwick Wood)
+Corpse Brigade Knuckledancer -> Southern Thanalan (Broken Water)
+Fire Sprite -> Southern Thanalan (The Red Labyrinth)
+Stroper -> Central Shroud (Sorrel Haven)""",
+4: """Adamantoise -> South Shroud
+Mamool Ja Executioner -> Upper La Noscea
+Revenant -> Central Shroud
+Russet Yarzon -> Southern Thanalan
+Smoke Bomb -> Southern Thanalan
+Dung Midge Swarm -> Eastern La Noscea
+Gigantoad -> Eastern La Noscea
+Spriggan -> Central Shroud
+Salamander -> Upper La Noscea
+Plasmoid -> Outer La Noscea
+Ice Sprite -> Coerthas Central Highlands
+Feral Croc -> Coerthas Central Highlands
+Will-o'-the-wisp -> South Shroud
+Golden Fleece -> Eastern Thanalan""",
+5: """Oldgrowth Treant -> East Shroud
+Dragonfly -> Coerthas Central Highlands
+Crater Golem -> Central Shroud
+Dead Man's Moan -> Western La Noscea
+3rd Cohort Secutor -> East Shroud
+Morbol -> East Shroud
+Nix -> Mor Dhona
+Lesser Kalong -> South Shroud
+Gigas Sozu -> Mor Dhona
+Giant Logger -> Coerthas Central Highlands
+Iron Tortoise -> Southern Thanalan
+Synthetic Doblyn -> Outer La Noscea
+Ked -> South Shroud
+4th Cohort Hoplomachus -> Western Thanalan
+2nd Cohort Signifer -> Eastern La Noscea""",
 }
 
 maelstrom = {
@@ -681,9 +729,9 @@ ALL = {
     "Gladiator": (gladiator, "->"),
     "Lancer": (lancer, "->"),
     "Marauder": (marauder, "->"),
-    "Pugilist": (pugilist, "--"),
+    "Pugilist": (pugilist, "->"),
     "Rogue": (rogue, "->"),
-    "Thaumaturge": (thaumaturge, "-"),
+    "Thaumaturge": (thaumaturge, "->"),
     "Maelstrom": (maelstrom, "->"),
     "Order of the Twin Adder": (order_of_the_twin_adder, "->"),
     "Immortal Flames": (immortal_flames, "->"),

@@ -19,7 +19,7 @@ Central Shroud,Lancer,2,Arbor Buzzard,
 Central Shroud,Lancer,2,Treant Sapling,
 Central Shroud,Lancer,4,Floating Eye,
 Central Shroud,Lancer,4,Spriggan,
-Central Shroud,Pugilist,3,"Lindwurm, Bigmouth Orobon, Apkallu",
+Central Shroud,Pugilist,3,Lindwurm,
 Central Shroud,Pugilist,4,Deathgaze,
 Central Shroud,Archer,1,Anole,
 Central Shroud,Archer,1,Black Eft,
@@ -47,10 +47,10 @@ Central Shroud,Conjurer,2,Tree Slug,
 Central Shroud,Conjurer,3,Toadstool,
 Central Shroud,Conjurer,4,Lindwurm,
 Central Shroud,Conjurer,4,Revenant,
-Central Shroud,Thaumaturge,3,Stroper,
-Central Shroud,Thaumaturge,4,"Gigantoad, Spriggan",
-Central Shroud,Thaumaturge,4,"Revenant, Russet Yarzon",
-Central Shroud,Thaumaturge,5,"Crater Golem, Dead Man's Moan",
+Central Shroud,Thaumaturge,3,Stroper,Sorrel Haven
+Central Shroud,Thaumaturge,4,Revenant,
+Central Shroud,Thaumaturge,4,Spriggan,
+Central Shroud,Thaumaturge,5,Crater Golem,
 Central Shroud,Arcanist,3,Brood Ziz,Sorrel Haven
 Central Shroud,Arcanist,3,Lindwurm,Sorrel Haven
 Central Thanalan,Gladiator,1,Antling Soldier,The Clutch
@@ -62,7 +62,7 @@ Central Thanalan,Gladiator,1,Star Marmot,Spineless Basin
 Central Thanalan,Gladiator,2,Cochineal Cactuar,The Clutch
 Central Thanalan,Gladiator,2,Giant Tortoise,
 Central Thanalan,Gladiator,2,Quiveron Guard,The Clutch
-Central Thanalan,Pugilist,1,"Eft, Sun Midge Swarm, Desert Peiste",
+Central Thanalan,Pugilist,1,Eft,
 Central Thanalan,Pugilist,1,Huge Hornet,
 Central Thanalan,Pugilist,1,Orobon,
 Central Thanalan,Pugilist,1,Snapping Shrew,
@@ -76,8 +76,9 @@ Central Thanalan,Thaumaturge,1,Snapping Shrew,
 Central Thanalan,Thaumaturge,1,Spriggan Graverobber,
 Central Thanalan,Thaumaturge,1,Sun Bat,
 Central Thanalan,Thaumaturge,1,Syrphid Cloud,
-Central Thanalan,Thaumaturge,2,"Cochineal Cactuar, Quiveron Attendant",
-Central Thanalan,Thaumaturge,2,"Giant Tortoise, Antling Sentry",
+Central Thanalan,Thaumaturge,2,Antling Sentry,
+Central Thanalan,Thaumaturge,2,Cochineal Cactuar,
+Central Thanalan,Thaumaturge,2,Quiveron Attendant,
 Central Thanalan,Thaumaturge,2,Toxic Toad,
 Coerthas Central Highlands,Gladiator,4,Hippocerf,Whitebrim
 Coerthas Central Highlands,Gladiator,4,Snow Wolf Pup,Dragonhead
@@ -85,7 +86,9 @@ Coerthas Central Highlands,Gladiator,4,Vodoriga,Providence Point
 Coerthas Central Highlands,Gladiator,5,Giant Lugger,Boulder Downs
 Coerthas Central Highlands,Gladiator,5,Mudpuppy,
 Coerthas Central Highlands,Marauder,4,Downy Aevis,
-Coerthas Central Highlands,Marauder,4,"Redhorn Ogre, Ornery Karakul, Highland Goobbue",
+Coerthas Central Highlands,Marauder,4,Highland Goobbue,
+Coerthas Central Highlands,Marauder,4,Ornery Karakul,
+Coerthas Central Highlands,Marauder,4,Redhorn Ogre,
 Coerthas Central Highlands,Marauder,4,Snow Wolf Pup,
 Coerthas Central Highlands,Marauder,4,Snowstorm Goobbue,
 Coerthas Central Highlands,Marauder,5,Biast,Boulder Downs
@@ -99,9 +102,9 @@ Coerthas Central Highlands,Lancer,5,Natalan Watchwolf,
 Coerthas Central Highlands,Lancer,5,Snow Wolf,
 Coerthas Central Highlands,Pugilist,4,Feral Croc,
 Coerthas Central Highlands,Pugilist,4,Highland Goobbue,
-Coerthas Central Highlands,Pugilist,4,"Ochu, Molted Ziz, Snowstorm Goobbue",
 Coerthas Central Highlands,Pugilist,4,Redhorn Ogre,
-Coerthas Central Highlands,Pugilist,5,"Raging Harrier, Biast, Gigas Shramana",
+Coerthas Central Highlands,Pugilist,4,Snowstorm Goobbue,
+Coerthas Central Highlands,Pugilist,5,Biast,
 Coerthas Central Highlands,Pugilist,5,Snow Wolf,
 Coerthas Central Highlands,Rogue,4,Bateleur,
 Coerthas Central Highlands,Rogue,4,Chinchilla,
@@ -124,8 +127,8 @@ Coerthas Central Highlands,Conjurer,5,Hippocerf,
 Coerthas Central Highlands,Conjurer,5,Snow Wolf,
 Coerthas Central Highlands,Thaumaturge,4,Feral Croc,
 Coerthas Central Highlands,Thaumaturge,4,Ice Sprite,
-Coerthas Central Highlands,Thaumaturge,5,"Gigas Sozu, Giant Logger",
-Coerthas Central Highlands,Thaumaturge,5,"Oldgrowth Treant, Dragonfly",
+Coerthas Central Highlands,Thaumaturge,5,Dragonfly,
+Coerthas Central Highlands,Thaumaturge,5,Giant Logger,
 Coerthas Central Highlands,Arcanist,4,Feral Croc,Dragonhead
 Coerthas Central Highlands,Arcanist,4,Snow Wolf Pup,Dragonhead
 Coerthas Central Highlands,Arcanist,4,Taurus,Providence Point
@@ -149,7 +152,7 @@ East Shroud,Gladiator,5,Oldgrowth Treant,Larkscall
 East Shroud,Marauder,3,Diseased Treant,
 East Shroud,Marauder,5,Milkroot Cluster,Sylphlands
 East Shroud,Marauder,5,Molted Ziz,Larkscall
-East Shroud,Marauder,5,"Quartz Doblyn, Dead Man's Moan, Morbol",
+East Shroud,Marauder,5,Morbol,Larkscall
 East Shroud,Lancer,1,Tree Slug,
 East Shroud,Lancer,2,Black Bat,
 East Shroud,Lancer,2,Boar Poacher,
@@ -164,7 +167,8 @@ East Shroud,Lancer,5,3rd Cohort Signifer,
 East Shroud,Lancer,5,Morbol,
 East Shroud,Lancer,5,Sylphlands Sentinel,
 East Shroud,Pugilist,3,Overgrown Ivy,
-East Shroud,Pugilist,4,"Ochu, Molted Ziz, Snowstorm Goobbue",
+East Shroud,Pugilist,4,Molted Ziz,
+East Shroud,Pugilist,4,Ochu,
 East Shroud,Pugilist,5,3rd Cohort Signifer,
 East Shroud,Pugilist,5,Dreamtoad,
 East Shroud,Rogue,3,Black Bat,
@@ -196,10 +200,12 @@ East Shroud,Conjurer,3,Diseased Treant,
 East Shroud,Conjurer,3,Glowfly,
 East Shroud,Conjurer,5,3rd Cohort Hoplomachus,
 East Shroud,Conjurer,5,Sylph Bonnet,
-East Shroud,Thaumaturge,3,"Jumping Djigga, Glowfly",
-East Shroud,Thaumaturge,3,"Kedtrap, Overgrown Ivy",
-East Shroud,Thaumaturge,5,"3rd Cohort Secutor, Morbol",
-East Shroud,Thaumaturge,5,"Oldgrowth Treant, Dragonfly",
+East Shroud,Thaumaturge,3,Glowfly,The Bramble Patch
+East Shroud,Thaumaturge,3,Jumping Djigga,The Bramble Patch
+East Shroud,Thaumaturge,3,Overgrown Ivy,Nine Ivies
+East Shroud,Thaumaturge,5,3rd Cohort Secutor,
+East Shroud,Thaumaturge,5,Morbol,
+East Shroud,Thaumaturge,5,Oldgrowth Treant,
 East Shroud,Arcanist,3,Overgrown Ivy,Nine Ivies
 East Shroud,Arcanist,4,Molted Ziz,Larkscall
 East Shroud,Arcanist,5,3rd Cohort Laquearius,Larkscall
@@ -215,16 +221,17 @@ East Shroud,Immortal Flames,2,Sylvan Screech,Larkscall
 East Shroud,Immortal Flames,3,Sylpheed Sigh,
 Eastern La Noscea,Gladiator,3,Apkallu,Bloodshore
 Eastern La Noscea,Gladiator,5,2nd Cohort Hoplomachus,Agelyss Wise
-Eastern La Noscea,Marauder,4,"Adamantoise, Smoke Bomb, Grass Raptor",
 Eastern La Noscea,Marauder,4,Bloodshore Bell,
+Eastern La Noscea,Marauder,4,Grass Raptor,
 Eastern La Noscea,Marauder,4,Jungle Coeurl,
 Eastern La Noscea,Marauder,4,Snipper,
 Eastern La Noscea,Marauder,5,2nd Cohort Laquearius,Agelyss Wise
 Eastern La Noscea,Lancer,3,Apkallu,
 Eastern La Noscea,Lancer,4,Large Buffalo,
 Eastern La Noscea,Lancer,5,2nd Cohort Eques,
-Eastern La Noscea,Pugilist,3,"Lindwurm, Bigmouth Orobon, Apkallu",
-Eastern La Noscea,Pugilist,4,"Jungle Coeurl, Goobbue, Basalt Golem",
+Eastern La Noscea,Pugilist,3,Apkallu,
+Eastern La Noscea,Pugilist,4,Goobbue,
+Eastern La Noscea,Pugilist,4,Jungle Coeurl,
 Eastern La Noscea,Rogue,4,Colibri,
 Eastern La Noscea,Rogue,4,Grass Raptor,
 Eastern La Noscea,Rogue,4,Large Buffalo,
@@ -241,8 +248,8 @@ Eastern La Noscea,Conjurer,3,Apkallu,
 Eastern La Noscea,Conjurer,4,Bloodshore Bell,
 Eastern La Noscea,Conjurer,4,Gigantoad,
 Eastern La Noscea,Conjurer,5,2nd Cohort Vanguard,
-Eastern La Noscea,Thaumaturge,4,"Gigantoad, Spriggan",
-Eastern La Noscea,Thaumaturge,4,"Smoke Bomb, Dung Midge Swarm",
+Eastern La Noscea,Thaumaturge,4,Dung Midge Swarm,
+Eastern La Noscea,Thaumaturge,4,Gigantoad,
 Eastern La Noscea,Thaumaturge,5,2nd Cohort Signifer,
 Eastern La Noscea,Arcanist,4,Colibri,Bloodshore
 Eastern La Noscea,Arcanist,4,Gigantoad,Raincatcher Gully
@@ -258,12 +265,13 @@ Eastern Thanalan,Gladiator,2,Tuco-tuco,Drybone
 Eastern Thanalan,Gladiator,2,Vandalous Imp,Drybone
 Eastern Thanalan,Gladiator,3,Qiqirn Roerunner,Wellwick Wood
 Eastern Thanalan,Marauder,3,Axe Beak,
-Eastern Thanalan,Marauder,3,"Balloon, Phurble, Sandskin Peiste",
-Eastern Thanalan,Marauder,5,"Quartz Doblyn, Dead Man's Moan, Morbol",
+Eastern Thanalan,Marauder,3,Phurble,
+Eastern Thanalan,Marauder,5,Quartz Doblyn,The Burning Wall
 Eastern Thanalan,Lancer,4,Mirrorknight,
-Eastern Thanalan,Pugilist,2,"Bloated Bogy, Rotting Corpse, Rotting Noble",
 Eastern Thanalan,Pugilist,2,Blowfly Swarm,
 Eastern Thanalan,Pugilist,2,Myotragus Nanny,
+Eastern Thanalan,Pugilist,2,Rotting Corpse,
+Eastern Thanalan,Pugilist,2,Rotting Noble,
 Eastern Thanalan,Pugilist,2,Tuco-tuco,
 Eastern Thanalan,Pugilist,2,Vandalous Imp,
 Eastern Thanalan,Pugilist,5,Quartz Doblyn,
@@ -277,7 +285,7 @@ Eastern Thanalan,Thaumaturge,2,Blowfly Swarm,
 Eastern Thanalan,Thaumaturge,2,Myotragus Nanny,
 Eastern Thanalan,Thaumaturge,2,Rotting Corpse,
 Eastern Thanalan,Thaumaturge,2,Tuco-tuco,
-Eastern Thanalan,Thaumaturge,3,Phurble,
+Eastern Thanalan,Thaumaturge,3,Phurble,Wellwick Wood
 Eastern Thanalan,Thaumaturge,4,Golden Fleece,
 Eastern Thanalan,Arcanist,3,Axe Beak,Wellwick Wood
 Eastern Thanalan,Arcanist,3,Chasm Buzzard,Wellwick Wood
@@ -347,9 +355,10 @@ Mor Dhona,Marauder,5,5th Cohort Signifer,Fogfens
 Mor Dhona,Lancer,5,5th Cohort Vanguard,
 Mor Dhona,Lancer,5,Daring Harrier,
 Mor Dhona,Lancer,5,Lake Cobra,
-Mor Dhona,Pugilist,5,5th Cohort Hoplomachus,
+Mor Dhona,Pugilist,5,5th Cohort Hoplomachus,Fogfens
+Mor Dhona,Pugilist,5,Gigas Shramana,
 Mor Dhona,Pugilist,5,Hapalit,
-Mor Dhona,Pugilist,5,"Raging Harrier, Biast, Gigas Shramana",
+Mor Dhona,Pugilist,5,Raging Harrier,
 Mor Dhona,Rogue,5,Daring Harrier,
 Mor Dhona,Rogue,5,Gigas Shramana,
 Mor Dhona,Rogue,5,Gigas Sozu,
@@ -362,17 +371,17 @@ Mor Dhona,Archer,5,5th Cohort Secutor,
 Mor Dhona,Archer,5,Hippogryph,
 Mor Dhona,Archer,5,Mudpuppy,
 Mor Dhona,Conjurer,5,5th Cohort Eques,
-Mor Dhona,Thaumaturge,5,"Gigas Sozu, Giant Logger",
-Mor Dhona,Thaumaturge,5,"Nix, Lesser Kalong",
+Mor Dhona,Thaumaturge,5,Gigas Sozu,
+Mor Dhona,Thaumaturge,5,Nix,
 Mor Dhona,Arcanist,5,5th Cohort Laquearius,Fogfens
 Mor Dhona,Arcanist,5,Mudpuppy,Fogfens
 Mor Dhona,Arcanist,5,Nix,Fogfens
 North Shroud,Gladiator,3,Balloon,Alder Springs
 North Shroud,Gladiator,5,Dullahan,Proud Creek
-North Shroud,Marauder,3,"Balloon, Phurble, Sandskin Peiste",
+North Shroud,Marauder,3,Balloon,
 North Shroud,Marauder,3,Shroud Hare,
 North Shroud,Marauder,3,Yarzon Scavenger,
-North Shroud,Marauder,5,"Synthetic Doblyn, Watchwolf, Iron Tortoise",
+North Shroud,Marauder,5,Watchwolf,Proud Creek
 North Shroud,Lancer,1,Microchu,
 North Shroud,Lancer,1,Miteling,
 North Shroud,Lancer,1,Opo-opo,
@@ -380,7 +389,7 @@ North Shroud,Lancer,3,Yarzon Scavenger,
 North Shroud,Lancer,4,Dryad,
 North Shroud,Lancer,4,Lesser Kalong,
 North Shroud,Pugilist,3,Clay Golem,
-North Shroud,Pugilist,3,"Shroud Hare, Bark Eft, Fallen Mage",
+North Shroud,Pugilist,3,Shroud Hare,
 North Shroud,Pugilist,3,Ziz,
 North Shroud,Archer,1,Little Ladybug,
 North Shroud,Archer,1,Midge Swarm,
@@ -404,17 +413,17 @@ North Shroud,Immortal Flames,1,Ixali Lightwing,Alder Springs
 North Shroud,Immortal Flames,3,Ixali Windtalon,Proud Creek
 Northern Thanalan,Gladiator,5,Basilisk,Bluefog
 Northern Thanalan,Lancer,5,Basilisk,
-Northern Thanalan,Pugilist,5,"Zahar'ak Battle Drake, Basilisk, Shelfclaw Reaver",
+Northern Thanalan,Pugilist,5,Basilisk,
 Northern Thanalan,Archer,5,Ahriman,
 Northern Thanalan,Conjurer,5,Ahriman,
 Outer La Noscea,Gladiator,3,Pteroc,The Long Climb
 Outer La Noscea,Gladiator,4,Grenade,Iron Lake
 Outer La Noscea,Gladiator,4,Velociraptor,The Long Climb
 Outer La Noscea,Marauder,4,Grenade,
-Outer La Noscea,Marauder,5,"Synthetic Doblyn, Watchwolf, Iron Tortoise",
+Outer La Noscea,Marauder,5,Synthetic Doblyn,U'Ghamaro Mines
 Outer La Noscea,Lancer,4,Basalt Golem,
 Outer La Noscea,Lancer,4,Ringtail,
-Outer La Noscea,Pugilist,4,"Jungle Coeurl, Goobbue, Basalt Golem",
+Outer La Noscea,Pugilist,4,Basalt Golem,
 Outer La Noscea,Pugilist,4,Velociraptor,
 Outer La Noscea,Rogue,4,Basalt Golem,
 Outer La Noscea,Rogue,4,Coeurl,
@@ -441,7 +450,7 @@ South Shroud,Gladiator,3,Overgrown Offering,Upper Paths
 South Shroud,Gladiator,4,Adamantoise,Lower Paths
 South Shroud,Gladiator,4,Treant,Snakemolt
 South Shroud,Marauder,3,Redbelly Larcener,
-South Shroud,Marauder,4,"Adamantoise, Smoke Bomb, Grass Raptor",
+South Shroud,Marauder,4,Adamantoise,
 South Shroud,Marauder,4,Stroper,
 South Shroud,Marauder,5,Wild Hog,Urth's Gift
 South Shroud,Lancer,2,Antelope Doe,
@@ -453,9 +462,9 @@ South Shroud,Lancer,3,Midland Condor,
 South Shroud,Lancer,3,Redbelly Lookout,
 South Shroud,Lancer,3,Smallmouth Orobon,
 South Shroud,Lancer,5,Wild Hog,
+South Shroud,Pugilist,3,Bark Eft,
+South Shroud,Pugilist,3,Bigmouth Orobon,
 South Shroud,Pugilist,3,Coeurlclaw Hunter,
-South Shroud,Pugilist,3,"Lindwurm, Bigmouth Orobon, Apkallu",
-South Shroud,Pugilist,3,"Shroud Hare, Bark Eft, Fallen Mage",
 South Shroud,Pugilist,3,Smallmouth Orobon,
 South Shroud,Pugilist,5,Wild Hog,
 South Shroud,Rogue,3,Antelope Stag,
@@ -477,13 +486,13 @@ South Shroud,Conjurer,4,Bigmouth Orobon,
 South Shroud,Conjurer,4,Deepvoid Deathmouse,
 South Shroud,Conjurer,4,Will-o'-the-wisp,
 South Shroud,Conjurer,5,Lesser Kalong,
-South Shroud,Thaumaturge,3,"Kedtrap, Overgrown Ivy",
-South Shroud,Thaumaturge,3,"Laughing Toad, Bark Eft",
-South Shroud,Thaumaturge,3,River Yarzon,
-South Shroud,Thaumaturge,4,"Adamantoise, Mamool Ja Executioner",
+South Shroud,Thaumaturge,3,Bark Eft,Upper Paths
+South Shroud,Thaumaturge,3,Kedtrap,Upper Paths
+South Shroud,Thaumaturge,3,River Yarzon,Silent Arbor
+South Shroud,Thaumaturge,4,Adamantoise,
 South Shroud,Thaumaturge,4,Will-o'-the-wisp,
 South Shroud,Thaumaturge,5,Ked,
-South Shroud,Thaumaturge,5,"Nix, Lesser Kalong",
+South Shroud,Thaumaturge,5,Lesser Kalong,
 South Shroud,Arcanist,3,Antelope Stag,Silent Arbor
 South Shroud,Arcanist,3,Kedtrap,Upper Paths
 South Shroud,Arcanist,5,Wild Hog,Urth's Gift
@@ -491,20 +500,20 @@ Southern Thanalan,Gladiator,3,Sabotender,Broken Water
 Southern Thanalan,Gladiator,4,Fallen Wizard,Sagolii Desert
 Southern Thanalan,Gladiator,4,Sandworm,Sagolii Desert
 Southern Thanalan,Gladiator,5,Tempered Orator,Zanr'ak
-Southern Thanalan,Marauder,3,"Balloon, Phurble, Sandskin Peiste",
 Southern Thanalan,Marauder,3,Sabotender,
-Southern Thanalan,Marauder,4,"Adamantoise, Smoke Bomb, Grass Raptor",
-Southern Thanalan,Marauder,5,"Synthetic Doblyn, Watchwolf, Iron Tortoise",
+Southern Thanalan,Marauder,3,Sandskin Peiste,
+Southern Thanalan,Marauder,4,Smoke Bomb,
+Southern Thanalan,Marauder,5,Iron Tortoise,Zanr'ak
 Southern Thanalan,Lancer,3,Corpse Brigade Firedancer,
 Southern Thanalan,Lancer,3,Sabotender,
 Southern Thanalan,Lancer,3,Sandskin Peiste,
 Southern Thanalan,Lancer,4,Smoke Bomb,
 Southern Thanalan,Lancer,4,Sundrake,
 Southern Thanalan,Pugilist,3,Corpse Brigade Knuckledancer,
-Southern Thanalan,Pugilist,3,"Shroud Hare, Bark Eft, Fallen Mage",
+Southern Thanalan,Pugilist,3,Fallen Mage,
 Southern Thanalan,Pugilist,4,Russet Yarzon,
 Southern Thanalan,Pugilist,4,Smoke Bomb,
-Southern Thanalan,Pugilist,5,"Zahar'ak Battle Drake, Basilisk, Shelfclaw Reaver",
+Southern Thanalan,Pugilist,5,Zahar'ak Battle Drake,
 Southern Thanalan,Rogue,3,Corpse Brigade Firedancer,
 Southern Thanalan,Rogue,3,Corpse Brigade Knuckledancer,
 Southern Thanalan,Rogue,3,Sandstone Golem,
@@ -516,11 +525,11 @@ Southern Thanalan,Archer,4,Smoke Bomb,
 Southern Thanalan,Archer,5,Tempered Gladiator,
 Southern Thanalan,Conjurer,3,Sabotender,
 Southern Thanalan,Conjurer,4,Sandworm,
-Southern Thanalan,Thaumaturge,3,Corpse Brigade Knuckledancer,
-Southern Thanalan,Thaumaturge,3,Fire Sprite,
+Southern Thanalan,Thaumaturge,3,Corpse Brigade Knuckledancer,Broken Water
+Southern Thanalan,Thaumaturge,3,Fire Sprite,The Red Labyrinth
 Southern Thanalan,Thaumaturge,3,Potter Wasp Swarm,
-Southern Thanalan,Thaumaturge,4,"Revenant, Russet Yarzon",
-Southern Thanalan,Thaumaturge,4,"Smoke Bomb, Dung Midge Swarm",
+Southern Thanalan,Thaumaturge,4,Russet Yarzon,
+Southern Thanalan,Thaumaturge,4,Smoke Bomb,
 Southern Thanalan,Thaumaturge,5,Iron Tortoise,
 Southern Thanalan,Arcanist,3,Sandstone Golem,Broken Water
 Southern Thanalan,Arcanist,4,Sundrake,Sagolii Desert
@@ -567,8 +576,8 @@ Upper La Noscea,Archer,3,Stoneshell,
 Upper La Noscea,Archer,4,Salamander,
 Upper La Noscea,Conjurer,3,Stoneshell,
 Upper La Noscea,Conjurer,4,Mamool Ja Infiltrator,
-Upper La Noscea,Thaumaturge,3,"Yarzon Scavenger, Forest Yarzon",
-Upper La Noscea,Thaumaturge,4,"Adamantoise, Mamool Ja Executioner",
+Upper La Noscea,Thaumaturge,3,Forest Yarzon,Oakwood
+Upper La Noscea,Thaumaturge,4,Mamool Ja Executioner,
 Upper La Noscea,Thaumaturge,4,Salamander,
 Upper La Noscea,Arcanist,2,Bumble Beetle,Oakwood
 Upper La Noscea,Arcanist,3,Coeurl Pup,Oakwood
@@ -581,16 +590,18 @@ Upper La Noscea,Immortal Flames,2,Kobold Sidesman,Zelma's Run
 Western La Noscea,Gladiator,5,Dead Man's Moan,The Isles of Umbra
 Western La Noscea,Gladiator,5,Lammergeyer,The Isles of Umbra
 Western La Noscea,Gladiator,5,Preying Mantis,The Isles of Umbra
-Western La Noscea,Marauder,2,"Dusk Bat, Puk Hatchling, Hedgemole",
+Western La Noscea,Marauder,2,Dusk Bat,
 Western La Noscea,Marauder,2,Fat Dodo,
+Western La Noscea,Marauder,2,Hedgemole,
 Western La Noscea,Marauder,2,Killer Mantis,
+Western La Noscea,Marauder,2,Puk Hatchling,
 Western La Noscea,Marauder,2,Rhotano Buccaneer,
 Western La Noscea,Marauder,2,Rothlyt Pelican,
-Western La Noscea,Marauder,5,"Quartz Doblyn, Dead Man's Moan, Morbol",
+Western La Noscea,Marauder,5,Dead Man's Moan,The Isles of Umbra
 Western La Noscea,Lancer,5,Dead Man's Moan,
 Western La Noscea,Lancer,5,Sea Wasp,
-Western La Noscea,Pugilist,5,Dead Man's Moan,
-Western La Noscea,Pugilist,5,"Zahar'ak Battle Drake, Basilisk, Shelfclaw Reaver",
+Western La Noscea,Pugilist,5,Dead Man's Moan,The Isles of Umbra
+Western La Noscea,Pugilist,5,Shelfclaw Reaver,
 Western La Noscea,Rogue,2,Fat Dodo,
 Western La Noscea,Rogue,2,Hedgemole,
 Western La Noscea,Rogue,2,Killer Mantis,
@@ -604,7 +615,7 @@ Western La Noscea,Archer,5,Shelfeye Reaver,
 Western La Noscea,Conjurer,5,Dead Man's Moan,
 Western La Noscea,Conjurer,5,Lammergeyer,
 Western La Noscea,Conjurer,5,Sea Wasp,
-Western La Noscea,Thaumaturge,5,"Crater Golem, Dead Man's Moan",
+Western La Noscea,Thaumaturge,5,Dead Man's Moan,
 Western La Noscea,Arcanist,2,Arbor Buzzard,Quarterstone
 Western La Noscea,Arcanist,2,Dusk Bat,Skull Valley
 Western La Noscea,Arcanist,2,Fat Dodo,Quarterstone
@@ -639,14 +650,17 @@ Western Thanalan,Marauder,5,4th Cohort Secutor,Cape Westwind
 Western Thanalan,Lancer,3,Moondrip Piledriver,
 Western Thanalan,Lancer,3,Yarzon Scavenger,
 Western Thanalan,Pugilist,1,Cactuar,
-Western Thanalan,Pugilist,1,"Eft, Sun Midge Swarm, Desert Peiste",
+Western Thanalan,Pugilist,1,Desert Peiste,
 Western Thanalan,Pugilist,1,Goblin Mugger,
 Western Thanalan,Pugilist,1,Nesting Buzzard,
 Western Thanalan,Pugilist,1,Sandtoad,
-Western Thanalan,Pugilist,2,"Arbor Buzzard, Scaphite, Thickshell",
-Western Thanalan,Pugilist,2,"Bloated Bogy, Rotting Corpse, Rotting Noble",
+Western Thanalan,Pugilist,1,Sun Midge Swarm,
+Western Thanalan,Pugilist,2,Arbor Buzzard,
+Western Thanalan,Pugilist,2,Bloated Bogy,
 Western Thanalan,Pugilist,2,Bomb,
 Western Thanalan,Pugilist,2,Giant Tortoise,
+Western Thanalan,Pugilist,2,Scaphite,
+Western Thanalan,Pugilist,2,Thickshell,
 Western Thanalan,Archer,3,Yarzon Scavenger,
 Western Thanalan,Conjurer,3,Laughing Toad,
 Western Thanalan,Conjurer,3,Lead Coblyn,
@@ -655,11 +669,12 @@ Western Thanalan,Thaumaturge,1,Little Ladybug,
 Western Thanalan,Thaumaturge,1,Rusty Coblyn,
 Western Thanalan,Thaumaturge,1,Yarzon Feeder,
 Western Thanalan,Thaumaturge,2,Bloated Bogy,
-Western Thanalan,Thaumaturge,2,"Copper Coblyn, Bomb",
-Western Thanalan,Thaumaturge,2,"Giant Tortoise, Antling Sentry",
+Western Thanalan,Thaumaturge,2,Bomb,
+Western Thanalan,Thaumaturge,2,Copper Coblyn,
+Western Thanalan,Thaumaturge,2,Giant Tortoise,
 Western Thanalan,Thaumaturge,2,Thickshell,
-Western Thanalan,Thaumaturge,3,"Laughing Toad, Bark Eft",
-Western Thanalan,Thaumaturge,3,"Yarzon Scavenger, Forest Yarzon",
+Western Thanalan,Thaumaturge,3,Laughing Toad,The Footfalls
+Western Thanalan,Thaumaturge,3,Yarzon Scavenger,Cape Westwind
 Western Thanalan,Thaumaturge,5,4th Cohort Hoplomachus,
 Western Thanalan,Arcanist,3,Lead Coblyn,The Footfalls
 Western Thanalan,Arcanist,5,4th Cohort Vanguard,Cape Westwind

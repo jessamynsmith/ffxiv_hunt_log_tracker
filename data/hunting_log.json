@@ -2375,7 +2375,21 @@
  {
   "class": "Marauder",
   "rank": 2,
-  "monster": "Dusk Bat, Puk Hatchling, Hedgemole",
+  "monster": "Dusk Bat",
+  "zone": "Western La Noscea",
+  "area": ""
+ },
+ {
+  "class": "Marauder",
+  "rank": 2,
+  "monster": "Puk Hatchling",
+  "zone": "Western La Noscea",
+  "area": ""
+ },
+ {
+  "class": "Marauder",
+  "rank": 2,
+  "monster": "Hedgemole",
   "zone": "Western La Noscea",
   "area": ""
  },
@@ -2452,21 +2466,21 @@
  {
   "class": "Marauder",
   "rank": 3,
-  "monster": "Balloon, Phurble, Sandskin Peiste",
+  "monster": "Balloon",
   "zone": "North Shroud",
   "area": ""
  },
  {
   "class": "Marauder",
   "rank": 3,
-  "monster": "Balloon, Phurble, Sandskin Peiste",
+  "monster": "Phurble",
   "zone": "Eastern Thanalan",
   "area": ""
  },
  {
   "class": "Marauder",
   "rank": 3,
-  "monster": "Balloon, Phurble, Sandskin Peiste",
+  "monster": "Sandskin Peiste",
   "zone": "Southern Thanalan",
   "area": ""
  },
@@ -2508,21 +2522,21 @@
  {
   "class": "Marauder",
   "rank": 4,
-  "monster": "Adamantoise, Smoke Bomb, Grass Raptor",
+  "monster": "Adamantoise",
   "zone": "South Shroud",
   "area": ""
  },
  {
   "class": "Marauder",
   "rank": 4,
-  "monster": "Adamantoise, Smoke Bomb, Grass Raptor",
+  "monster": "Smoke Bomb",
   "zone": "Southern Thanalan",
   "area": ""
  },
  {
   "class": "Marauder",
   "rank": 4,
-  "monster": "Adamantoise, Smoke Bomb, Grass Raptor",
+  "monster": "Grass Raptor",
   "zone": "Eastern La Noscea",
   "area": ""
  },
@@ -2557,7 +2571,21 @@
  {
   "class": "Marauder",
   "rank": 4,
-  "monster": "Redhorn Ogre, Ornery Karakul, Highland Goobbue",
+  "monster": "Redhorn Ogre",
+  "zone": "Coerthas Central Highlands",
+  "area": ""
+ },
+ {
+  "class": "Marauder",
+  "rank": 4,
+  "monster": "Ornery Karakul",
+  "zone": "Coerthas Central Highlands",
+  "area": ""
+ },
+ {
+  "class": "Marauder",
+  "rank": 4,
+  "monster": "Highland Goobbue",
   "zone": "Coerthas Central Highlands",
   "area": ""
  },
@@ -2592,23 +2620,23 @@
  {
   "class": "Marauder",
   "rank": 5,
-  "monster": "Quartz Doblyn, Dead Man's Moan, Morbol",
+  "monster": "Quartz Doblyn",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "The Burning Wall"
  },
  {
   "class": "Marauder",
   "rank": 5,
-  "monster": "Quartz Doblyn, Dead Man's Moan, Morbol",
+  "monster": "Dead Man's Moan",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "The Isles of Umbra"
  },
  {
   "class": "Marauder",
   "rank": 5,
-  "monster": "Quartz Doblyn, Dead Man's Moan, Morbol",
+  "monster": "Morbol",
   "zone": "East Shroud",
-  "area": ""
+  "area": "Larkscall"
  },
  {
   "class": "Marauder",
@@ -2641,23 +2669,23 @@
  {
   "class": "Marauder",
   "rank": 5,
-  "monster": "Synthetic Doblyn, Watchwolf, Iron Tortoise",
+  "monster": "Synthetic Doblyn",
   "zone": "Outer La Noscea",
-  "area": ""
+  "area": "U'Ghamaro Mines"
  },
  {
   "class": "Marauder",
   "rank": 5,
-  "monster": "Synthetic Doblyn, Watchwolf, Iron Tortoise",
+  "monster": "Watchwolf",
   "zone": "North Shroud",
-  "area": ""
+  "area": "Proud Creek"
  },
  {
   "class": "Marauder",
   "rank": 5,
-  "monster": "Synthetic Doblyn, Watchwolf, Iron Tortoise",
+  "monster": "Iron Tortoise",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "Zanr'ak"
  },
  {
   "class": "Marauder",
@@ -2746,14 +2774,21 @@
  {
   "class": "Pugilist",
   "rank": 1,
-  "monster": "Eft, Sun Midge Swarm, Desert Peiste",
+  "monster": "Eft",
   "zone": "Central Thanalan",
   "area": ""
  },
  {
   "class": "Pugilist",
   "rank": 1,
-  "monster": "Eft, Sun Midge Swarm, Desert Peiste",
+  "monster": "Sun Midge Swarm",
+  "zone": "Western Thanalan",
+  "area": ""
+ },
+ {
+  "class": "Pugilist",
+  "rank": 1,
+  "monster": "Desert Peiste",
   "zone": "Western Thanalan",
   "area": ""
  },
@@ -2788,7 +2823,21 @@
  {
   "class": "Pugilist",
   "rank": 2,
-  "monster": "Arbor Buzzard, Scaphite, Thickshell",
+  "monster": "Arbor Buzzard",
+  "zone": "Western Thanalan",
+  "area": ""
+ },
+ {
+  "class": "Pugilist",
+  "rank": 2,
+  "monster": "Scaphite",
+  "zone": "Western Thanalan",
+  "area": ""
+ },
+ {
+  "class": "Pugilist",
+  "rank": 2,
+  "monster": "Thickshell",
   "zone": "Western Thanalan",
   "area": ""
  },
@@ -2823,14 +2872,21 @@
  {
   "class": "Pugilist",
   "rank": 2,
-  "monster": "Bloated Bogy, Rotting Corpse, Rotting Noble",
+  "monster": "Bloated Bogy",
   "zone": "Western Thanalan",
   "area": ""
  },
  {
   "class": "Pugilist",
   "rank": 2,
-  "monster": "Bloated Bogy, Rotting Corpse, Rotting Noble",
+  "monster": "Rotting Corpse",
+  "zone": "Eastern Thanalan",
+  "area": ""
+ },
+ {
+  "class": "Pugilist",
+  "rank": 2,
+  "monster": "Rotting Noble",
   "zone": "Eastern Thanalan",
   "area": ""
  },
@@ -2865,21 +2921,21 @@
  {
   "class": "Pugilist",
   "rank": 3,
-  "monster": "Shroud Hare, Bark Eft, Fallen Mage",
+  "monster": "Shroud Hare",
   "zone": "North Shroud",
   "area": ""
  },
  {
   "class": "Pugilist",
   "rank": 3,
-  "monster": "Shroud Hare, Bark Eft, Fallen Mage",
+  "monster": "Bark Eft",
   "zone": "South Shroud",
   "area": ""
  },
  {
   "class": "Pugilist",
   "rank": 3,
-  "monster": "Shroud Hare, Bark Eft, Fallen Mage",
+  "monster": "Fallen Mage",
   "zone": "Southern Thanalan",
   "area": ""
  },
@@ -2914,21 +2970,21 @@
  {
   "class": "Pugilist",
   "rank": 3,
-  "monster": "Lindwurm, Bigmouth Orobon, Apkallu",
+  "monster": "Lindwurm",
   "zone": "Central Shroud",
   "area": ""
  },
  {
   "class": "Pugilist",
   "rank": 3,
-  "monster": "Lindwurm, Bigmouth Orobon, Apkallu",
+  "monster": "Bigmouth Orobon",
   "zone": "South Shroud",
   "area": ""
  },
  {
   "class": "Pugilist",
   "rank": 3,
-  "monster": "Lindwurm, Bigmouth Orobon, Apkallu",
+  "monster": "Apkallu",
   "zone": "Eastern La Noscea",
   "area": ""
  },
@@ -2963,14 +3019,21 @@
  {
   "class": "Pugilist",
   "rank": 4,
-  "monster": "Jungle Coeurl, Goobbue, Basalt Golem",
+  "monster": "Jungle Coeurl",
   "zone": "Eastern La Noscea",
   "area": ""
  },
  {
   "class": "Pugilist",
   "rank": 4,
-  "monster": "Jungle Coeurl, Goobbue, Basalt Golem",
+  "monster": "Goobbue",
+  "zone": "Eastern La Noscea",
+  "area": ""
+ },
+ {
+  "class": "Pugilist",
+  "rank": 4,
+  "monster": "Basalt Golem",
   "zone": "Outer La Noscea",
   "area": ""
  },
@@ -3005,14 +3068,21 @@
  {
   "class": "Pugilist",
   "rank": 4,
-  "monster": "Ochu, Molted Ziz, Snowstorm Goobbue",
+  "monster": "Ochu",
   "zone": "East Shroud",
   "area": ""
  },
  {
   "class": "Pugilist",
   "rank": 4,
-  "monster": "Ochu, Molted Ziz, Snowstorm Goobbue",
+  "monster": "Molted Ziz",
+  "zone": "East Shroud",
+  "area": ""
+ },
+ {
+  "class": "Pugilist",
+  "rank": 4,
+  "monster": "Snowstorm Goobbue",
   "zone": "Coerthas Central Highlands",
   "area": ""
  },
@@ -3028,7 +3098,7 @@
   "rank": 5,
   "monster": "Dead Man's Moan",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "The Isles of Umbra"
  },
  {
   "class": "Pugilist",
@@ -3047,15 +3117,22 @@
  {
   "class": "Pugilist",
   "rank": 5,
-  "monster": "Raging Harrier, Biast, Gigas Shramana",
+  "monster": "Raging Harrier",
   "zone": "Mor Dhona",
   "area": ""
  },
  {
   "class": "Pugilist",
   "rank": 5,
-  "monster": "Raging Harrier, Biast, Gigas Shramana",
+  "monster": "Biast",
   "zone": "Coerthas Central Highlands",
+  "area": ""
+ },
+ {
+  "class": "Pugilist",
+  "rank": 5,
+  "monster": "Gigas Shramana",
+  "zone": "Mor Dhona",
   "area": ""
  },
  {
@@ -3070,7 +3147,7 @@
   "rank": 5,
   "monster": "5th Cohort Hoplomachus",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "Fogfens"
  },
  {
   "class": "Pugilist",
@@ -3089,21 +3166,21 @@
  {
   "class": "Pugilist",
   "rank": 5,
-  "monster": "Zahar'ak Battle Drake, Basilisk, Shelfclaw Reaver",
+  "monster": "Zahar'ak Battle Drake",
   "zone": "Southern Thanalan",
   "area": ""
  },
  {
   "class": "Pugilist",
   "rank": 5,
-  "monster": "Zahar'ak Battle Drake, Basilisk, Shelfclaw Reaver",
+  "monster": "Basilisk",
   "zone": "Northern Thanalan",
   "area": ""
  },
  {
   "class": "Pugilist",
   "rank": 5,
-  "monster": "Zahar'ak Battle Drake, Basilisk, Shelfclaw Reaver",
+  "monster": "Shelfclaw Reaver",
   "zone": "Western La Noscea",
   "area": ""
  },
@@ -3649,28 +3726,42 @@
  {
   "class": "Thaumaturge",
   "rank": 2,
-  "monster": "Copper Coblyn, Bomb",
+  "monster": "Copper Coblyn",
   "zone": "Western Thanalan",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 2,
-  "monster": "Cochineal Cactuar, Quiveron Attendant",
+  "monster": "Bomb",
+  "zone": "Western Thanalan",
+  "area": ""
+ },
+ {
+  "class": "Thaumaturge",
+  "rank": 2,
+  "monster": "Cochineal Cactuar",
   "zone": "Central Thanalan",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 2,
-  "monster": "Giant Tortoise, Antling Sentry",
+  "monster": "Quiveron Attendant",
+  "zone": "Central Thanalan",
+  "area": ""
+ },
+ {
+  "class": "Thaumaturge",
+  "rank": 2,
+  "monster": "Giant Tortoise",
   "zone": "Western Thanalan",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 2,
-  "monster": "Giant Tortoise, Antling Sentry",
+  "monster": "Antling Sentry",
   "zone": "Central Thanalan",
   "area": ""
  },
@@ -3726,58 +3817,65 @@
  {
   "class": "Thaumaturge",
   "rank": 3,
-  "monster": "Kedtrap, Overgrown Ivy",
+  "monster": "Kedtrap",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Upper Paths"
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
-  "monster": "Kedtrap, Overgrown Ivy",
+  "monster": "Overgrown Ivy",
   "zone": "East Shroud",
-  "area": ""
+  "area": "Nine Ivies"
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
-  "monster": "Yarzon Scavenger, Forest Yarzon",
+  "monster": "Yarzon Scavenger",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "Cape Westwind"
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
-  "monster": "Yarzon Scavenger, Forest Yarzon",
+  "monster": "Forest Yarzon",
   "zone": "Upper La Noscea",
-  "area": ""
+  "area": "Oakwood"
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
-  "monster": "Laughing Toad, Bark Eft",
+  "monster": "Laughing Toad",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "The Footfalls"
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
-  "monster": "Laughing Toad, Bark Eft",
+  "monster": "Bark Eft",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Upper Paths"
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
-  "monster": "Jumping Djigga, Glowfly",
+  "monster": "Jumping Djigga",
   "zone": "East Shroud",
-  "area": ""
+  "area": "The Bramble Patch"
+ },
+ {
+  "class": "Thaumaturge",
+  "rank": 3,
+  "monster": "Glowfly",
+  "zone": "East Shroud",
+  "area": "The Bramble Patch"
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "River Yarzon",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Silent Arbor"
  },
  {
   "class": "Thaumaturge",
@@ -3791,82 +3889,82 @@
   "rank": 3,
   "monster": "Phurble",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "Wellwick Wood"
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "Corpse Brigade Knuckledancer",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "Broken Water"
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "Fire Sprite",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "The Red Labyrinth"
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "Stroper",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "Sorrel Haven"
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
-  "monster": "Adamantoise, Mamool Ja Executioner",
+  "monster": "Adamantoise",
   "zone": "South Shroud",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
-  "monster": "Adamantoise, Mamool Ja Executioner",
+  "monster": "Mamool Ja Executioner",
   "zone": "Upper La Noscea",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
-  "monster": "Revenant, Russet Yarzon",
+  "monster": "Revenant",
   "zone": "Central Shroud",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
-  "monster": "Revenant, Russet Yarzon",
+  "monster": "Russet Yarzon",
   "zone": "Southern Thanalan",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
-  "monster": "Smoke Bomb, Dung Midge Swarm",
+  "monster": "Smoke Bomb",
   "zone": "Southern Thanalan",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
-  "monster": "Smoke Bomb, Dung Midge Swarm",
+  "monster": "Dung Midge Swarm",
   "zone": "Eastern La Noscea",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
-  "monster": "Gigantoad, Spriggan",
+  "monster": "Gigantoad",
   "zone": "Eastern La Noscea",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
-  "monster": "Gigantoad, Spriggan",
+  "monster": "Spriggan",
   "zone": "Central Shroud",
   "area": ""
  },
@@ -3915,63 +4013,70 @@
  {
   "class": "Thaumaturge",
   "rank": 5,
-  "monster": "Oldgrowth Treant, Dragonfly",
+  "monster": "Oldgrowth Treant",
   "zone": "East Shroud",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
-  "monster": "Oldgrowth Treant, Dragonfly",
+  "monster": "Dragonfly",
   "zone": "Coerthas Central Highlands",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
-  "monster": "Crater Golem, Dead Man's Moan",
+  "monster": "Crater Golem",
   "zone": "Central Shroud",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
-  "monster": "Crater Golem, Dead Man's Moan",
+  "monster": "Dead Man's Moan",
   "zone": "Western La Noscea",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
-  "monster": "3rd Cohort Secutor, Morbol",
+  "monster": "3rd Cohort Secutor",
   "zone": "East Shroud",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
-  "monster": "Nix, Lesser Kalong",
+  "monster": "Morbol",
+  "zone": "East Shroud",
+  "area": ""
+ },
+ {
+  "class": "Thaumaturge",
+  "rank": 5,
+  "monster": "Nix",
   "zone": "Mor Dhona",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
-  "monster": "Nix, Lesser Kalong",
+  "monster": "Lesser Kalong",
   "zone": "South Shroud",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
-  "monster": "Gigas Sozu, Giant Logger",
+  "monster": "Gigas Sozu",
   "zone": "Mor Dhona",
   "area": ""
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
-  "monster": "Gigas Sozu, Giant Logger",
+  "monster": "Giant Logger",
   "zone": "Coerthas Central Highlands",
   "area": ""
  },
