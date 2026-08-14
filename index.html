@@ -526,6 +526,35 @@ footer {
   const activeZones = new Set();
   let hideDone = false;
 
+  // One-time migration: row IDs used to be "class|zone|rank|monster|area",
+  // which changed (e.g. on a backfilled area) whenever the underlying data
+  // pipeline improved. IDs are now just "class|monster", so carry any
+  // saved done-state across by keeping only those two segments from each
+  // old ID. (Rare edge case: if the same class+monster appeared as two
+  // separate rows at different ranks and both were marked done under the
+  // old scheme, they collapse onto one done row here.)
+  function migrateDoneIds() {
+    const MIGRATION_FLAG = 'ffxivHuntLogTrackerIdMigrationV2';
+    if (localStorage.getItem(MIGRATION_FLAG)) return;
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        const oldMap = JSON.parse(raw);
+        const newMap = {};
+        Object.keys(oldMap).forEach(function (oldId) {
+          if (!oldMap[oldId]) return;
+          const parts = oldId.split('|');
+          const newId = parts.length >= 4 ? parts[0] + '|' + parts[3] : oldId;
+          newMap[newId] = true;
+        });
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(newMap));
+      }
+    } catch (e) {
+      console.error('Failed to migrate saved done-state to new row IDs', e);
+    }
+    localStorage.setItem(MIGRATION_FLAG, '1');
+  }
+
   function loadDone() {
     try {
       return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
@@ -538,6 +567,7 @@ footer {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(done));
   }
 
+  migrateDoneIds();
   let doneMap = loadDone();
 
   function loadFilters() {
@@ -671,7 +701,7 @@ footer {
 
     const usedIds = Object.create(null);
     return specs.map(function (s) {
-      const base = [idPart(s.cls), idPart(s.zone), s.rank, idPart(s.monster), idPart(s.area)].join('|');
+      const base = [idPart(s.cls), idPart(s.monster)].join('|');
       let id = base;
       let suffix = 2;
       while (usedIds[id]) {
