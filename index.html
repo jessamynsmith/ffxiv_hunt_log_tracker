@@ -430,7 +430,7 @@ footer {
     <p class="eyebrow">Eorzea &middot; Field Reference</p>
     <h1>FFXIV Hunt Log Tracker</h1>
     <p class="subhead">Every class and Grand Company hunting log entry from A Realm Reborn,
-      in one sortable table &mdash; 679 entries across 21 zones,
+      in one sortable table &mdash; <span id="stat-entries">679</span> entries across <span id="stat-zones">21</span> zones,
       9 classes, and 3 Grand Companies.
       <span class="note">Source: FFXIV Console Games Wiki, Hunting Log and per-class/
       per-company log pages. Where the wiki listed several possible zones for one
@@ -465,29 +465,7 @@ footer {
       <div class="filter-row" id="rank-filter">
         <button data-rank="1">Rank 1</button><button data-rank="2">Rank 2</button><button data-rank="3">Rank 3</button><button data-rank="4">Rank 4</button><button data-rank="5">Rank 5</button>
       </div>
-      <div class="filter-row" id="zone-filter">
-        <button data-zone="Central Shroud" class="badge badge-adder">Central Shroud</button>
-<button data-zone="Central Thanalan" class="badge badge-flames">Central Thanalan</button>
-<button data-zone="Coerthas Central Highlands" class="badge badge-neutral">Coerthas Central Highlands</button>
-<button data-zone="Cutter's Cry" class="badge badge-neutral">Cutter's Cry</button>
-<button data-zone="East Shroud" class="badge badge-adder">East Shroud</button>
-<button data-zone="Eastern La Noscea" class="badge badge-maelstrom">Eastern La Noscea</button>
-<button data-zone="Eastern Thanalan" class="badge badge-flames">Eastern Thanalan</button>
-<button data-zone="Halatali" class="badge badge-neutral">Halatali</button>
-<button data-zone="Lower La Noscea" class="badge badge-maelstrom">Lower La Noscea</button>
-<button data-zone="Middle La Noscea" class="badge badge-maelstrom">Middle La Noscea</button>
-<button data-zone="Mor Dhona" class="badge badge-neutral">Mor Dhona</button>
-<button data-zone="North Shroud" class="badge badge-adder">North Shroud</button>
-<button data-zone="Northern Thanalan" class="badge badge-flames">Northern Thanalan</button>
-<button data-zone="Outer La Noscea" class="badge badge-maelstrom">Outer La Noscea</button>
-<button data-zone="South Shroud" class="badge badge-adder">South Shroud</button>
-<button data-zone="Southern Thanalan" class="badge badge-flames">Southern Thanalan</button>
-<button data-zone="The Sunken Temple of Qarn" class="badge badge-neutral">The Sunken Temple of Qarn</button>
-<button data-zone="The Wanderer's Palace" class="badge badge-neutral">The Wanderer's Palace</button>
-<button data-zone="Upper La Noscea" class="badge badge-maelstrom">Upper La Noscea</button>
-<button data-zone="Western La Noscea" class="badge badge-maelstrom">Western La Noscea</button>
-<button data-zone="Western Thanalan" class="badge badge-flames">Western Thanalan</button>
-      </div>
+      <div class="filter-row" id="zone-filter"></div>
     </div>
   </div>
 
@@ -520,10 +498,13 @@ footer {
   const search = document.getElementById('search');
   const classButtons = document.querySelectorAll('#class-filter button, #gc-filter button');
   const rankButtons = document.querySelectorAll('#rank-filter button');
-  const zoneButtons = document.querySelectorAll('#zone-filter button');
+  const zoneFilter = document.getElementById('zone-filter');
+  let zoneButtons = [];
   const filtersToggle = document.getElementById('filters-toggle');
   const filtersBody = document.getElementById('filters-body');
   const filtersCount = document.getElementById('filters-count');
+  const statEntries = document.getElementById('stat-entries');
+  const statZones = document.getElementById('stat-zones');
   const tbody = document.getElementById('log-body');
   const emptyState = document.getElementById('empty-state');
   const hideDoneToggle = document.getElementById('hide-done');
@@ -616,7 +597,8 @@ footer {
     return str.toLowerCase().replace(/'/g, '').replace(/\s+/g, '_');
   }
 
-  // Mirrors CLASS_BADGE / zone_badge in build_page.py.
+  // Role/company badge color for each class, used both for the class column
+  // and the class filter buttons.
   const CLASS_BADGE = {
     'Gladiator': 'tank', 'Marauder': 'tank',
     'Conjurer': 'healer',
@@ -907,6 +889,15 @@ footer {
       .then(function (text) {
         const allRecords = parseCsv(text).filter(function (r) { return r.length === 5; });
         const records = allRecords.slice(1);
+
+        const zonesSorted = Array.from(new Set(records.map(function (r) { return r[0]; }))).sort();
+        zoneFilter.innerHTML = zonesSorted.map(function (z) {
+          return '<button data-zone="' + escapeHtml(z) + '" class="badge badge-' + zoneBadge(z) + '">' + escapeHtml(z) + '</button>';
+        }).join('');
+        zoneButtons = document.querySelectorAll('#zone-filter button');
+        statEntries.textContent = records.length;
+        statZones.textContent = zonesSorted.length;
+
         renderRows(buildRows(records));
         allRows = document.querySelectorAll('tbody tr[data-id]');
         totalCount = allRows.length;
