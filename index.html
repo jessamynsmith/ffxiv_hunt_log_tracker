@@ -496,7 +496,8 @@ footer {
   const STORAGE_KEY = 'ffxivHuntLogTrackerDone';
   const FILTERS_STORAGE_KEY = 'ffxivHuntLogTrackerFilters';
   const search = document.getElementById('search');
-  const classButtons = document.querySelectorAll('#class-filter button, #gc-filter button');
+  const classButtons = document.querySelectorAll('#class-filter button');
+  const gcButtons = document.querySelectorAll('#gc-filter button');
   const rankButtons = document.querySelectorAll('#rank-filter button');
   const zoneFilter = document.getElementById('zone-filter');
   let zoneButtons = [];
@@ -740,6 +741,20 @@ footer {
     }
   }
 
+  // A character can only belong to one Grand Company at a time, so unlike
+  // the other filter groups, only one of these buttons can be active.
+  function toggleRadioButton(btn, attr, activeSet, group) {
+    const wasActive = btn.classList.contains('active');
+    group.forEach(function (b) {
+      b.classList.remove('active');
+      activeSet.delete(b.getAttribute(attr));
+    });
+    if (!wasActive) {
+      btn.classList.add('active');
+      activeSet.add(btn.getAttribute(attr));
+    }
+  }
+
   function updateFiltersCount() {
     const n = activeClasses.size + activeRanks.size + activeZones.size;
     filtersCount.textContent = n ? ' (' + n + ')' : '';
@@ -765,6 +780,7 @@ footer {
     }
 
     restoreGroup(classButtons, 'data-class', saved.classes, activeClasses);
+    restoreGroup(gcButtons, 'data-class', saved.classes, activeClasses);
     restoreGroup(rankButtons, 'data-rank', saved.ranks, activeRanks);
     restoreGroup(zoneButtons, 'data-zone', saved.zones, activeZones);
     updateFiltersCount();
@@ -789,6 +805,15 @@ footer {
     classButtons.forEach(function (btn) {
       btn.addEventListener('click', function () {
         toggleButton(btn, 'data-class', activeClasses);
+        updateFiltersCount();
+        applyFilter();
+        saveFilters();
+      });
+    });
+
+    gcButtons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        toggleRadioButton(btn, 'data-class', activeClasses, gcButtons);
         updateFiltersCount();
         applyFilter();
         saveFilters();
