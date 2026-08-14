@@ -251,6 +251,7 @@ thead th {
   padding: 0.55rem 0.8rem;
   border-bottom: 1px solid var(--line-strong);
   background: var(--surface-2);
+  white-space: nowrap;
 }
 
 thead th.sortable { cursor: pointer; user-select: none; }
@@ -259,6 +260,9 @@ thead th.sortable:hover { color: var(--ink); }
 .sort-arrow {
   display: inline-block;
   width: 0.9em;
+  margin-left: 0.5em;
+  position: relative;
+  top: -0.15em;
   color: var(--accent);
 }
 
@@ -525,6 +529,7 @@ footer {
   const activeRanks = new Set();
   const activeZones = new Set();
   let hideDone = false;
+  let currentSort = { key: null, dir: 'asc' };
 
   // One-time migration: row IDs used to be "class|zone|rank|monster|area",
   // which changed (e.g. on a backfilled area) whenever the underlying data
@@ -585,7 +590,8 @@ footer {
       classes: Array.from(activeClasses),
       gc: Array.from(activeGc),
       ranks: Array.from(activeRanks),
-      zones: Array.from(activeZones)
+      zones: Array.from(activeZones),
+      sort: currentSort
     }));
   }
 
@@ -931,7 +937,6 @@ footer {
 
     // Sorting
     const sortHeaders = document.querySelectorAll('th.sortable');
-    let currentSort = { key: null, dir: 'asc' };
 
     function updateSortArrows() {
       sortHeaders.forEach(function (th) {
@@ -944,31 +949,42 @@ footer {
       });
     }
 
+    function applySort(key, dir) {
+      currentSort = { key: key, dir: dir };
+      const numeric = key === 'rank';
+      const rowsArr = Array.from(tbody.querySelectorAll('tr'));
+      rowsArr.sort(function (a, b) {
+        let av = a.getAttribute('data-' + key);
+        let bv = b.getAttribute('data-' + key);
+        if (numeric) {
+          av = Number(av);
+          bv = Number(bv);
+          return dir === 'asc' ? av - bv : bv - av;
+        }
+        av = av.toLowerCase();
+        bv = bv.toLowerCase();
+        if (av < bv) return dir === 'asc' ? -1 : 1;
+        if (av > bv) return dir === 'asc' ? 1 : -1;
+        return 0;
+      });
+      rowsArr.forEach(function (row) { tbody.appendChild(row); });
+      updateSortArrows();
+      saveFilters();
+    }
+
     sortHeaders.forEach(function (th) {
       th.addEventListener('click', function () {
         const key = th.getAttribute('data-sort');
         const dir = (currentSort.key === key && currentSort.dir === 'asc') ? 'desc' : 'asc';
-        currentSort = { key: key, dir: dir };
-        const numeric = key === 'rank';
-        const rowsArr = Array.from(tbody.querySelectorAll('tr'));
-        rowsArr.sort(function (a, b) {
-          let av = a.getAttribute('data-' + key);
-          let bv = b.getAttribute('data-' + key);
-          if (numeric) {
-            av = Number(av);
-            bv = Number(bv);
-            return dir === 'asc' ? av - bv : bv - av;
-          }
-          av = av.toLowerCase();
-          bv = bv.toLowerCase();
-          if (av < bv) return dir === 'asc' ? -1 : 1;
-          if (av > bv) return dir === 'asc' ? 1 : -1;
-          return 0;
-        });
-        rowsArr.forEach(function (row) { tbody.appendChild(row); });
-        updateSortArrows();
+        applySort(key, dir);
       });
     });
+
+    // Restore a previously saved sort (see restoreFilters/saveFilters).
+    const savedSort = loadFilters().sort;
+    if (savedSort && savedSort.key) {
+      applySort(savedSort.key, savedSort.dir === 'desc' ? 'desc' : 'asc');
+    }
   }
 
   function init() {
