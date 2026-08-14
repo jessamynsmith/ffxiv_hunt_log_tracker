@@ -514,6 +514,7 @@ footer {
   let allRows = [];
   let totalCount = 0;
   const activeClasses = new Set();
+  const activeGc = new Set();
   const activeRanks = new Set();
   const activeZones = new Set();
   let hideDone = false;
@@ -545,6 +546,7 @@ footer {
       hideDone: hideDone,
       search: search.value,
       classes: Array.from(activeClasses),
+      gc: Array.from(activeGc),
       ranks: Array.from(activeRanks),
       zones: Array.from(activeZones)
     }));
@@ -613,6 +615,8 @@ footer {
   function classBadge(cls) {
     return CLASS_BADGE[cls] || 'neutral';
   }
+
+  const GC_NAMES = ['Immortal Flames', 'Maelstrom', 'Order of the Twin Adder'];
 
   function zoneBadge(zone) {
     if (zone.indexOf('Shroud') !== -1) return 'adder';
@@ -717,7 +721,12 @@ footer {
       const zone = row.getAttribute('data-zone');
       const monster = row.getAttribute('data-monster').toLowerCase();
       const area = row.getAttribute('data-area').toLowerCase();
-      const classOk = activeClasses.size === 0 || activeClasses.has(cls);
+      // Class and GC filters are independent: a class row is only ever
+      // gated by activeClasses, a GC row only by activeGc, so picking a
+      // Grand Company doesn't hide unrelated class rows (and vice versa).
+      const classOk = GC_NAMES.indexOf(cls) !== -1
+        ? (activeGc.size === 0 || activeGc.has(cls))
+        : (activeClasses.size === 0 || activeClasses.has(cls));
       const rankOk = activeRanks.size === 0 || activeRanks.has(rank);
       const zoneOk = activeZones.size === 0 || zone.split(' / ').some(function (z) { return activeZones.has(z); });
       const textOk = !q || monster.includes(q) || area.includes(q) ||
@@ -756,7 +765,7 @@ footer {
   }
 
   function updateFiltersCount() {
-    const n = activeClasses.size + activeRanks.size + activeZones.size;
+    const n = activeClasses.size + activeGc.size + activeRanks.size + activeZones.size;
     filtersCount.textContent = n ? ' (' + n + ')' : '';
   }
 
@@ -780,12 +789,12 @@ footer {
     }
 
     restoreGroup(classButtons, 'data-class', saved.classes, activeClasses);
-    restoreGroup(gcButtons, 'data-class', saved.classes, activeClasses);
+    restoreGroup(gcButtons, 'data-class', saved.gc, activeGc);
     restoreGroup(rankButtons, 'data-rank', saved.ranks, activeRanks);
     restoreGroup(zoneButtons, 'data-zone', saved.zones, activeZones);
     updateFiltersCount();
 
-    if (activeClasses.size || activeRanks.size || activeZones.size) {
+    if (activeClasses.size || activeGc.size || activeRanks.size || activeZones.size) {
       filtersBody.classList.add('open');
       filtersToggle.setAttribute('aria-expanded', 'true');
     }
@@ -813,7 +822,7 @@ footer {
 
     gcButtons.forEach(function (btn) {
       btn.addEventListener('click', function () {
-        toggleRadioButton(btn, 'data-class', activeClasses, gcButtons);
+        toggleRadioButton(btn, 'data-class', activeGc, gcButtons);
         updateFiltersCount();
         applyFilter();
         saveFilters();
