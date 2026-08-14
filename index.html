@@ -636,31 +636,35 @@ footer {
     // A monster valid in several zones for the same class+rank hunting log
     // entry was split into one CSV row per zone (see NOTES.md); only one
     // kill is actually required, so merge those rows back into a single
-    // checkable entry listing every valid zone. Rows are only merged when
-    // every candidate has an empty area, since that's the split's signature
-    // (a real area means it's a distinct, independently-tracked entry).
+    // checkable entry listing every valid zone (and, when known, each
+    // zone's own area/coordinates).
     const groups = new Map();
     records.forEach(function (r, idx) {
       const zone = r[0], cls = r[1], rank = r[2], monster = r[3], area = r[4] || '';
+      const x = r[5] || '', y = r[6] || '';
       const key = [cls, rank, monster].join('\u0001');
       if (!groups.has(key)) groups.set(key, { cls: cls, rank: rank, monster: monster, entries: [] });
-      groups.get(key).entries.push({ zone: zone, area: area, idx: idx });
+      groups.get(key).entries.push({ zone: zone, area: area, x: x, y: y, idx: idx });
     });
 
+    // Every entry carries its own zone's coordinates (zoneCoords), in the
+    // same order as the zones in the joined zone string, so a merged
+    // multi-zone row doesn't lose per-zone coordinates; distinct known
+    // areas across zones are shown comma-separated.
     const specs = [];
     groups.forEach(function (g) {
       const entries = g.entries;
-      const mergeable = entries.length > 1 && entries.every(function (e) { return e.area === ''; });
-      if (mergeable) {
+      if (entries.length > 1) {
+        const areas = Array.from(new Set(entries.map(function (e) { return e.area; }).filter(Boolean)));
         specs.push({
           idx: entries.reduce(function (m, e) { return Math.min(m, e.idx); }, entries[0].idx),
           zone: entries.map(function (e) { return e.zone; }).join(' / '),
-          cls: g.cls, rank: g.rank, monster: g.monster, area: ''
+          zoneCoords: entries.map(function (e) { return { x: e.x, y: e.y }; }),
+          cls: g.cls, rank: g.rank, monster: g.monster, area: areas.join(', ')
         });
       } else {
-        entries.forEach(function (e) {
-          specs.push({ idx: e.idx, zone: e.zone, cls: g.cls, rank: g.rank, monster: g.monster, area: e.area });
-        });
+        const e = entries[0];
+        specs.push({ idx: e.idx, zone: e.zone, zoneCoords: [{ x: e.x, y: e.y }], cls: g.cls, rank: g.rank, monster: g.monster, area: e.area });
       }
     });
     specs.sort(function (a, b) { return a.idx - b.idx; });
@@ -675,7 +679,7 @@ footer {
         suffix++;
       }
       usedIds[id] = true;
-      return { zone: s.zone, cls: s.cls, rank: s.rank, monster: s.monster, area: s.area, id: id };
+      return { zone: s.zone, zoneCoords: s.zoneCoords, cls: s.cls, rank: s.rank, monster: s.monster, area: s.area, id: id };
     });
   }
 
@@ -683,11 +687,22 @@ footer {
     return 'https://ffxiv.consolegameswiki.com/wiki/' + encodeURIComponent(monster.replace(/ /g, '_'));
   }
 
+  function formatCoord(n) {
+    const v = parseFloat(n);
+    return Number.isInteger(v) ? String(v) : v.toFixed(1);
+  }
+
   function renderRows(rows) {
     tbody.innerHTML = rows.map(function (r) {
       const areaDisplay = r.area ? escapeHtml(r.area) : '\u2014';
-      const zoneBadges = r.zone.split(' / ').map(function (z) {
-        return '<span class="badge badge-' + zoneBadge(z) + '">' + escapeHtml(z) + '</span>';
+      const zones = r.zone.split(' / ');
+      // zoneCoords is parallel to zones (one entry per zone, even after
+      // rows for the same monster get merged across zones) so every zone
+      // badge can show its own coordinates rather than losing them.
+      const zoneBadges = zones.map(function (z, i) {
+        const c = r.zoneCoords[i];
+        const coords = c && c.x !== '' && c.y !== '' ? ' (' + formatCoord(c.x) + ', ' + formatCoord(c.y) + ')' : '';
+        return '<span class="badge badge-' + zoneBadge(z) + '">' + escapeHtml(z) + escapeHtml(coords) + '</span>';
       }).join('');
       return '<tr data-zone="' + escapeHtml(r.zone) + '" data-class="' + escapeHtml(r.cls) +
         '" data-monster="' + escapeHtml(r.monster) + '" data-area="' + escapeHtml(r.area) +
@@ -933,7 +948,7 @@ footer {
         return res.text();
       })
       .then(function (text) {
-        const allRecords = parseCsv(text).filter(function (r) { return r.length === 5; });
+        const allRecords = parseCsv(text).filter(function (r) { return r.length === 7; });
         const records = allRecords.slice(1);
 
         const zonesSorted = Array.from(new Set(records.map(function (r) { return r[0]; }))).sort();

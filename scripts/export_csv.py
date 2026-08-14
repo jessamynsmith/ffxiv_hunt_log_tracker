@@ -26,8 +26,13 @@ rows.sort(key=lambda r: (
 
 with open(OUT_CSV, "w", newline="") as f:
     w = csv.writer(f)
-    w.writerow(["zone", "class", "rank", "monster", "area"])
+    w.writerow(["zone", "class", "rank", "monster", "area", "x", "y"])
     for r in rows:
-        w.writerow([r["zone"], r["class"], r["rank"], r["monster"], r["area"]])
+        x = r.get("x")
+        y = r.get("y")
+        w.writerow([
+            r["zone"], r["class"], r["rank"], r["monster"], r["area"],
+            "" if x is None else x, "" if y is None else y,
+        ])
 
 print(f"wrote {OUT_CSV} ({len(rows)} rows)")

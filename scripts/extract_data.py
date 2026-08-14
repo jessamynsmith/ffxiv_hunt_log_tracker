@@ -7,13 +7,127 @@ linked per-class pages, plus the three Grand Company pages (Maelstrom,
 Order of the Twin Adder, Immortal Flames) (that overview page itself has
 no entry data, only links out to each class's/company's own Hunting Log
 page).
+
+Also fetches each monster's individual wiki page (e.g.
+https://ffxiv.consolegameswiki.com/wiki/Little_Ladybug) to read its
+"Locations" table and attach approximate x/y map coordinates per zone.
+Responses are cached in data/wiki_cache/ so re-runs only hit the network
+for monsters not already fetched.
 """
 import json
 import re
+import time
 from pathlib import Path
+from urllib.parse import quote
+
+import requests
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO_ROOT / "data" / "hunting_log.json"
+CACHE_DIR = REPO_ROOT / "data" / "wiki_cache"
+WIKI_BASE = "https://ffxiv.consolegameswiki.com/wiki/"
+REQUEST_DELAY = 0.3  # seconds between live (non-cached) fetches
+
+LOCATION_TABLE_RE = re.compile(
+    r'<table class="location stdt__table_v2">(.*?)</table>', re.S
+)
+LOCATION_ROW_RE = re.compile(
+    r'<tr>\s*<td[^>]*>\s*(?:<a[^>]*title="([^"]+)"[^>]*>.*?</a>|([^<]+?))\s*</td>\s*'
+    r'<td[^>]*>(.*?)</td>',
+    re.S,
+)
+COORD_RE = re.compile(
+    r'X:</small></b>\s*([\d.]+),\s*<b><small>Y:</small></b>\s*([\d.]+)'
+)
+
+
+def monster_wiki_url(monster):
+    return WIKI_BASE + quote(monster.replace(" ", "_"), safe="_.-~!*'()")
+
+
+def is_ambiguous_page(html):
+    """True if the page is a wiki Category listing or a disambiguation page
+    rather than a single monster's article (happens when a monster's name
+    collides with a species/family name, e.g. "Chigoe" or "Lindwurm")."""
+    return (
+        '"wgCanonicalNamespace":"Category"' in html
+        or "Disambiguation articles" in html
+    )
+
+
+def fetch_raw_html(page_title):
+    """Fetch (with on-disk caching) the raw HTML for an exact wiki page title."""
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    cache_file = CACHE_DIR / (page_title.replace(" ", "_").replace("/", "_") + ".html")
+    if cache_file.exists():
+        return cache_file.read_text()
+    try:
+        resp = requests.get(
+            monster_wiki_url(page_title),
+            headers={"User-Agent": "Mozilla/5.0 (compatible; ffxiv-hunt-log-script)"},
+            timeout=15,
+        )
+    except requests.RequestException as exc:
+        print(f"  warning: {page_title} -> {exc}")
+        return None
+    time.sleep(REQUEST_DELAY)
+    if resp.status_code != 200:
+        print(f"  warning: {page_title} -> HTTP {resp.status_code}")
+        return None
+    cache_file.write_text(resp.text)
+    return resp.text
+
+
+# Disambiguators the wiki uses for monster articles whose plain name collides
+# with a species/family Category page or a disambiguation page.
+DISAMBIGUATION_SUFFIXES = [" (Enemy)", " (Mob)", " (A Realm Reborn)"]
+
+
+def fetch_monster_html(monster):
+    html = fetch_raw_html(monster)
+    if not html or not is_ambiguous_page(html):
+        return html
+    for suffix in DISAMBIGUATION_SUFFIXES:
+        candidate_html = fetch_raw_html(monster + suffix)
+        if candidate_html and not is_ambiguous_page(candidate_html) \
+                and LOCATION_TABLE_RE.search(candidate_html):
+            return candidate_html
+    return html
+
+
+def parse_locations(html):
+    """Return {zone_name: (x, y) or None} from a monster page's Locations table.
+
+    A zone can appear more than once (multiple spawn points); the first
+    entry with real coordinates wins, falling back to "Unknown" (None) only
+    if every entry for that zone is unknown.
+    """
+    locations = {}
+    table_match = LOCATION_TABLE_RE.search(html)
+    if not table_match:
+        return locations
+    for m in LOCATION_ROW_RE.finditer(table_match.group(1)):
+        zone = (m.group(1) or m.group(2) or "").strip()
+        if not zone or locations.get(zone) is not None:
+            continue
+        coord_match = COORD_RE.search(m.group(3))
+        locations[zone] = (
+            (float(coord_match.group(1)), float(coord_match.group(2)))
+            if coord_match else None
+        )
+    return locations
+
+
+def fetch_all_locations(monsters):
+    """Fetch each monster's wiki page once; return {monster: {zone: (x,y)|None}}."""
+    result = {}
+    total = len(monsters)
+    for i, monster in enumerate(sorted(monsters), 1):
+        html = fetch_monster_html(monster)
+        result[monster] = parse_locations(html) if html else {}
+        if i % 25 == 0 or i == total:
+            print(f"  fetched locations for {i}/{total} monsters")
+    return result
 
 # Raw data captured from WebFetch results, per class, per rank.
 # Format markers vary by class; parsed individually below.
@@ -790,15 +904,48 @@ def expand_zone(zone_str):
 final_rows = []
 for r in rows:
     zones = expand_zone(r["zone"])
-    single = len(zones) == 1
-    for z in zones:
+    if len(zones) == 1:
+        areas = [r["area"]]
+    else:
+        # A source line like "Mor Dhona/Coerthas Central Highlands
+        # (Fogfens/Boulder Downs)" gives one area per zone, in order; keep
+        # that pairing. Otherwise (no area, or a single area/note that can't
+        # be attributed to one zone, e.g. "(multiple locations)") the area
+        # is unknown per zone.
+        area_parts = [p.strip() for p in split_re.split(r["area"]) if p.strip()]
+        areas = area_parts if len(area_parts) == len(zones) else [""] * len(zones)
+    for z, a in zip(zones, areas):
         final_rows.append({
             "class": r["class"],
             "rank": r["rank"],
             "monster": r["monster"],
             "zone": z,
-            "area": r["area"] if single else "",
+            "area": a,
         })
+
+# The same monster/zone pairing can show up under multiple classes (a
+# monster is often on more than one class's hunting log), and some classes'
+# source pages (notably Archer, Conjurer, Lancer) didn't reliably give a
+# sub-area even where others did. Backfill any missing area from whichever
+# other row already has one for that exact monster+zone.
+area_by_monster_zone = {}
+for r in final_rows:
+    if r["area"]:
+        area_by_monster_zone.setdefault((r["monster"], r["zone"]), r["area"])
+backfilled = 0
+for r in final_rows:
+    if not r["area"]:
+        known = area_by_monster_zone.get((r["monster"], r["zone"]))
+        if known:
+            r["area"] = known
+            backfilled += 1
+print(f"Backfilled area from other class/rank entries for {backfilled} rows")
+
+print("Fetching monster locations from the wiki (cached in data/wiki_cache/)...")
+locations_by_monster = fetch_all_locations({r["monster"] for r in final_rows})
+for r in final_rows:
+    coords = locations_by_monster.get(r["monster"], {}).get(r["zone"])
+    r["x"], r["y"] = coords if coords else (None, None)
 
 OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
 with open(OUT_JSON, "w") as f:

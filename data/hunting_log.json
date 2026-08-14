@@ -4,4752 +4,6110 @@
   "rank": 1,
   "monster": "Little Ladybug",
   "zone": "Middle La Noscea",
-  "area": "Zephyr Drift"
+  "area": "Zephyr Drift",
+  "x": 24.0,
+  "y": 26.0
  },
  {
   "class": "Arcanist",
   "rank": 1,
   "monster": "Wharf Rat",
   "zone": "Middle La Noscea",
-  "area": "Zephyr Drift"
+  "area": "Zephyr Drift",
+  "x": 24.0,
+  "y": 23.0
  },
  {
   "class": "Arcanist",
   "rank": 1,
   "monster": "Lost Lamb",
   "zone": "Middle La Noscea",
-  "area": "Zephyr Drift"
+  "area": "Zephyr Drift",
+  "x": 22.2,
+  "y": 25.6
  },
  {
   "class": "Arcanist",
   "rank": 1,
   "monster": "Wind Sprite",
   "zone": "Lower La Noscea",
-  "area": "Cedarwood"
+  "area": "Cedarwood",
+  "x": 28.1,
+  "y": 21.1
  },
  {
   "class": "Arcanist",
   "rank": 1,
   "monster": "Puk Hatchling",
   "zone": "Middle La Noscea",
-  "area": "Summerford"
+  "area": "Summerford",
+  "x": 23.0,
+  "y": 19.0
  },
  {
   "class": "Arcanist",
   "rank": 1,
   "monster": "Nesting Buzzard",
   "zone": "Lower La Noscea",
-  "area": "Cedarwood"
+  "area": "Cedarwood",
+  "x": 32.0,
+  "y": 16.0
  },
  {
   "class": "Arcanist",
   "rank": 1,
   "monster": "Bogy",
   "zone": "Middle La Noscea",
-  "area": "Summerford"
+  "area": "Summerford",
+  "x": 20.0,
+  "y": 19.0
  },
  {
   "class": "Arcanist",
   "rank": 1,
   "monster": "Cave Bat",
   "zone": "Lower La Noscea",
-  "area": "Cedarwood"
+  "area": "Cedarwood",
+  "x": 27.0,
+  "y": 15.9
  },
  {
   "class": "Arcanist",
   "rank": 1,
   "monster": "Galago",
   "zone": "Lower La Noscea",
-  "area": "Cedarwood"
+  "area": "Cedarwood",
+  "x": 29.3,
+  "y": 14.9
  },
  {
   "class": "Arcanist",
   "rank": 1,
   "monster": "Grounded Pirate",
   "zone": "Middle La Noscea",
-  "area": "Summerford"
+  "area": "Summerford",
+  "x": 20.0,
+  "y": 17.0
  },
  {
   "class": "Arcanist",
   "rank": 1,
   "monster": "Lightning Sprite",
   "zone": "Lower La Noscea",
-  "area": "The Gods' Grip"
+  "area": "The Gods' Grip",
+  "x": 19.0,
+  "y": 34.0
  },
  {
   "class": "Arcanist",
   "rank": 2,
   "monster": "Sewer Mole",
   "zone": "Western La Noscea",
-  "area": "Quarterstone"
+  "area": "Quarterstone",
+  "x": 33.2,
+  "y": 28.4
  },
  {
   "class": "Arcanist",
   "rank": 2,
   "monster": "Mossless Goobbue",
   "zone": "Middle La Noscea",
-  "area": ""
+  "area": "",
+  "x": 21.0,
+  "y": 23.0
  },
  {
   "class": "Arcanist",
   "rank": 2,
   "monster": "Mossless Goobbue",
   "zone": "Lower La Noscea",
-  "area": ""
+  "area": "",
+  "x": 25.0,
+  "y": 26.0
  },
  {
   "class": "Arcanist",
   "rank": 2,
   "monster": "Fat Dodo",
   "zone": "Western La Noscea",
-  "area": "Quarterstone"
+  "area": "Quarterstone",
+  "x": 33.0,
+  "y": 28.0
  },
  {
   "class": "Arcanist",
   "rank": 2,
   "monster": "Arbor Buzzard",
   "zone": "Western La Noscea",
-  "area": "Quarterstone"
+  "area": "Quarterstone",
+  "x": 30.0,
+  "y": 30.0
  },
  {
   "class": "Arcanist",
   "rank": 2,
   "monster": "Qiqirn Eggdigger",
   "zone": "Lower La Noscea",
-  "area": "The Gods' Grip"
+  "area": "The Gods' Grip",
+  "x": 18.0,
+  "y": 35.0
  },
  {
   "class": "Arcanist",
   "rank": 2,
   "monster": "Dusk Bat",
   "zone": "Western La Noscea",
-  "area": "Skull Valley"
+  "area": "Skull Valley",
+  "x": 21.5,
+  "y": 22.5
  },
  {
   "class": "Arcanist",
   "rank": 2,
   "monster": "Puk Hatchling",
   "zone": "Western La Noscea",
-  "area": "Skull Valley"
+  "area": "Skull Valley",
+  "x": 28.0,
+  "y": 25.0
  },
  {
   "class": "Arcanist",
   "rank": 2,
   "monster": "Hedgemole",
   "zone": "Western La Noscea",
-  "area": "Skull Valley"
+  "area": "Skull Valley",
+  "x": 25.8,
+  "y": 23.5
  },
  {
   "class": "Arcanist",
   "rank": 2,
   "monster": "Rothlyt Pelican",
   "zone": "Western La Noscea",
-  "area": "Skull Valley"
+  "area": "Skull Valley",
+  "x": 23.1,
+  "y": 24.0
  },
  {
   "class": "Arcanist",
   "rank": 2,
   "monster": "Killer Mantis",
   "zone": "Western La Noscea",
-  "area": "Skull Valley"
+  "area": "Skull Valley",
+  "x": 22.0,
+  "y": 23.0
  },
  {
   "class": "Arcanist",
   "rank": 2,
   "monster": "Bumble Beetle",
   "zone": "Upper La Noscea",
-  "area": "Oakwood"
+  "area": "Oakwood",
+  "x": 12.5,
+  "y": 26.5
  },
  {
   "class": "Arcanist",
   "rank": 3,
   "monster": "Overgrown Ivy",
   "zone": "East Shroud",
-  "area": "Nine Ivies"
+  "area": "Nine Ivies",
+  "x": 20.0,
+  "y": 29.0
  },
  {
   "class": "Arcanist",
   "rank": 3,
   "monster": "Lead Coblyn",
   "zone": "Western Thanalan",
-  "area": "The Footfalls"
+  "area": "The Footfalls",
+  "x": 14.0,
+  "y": 9.0
  },
  {
   "class": "Arcanist",
   "rank": 3,
   "monster": "Kedtrap",
   "zone": "South Shroud",
-  "area": "Upper Paths"
+  "area": "Upper Paths",
+  "x": 22.0,
+  "y": 21.0
  },
  {
   "class": "Arcanist",
   "rank": 3,
   "monster": "Coeurl Pup",
   "zone": "Upper La Noscea",
-  "area": "Oakwood"
+  "area": "Oakwood",
+  "x": 9.5,
+  "y": 21.6
  },
  {
   "class": "Arcanist",
   "rank": 3,
   "monster": "Antelope Stag",
   "zone": "South Shroud",
-  "area": "Silent Arbor"
+  "area": "Silent Arbor",
+  "x": 23.7,
+  "y": 20.2
  },
  {
   "class": "Arcanist",
   "rank": 3,
   "monster": "Balloon",
   "zone": "North Shroud",
-  "area": "Alder Springs"
+  "area": "Alder Springs",
+  "x": 15.5,
+  "y": 27.5
  },
  {
   "class": "Arcanist",
   "rank": 3,
   "monster": "Chasm Buzzard",
   "zone": "Eastern Thanalan",
-  "area": "Wellwick Wood"
+  "area": "Wellwick Wood",
+  "x": 22.0,
+  "y": 20.0
  },
  {
   "class": "Arcanist",
   "rank": 3,
   "monster": "Axe Beak",
   "zone": "Eastern Thanalan",
-  "area": "Wellwick Wood"
+  "area": "Wellwick Wood",
+  "x": 23.7,
+  "y": 18.6
  },
  {
   "class": "Arcanist",
   "rank": 3,
   "monster": "Clay Golem",
   "zone": "North Shroud",
-  "area": "Alder Springs"
+  "area": "Alder Springs",
+  "x": 16.5,
+  "y": 29.4
  },
  {
   "class": "Arcanist",
   "rank": 3,
   "monster": "Sandstone Golem",
   "zone": "Southern Thanalan",
-  "area": "Broken Water"
+  "area": "Broken Water",
+  "x": 22.1,
+  "y": 11.7
  },
  {
   "class": "Arcanist",
   "rank": 3,
   "monster": "Brood Ziz",
   "zone": "Central Shroud",
-  "area": "Sorrel Haven"
+  "area": "Sorrel Haven",
+  "x": 15.7,
+  "y": 20.3
  },
  {
   "class": "Arcanist",
   "rank": 3,
   "monster": "Lindwurm",
   "zone": "Central Shroud",
-  "area": "Sorrel Haven"
+  "area": "Sorrel Haven",
+  "x": 13.0,
+  "y": 20.0
  },
  {
   "class": "Arcanist",
   "rank": 4,
   "monster": "Qiqirn Gullroaster",
   "zone": "Eastern La Noscea",
-  "area": "Bloodshore"
+  "area": "Bloodshore",
+  "x": 26.0,
+  "y": 32.0
  },
  {
   "class": "Arcanist",
   "rank": 4,
   "monster": "Grass Raptor",
   "zone": "Eastern La Noscea",
-  "area": "Raincatcher Gully"
+  "area": "Raincatcher Gully",
+  "x": 16.0,
+  "y": 25.0
  },
  {
   "class": "Arcanist",
   "rank": 4,
   "monster": "Gigantoad",
   "zone": "Eastern La Noscea",
-  "area": "Raincatcher Gully"
+  "area": "Raincatcher Gully",
+  "x": 19.0,
+  "y": 26.0
  },
  {
   "class": "Arcanist",
   "rank": 4,
   "monster": "Sundrake",
   "zone": "Southern Thanalan",
-  "area": "Sagolii Desert"
+  "area": "Sagolii Desert",
+  "x": 25.0,
+  "y": 38.0
  },
  {
   "class": "Arcanist",
   "rank": 4,
   "monster": "Colibri",
   "zone": "Eastern La Noscea",
-  "area": "Bloodshore"
+  "area": "Bloodshore",
+  "x": 30.0,
+  "y": 25.0
  },
  {
   "class": "Arcanist",
   "rank": 4,
   "monster": "Coeurl",
   "zone": "Outer La Noscea",
-  "area": "The Long Climb"
+  "area": "The Long Climb",
+  "x": 14.0,
+  "y": 14.0
  },
  {
   "class": "Arcanist",
   "rank": 4,
   "monster": "Mildewed Goobbue",
   "zone": "Eastern La Noscea",
-  "area": "Raincatcher Gully"
+  "area": "Raincatcher Gully",
+  "x": 16.9,
+  "y": 32.4
  },
  {
   "class": "Arcanist",
   "rank": 4,
   "monster": "Snow Wolf Pup",
   "zone": "Coerthas Central Highlands",
-  "area": "Dragonhead"
+  "area": "Dragonhead",
+  "x": 22.0,
+  "y": 27.0
  },
  {
   "class": "Arcanist",
   "rank": 4,
   "monster": "Feral Croc",
   "zone": "Coerthas Central Highlands",
-  "area": "Dragonhead"
+  "area": "Dragonhead",
+  "x": 27.0,
+  "y": 24.0
  },
  {
   "class": "Arcanist",
   "rank": 4,
   "monster": "Dryad",
   "zone": "North Shroud",
-  "area": "Proud Creek"
+  "area": "Proud Creek",
+  "x": 22.0,
+  "y": 23.0
  },
  {
   "class": "Arcanist",
   "rank": 4,
   "monster": "Taurus",
   "zone": "Coerthas Central Highlands",
-  "area": "Providence Point"
+  "area": "Providence Point",
+  "x": 32.0,
+  "y": 12.0
  },
  {
   "class": "Arcanist",
   "rank": 4,
   "monster": "Molted Ziz",
   "zone": "East Shroud",
-  "area": "Larkscall"
+  "area": "Larkscall",
+  "x": 25.3,
+  "y": 23.9
  },
  {
   "class": "Arcanist",
   "rank": 5,
   "monster": "Quartz Doblyn",
   "zone": "Eastern Thanalan",
-  "area": "The Burning Wall"
+  "area": "The Burning Wall",
+  "x": 27.3,
+  "y": 26.0
  },
  {
   "class": "Arcanist",
   "rank": 5,
   "monster": "Lammergeyer",
   "zone": "Western La Noscea",
-  "area": "The Isles of Umbra"
+  "area": "The Isles of Umbra",
+  "x": 12.0,
+  "y": 35.0
  },
  {
   "class": "Arcanist",
   "rank": 5,
   "monster": "3rd Cohort Laquearius",
   "zone": "East Shroud",
-  "area": "Larkscall"
+  "area": "Larkscall",
+  "x": 29.0,
+  "y": 20.7
  },
  {
   "class": "Arcanist",
   "rank": 5,
   "monster": "Nix",
   "zone": "Mor Dhona",
-  "area": "Fogfens"
+  "area": "Fogfens",
+  "x": 19.0,
+  "y": 9.0
  },
  {
   "class": "Arcanist",
   "rank": 5,
   "monster": "Mudpuppy",
   "zone": "Mor Dhona",
-  "area": "Fogfens"
+  "area": "Fogfens",
+  "x": 12.9,
+  "y": 11.2
  },
  {
   "class": "Arcanist",
   "rank": 5,
   "monster": "Wild Hog",
   "zone": "South Shroud",
-  "area": "Urth's Gift"
+  "area": "Urth's Gift",
+  "x": 29.5,
+  "y": 23.6
  },
  {
   "class": "Arcanist",
   "rank": 5,
   "monster": "Watchwolf",
   "zone": "North Shroud",
-  "area": "Proud Creek"
+  "area": "Proud Creek",
+  "x": 21.0,
+  "y": 20.0
  },
  {
   "class": "Arcanist",
   "rank": 5,
   "monster": "5th Cohort Laquearius",
   "zone": "Mor Dhona",
-  "area": "Fogfens"
+  "area": "Fogfens",
+  "x": 11.0,
+  "y": 11.0
  },
  {
   "class": "Arcanist",
   "rank": 5,
   "monster": "Snow Wolf",
   "zone": "Coerthas Central Highlands",
-  "area": "Boulder Downs"
+  "area": "Boulder Downs",
+  "x": 16.4,
+  "y": 33.9
  },
  {
   "class": "Arcanist",
   "rank": 5,
   "monster": "Natalan Watchwolf",
   "zone": "Coerthas Central Highlands",
-  "area": "Natalan"
+  "area": "Natalan",
+  "x": 33.0,
+  "y": 20.8
  },
  {
   "class": "Arcanist",
   "rank": 5,
   "monster": "Axolotl",
   "zone": "Western La Noscea",
-  "area": "Sapsa Spawning Grounds"
+  "area": "Sapsa Spawning Grounds",
+  "x": 13.7,
+  "y": 15.6
  },
  {
   "class": "Arcanist",
   "rank": 5,
   "monster": "Zahar'ak Battle Drake",
   "zone": "Southern Thanalan",
-  "area": "Zahar'ak"
+  "area": "Zahar'ak",
+  "x": 29.5,
+  "y": 19.7
  },
  {
   "class": "Arcanist",
   "rank": 5,
   "monster": "4th Cohort Vanguard",
   "zone": "Western Thanalan",
-  "area": "Cape Westwind"
+  "area": "Cape Westwind",
+  "x": 8.7,
+  "y": 5.9
  },
  {
   "class": "Archer",
   "rank": 1,
   "monster": "Little Ladybug",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Archer",
   "rank": 1,
   "monster": "Ground Squirrel",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 22.3,
+  "y": 17.6
  },
  {
   "class": "Archer",
   "rank": 1,
   "monster": "Forest Funguar",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 24.7,
+  "y": 18.6
  },
  {
   "class": "Archer",
   "rank": 1,
   "monster": "Miteling",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 25.0,
+  "y": 27.0
  },
  {
   "class": "Archer",
   "rank": 1,
   "monster": "Midge Swarm",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 25.6,
+  "y": 21.8
  },
  {
   "class": "Archer",
   "rank": 1,
   "monster": "Water Sprite",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 23.0,
+  "y": 23.0
  },
  {
   "class": "Archer",
   "rank": 1,
   "monster": "Black Eft",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Archer",
   "rank": 1,
   "monster": "Anole",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 30.0,
+  "y": 19.0
  },
  {
   "class": "Archer",
   "rank": 1,
   "monster": "Trickster Imp",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 27.0,
+  "y": 24.0
  },
  {
   "class": "Archer",
   "rank": 1,
   "monster": "Roselet",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 22.7,
+  "y": 27.4
  },
  {
   "class": "Archer",
   "rank": 2,
   "monster": "Hornet Swarm",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 14.6,
+  "y": 24.7
  },
  {
   "class": "Archer",
   "rank": 2,
   "monster": "Arbor Buzzard",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 28.0,
+  "y": 29.0
  },
  {
   "class": "Archer",
   "rank": 2,
   "monster": "Magicked Bones",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 19.1,
+  "y": 27.6
  },
  {
   "class": "Archer",
   "rank": 2,
   "monster": "Treant Sapling",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 27.0,
+  "y": 15.0
  },
  {
   "class": "Archer",
   "rank": 2,
   "monster": "Goblin Hunter",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 13.0,
+  "y": 27.0
  },
  {
   "class": "Archer",
   "rank": 2,
   "monster": "Mandragora",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 14.0,
+  "y": 25.0
  },
  {
   "class": "Archer",
   "rank": 2,
   "monster": "Wild Hoglet",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 12.7,
+  "y": 23.2
  },
  {
   "class": "Archer",
   "rank": 2,
   "monster": "Lemur",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 14.9,
+  "y": 27.5
  },
  {
   "class": "Archer",
   "rank": 2,
   "monster": "Faerie Funguar",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 19.4,
+  "y": 28.6
  },
  {
   "class": "Archer",
   "rank": 2,
   "monster": "Giant Gnat",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 19.0,
+  "y": 27.0
  },
  {
   "class": "Archer",
   "rank": 2,
   "monster": "Raptor Poacher",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 19.0,
+  "y": 30.0
  },
  {
   "class": "Archer",
   "rank": 2,
   "monster": "Antelope Doe",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 17.0,
+  "y": 22.0
  },
  {
   "class": "Archer",
   "rank": 2,
   "monster": "Wild Boar",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 17.0,
+  "y": 23.4
  },
  {
   "class": "Archer",
   "rank": 3,
   "monster": "Stoneshell",
   "zone": "Upper La Noscea",
-  "area": ""
+  "area": "Oakwood",
+  "x": 13.0,
+  "y": 24.0
  },
  {
   "class": "Archer",
   "rank": 3,
   "monster": "Diseased Treant",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 18.0,
+  "y": 25.0
  },
  {
   "class": "Archer",
   "rank": 3,
   "monster": "Overgrown Offering",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Upper Paths",
+  "x": 18.0,
+  "y": 19.0
  },
  {
   "class": "Archer",
   "rank": 3,
   "monster": "Yarzon Scavenger",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "Cape Westwind",
+  "x": 14.0,
+  "y": 9.0
  },
  {
   "class": "Archer",
   "rank": 3,
   "monster": "Yarzon Scavenger",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 21.0,
+  "y": 30.0
  },
  {
   "class": "Archer",
   "rank": 3,
   "monster": "Forest Yarzon",
   "zone": "Upper La Noscea",
-  "area": ""
+  "area": "Oakwood",
+  "x": 11.1,
+  "y": 21.2
  },
  {
   "class": "Archer",
   "rank": 3,
   "monster": "Jumping Djigga",
   "zone": "East Shroud",
-  "area": ""
+  "area": "The Bramble Patch",
+  "x": 15.7,
+  "y": 20.4
  },
  {
   "class": "Archer",
   "rank": 3,
   "monster": "Redbelly Sharpeye",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 15.5,
+  "y": 22.9
  },
  {
   "class": "Archer",
   "rank": 3,
   "monster": "Banemite",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 25.0,
+  "y": 25.0
  },
  {
   "class": "Archer",
   "rank": 3,
   "monster": "Chasm Buzzard",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "Wellwick Wood",
+  "x": 22.0,
+  "y": 20.0
  },
  {
   "class": "Archer",
   "rank": 3,
   "monster": "Sandskin Peiste",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 15.0,
+  "y": 13.0
  },
  {
   "class": "Archer",
   "rank": 3,
   "monster": "Ziz",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 18.0,
+  "y": 26.0
  },
  {
   "class": "Archer",
   "rank": 3,
   "monster": "Toadstool",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 15.4,
+  "y": 18.3
  },
  {
   "class": "Archer",
   "rank": 3,
   "monster": "Apkallu",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "Bloodshore",
+  "x": 27.2,
+  "y": 36.4
  },
  {
   "class": "Archer",
   "rank": 4,
   "monster": "Floating Eye",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "Sorrel Haven",
+  "x": 11.0,
+  "y": 22.0
  },
  {
   "class": "Archer",
   "rank": 4,
   "monster": "Sandworm",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "Sagolii Desert",
+  "x": 13.2,
+  "y": 34.3
  },
  {
   "class": "Archer",
   "rank": 4,
   "monster": "Russet Yarzon",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 13.0,
+  "y": 32.0
  },
  {
   "class": "Archer",
   "rank": 4,
   "monster": "Giant Pelican",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 19.4,
+  "y": 30.6
  },
  {
   "class": "Archer",
   "rank": 4,
   "monster": "Smoke Bomb",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 20.0,
+  "y": 35.0
  },
  {
   "class": "Archer",
   "rank": 4,
   "monster": "Spriggan",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 11.8,
+  "y": 15.8
  },
  {
   "class": "Archer",
   "rank": 4,
   "monster": "Bloodshore Bell",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 31.0,
+  "y": 26.5
  },
  {
   "class": "Archer",
   "rank": 4,
   "monster": "Jungle Coeurl",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 18.4,
+  "y": 28.1
  },
  {
   "class": "Archer",
   "rank": 4,
   "monster": "Ringtail",
   "zone": "Outer La Noscea",
-  "area": ""
+  "area": "",
+  "x": 15.0,
+  "y": 12.5
  },
  {
   "class": "Archer",
   "rank": 4,
   "monster": "Highland Condor",
   "zone": "Outer La Noscea",
-  "area": ""
+  "area": "",
+  "x": 16.5,
+  "y": 16.5
  },
  {
   "class": "Archer",
   "rank": 4,
   "monster": "Salamander",
   "zone": "Upper La Noscea",
-  "area": ""
+  "area": "",
+  "x": 27.2,
+  "y": 24.3
  },
  {
   "class": "Archer",
   "rank": 4,
   "monster": "Fallen Pikeman",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 21.0,
+  "y": 39.0
  },
  {
   "class": "Archer",
   "rank": 4,
   "monster": "Ice Sprite",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 25.0,
+  "y": 20.0
  },
  {
   "class": "Archer",
   "rank": 4,
   "monster": "Feral Croc",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Dragonhead",
+  "x": 27.0,
+  "y": 24.0
  },
  {
   "class": "Archer",
   "rank": 4,
   "monster": "Vodoriga",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Providence Point",
+  "x": 27.0,
+  "y": 14.0
  },
  {
   "class": "Archer",
   "rank": 4,
   "monster": "Baritine Croc",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 4.9,
+  "y": 22.0
  },
  {
   "class": "Archer",
   "rank": 5,
   "monster": "Hippocerf",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Whitebrim",
+  "x": 12.0,
+  "y": 18.5
  },
  {
   "class": "Archer",
   "rank": 5,
   "monster": "Dragonfly",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 9.0,
+  "y": 14.0
  },
  {
   "class": "Archer",
   "rank": 5,
   "monster": "Oldgrowth Treant",
   "zone": "East Shroud",
-  "area": ""
+  "area": "Larkscall",
+  "x": 27.0,
+  "y": 22.0
  },
  {
   "class": "Archer",
   "rank": 5,
   "monster": "Lammergeyer",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "The Isles of Umbra",
+  "x": 12.0,
+  "y": 35.0
  },
  {
   "class": "Archer",
   "rank": 5,
   "monster": "Dead Man's Moan",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "The Isles of Umbra",
+  "x": 14.5,
+  "y": 35.9
  },
  {
   "class": "Archer",
   "rank": 5,
   "monster": "Morbol",
   "zone": "East Shroud",
-  "area": ""
+  "area": "Larkscall",
+  "x": 22.9,
+  "y": 20.5
  },
  {
   "class": "Archer",
   "rank": 5,
   "monster": "Mudpuppy",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "Fogfens",
+  "x": 12.9,
+  "y": 11.2
  },
  {
   "class": "Archer",
   "rank": 5,
   "monster": "Lesser Kalong",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 22.0,
+  "y": 27.0
  },
  {
   "class": "Archer",
   "rank": 5,
   "monster": "Giant Reader",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 13.0,
+  "y": 27.0
  },
  {
   "class": "Archer",
   "rank": 5,
   "monster": "Hippogryph",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "",
+  "x": 24.6,
+  "y": 9.4
  },
  {
   "class": "Archer",
   "rank": 5,
   "monster": "5th Cohort Secutor",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "",
+  "x": 10.0,
+  "y": 13.0
  },
  {
   "class": "Archer",
   "rank": 5,
   "monster": "Tempered Gladiator",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 21.0,
+  "y": 19.0
  },
  {
   "class": "Archer",
   "rank": 5,
   "monster": "Sylphlands Condor",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 27.0,
+  "y": 16.0
  },
  {
   "class": "Archer",
   "rank": 5,
   "monster": "Milkroot Sapling",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 23.2,
+  "y": 14.6
  },
  {
   "class": "Archer",
   "rank": 5,
   "monster": "Ahriman",
   "zone": "Northern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 24.0,
+  "y": 21.0
  },
  {
   "class": "Archer",
   "rank": 5,
   "monster": "Shelfeye Reaver",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "",
+  "x": 13.0,
+  "y": 17.0
  },
  {
   "class": "Conjurer",
   "rank": 1,
   "monster": "Little Ladybug",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 24.7,
+  "y": 18.6
  },
  {
   "class": "Conjurer",
   "rank": 1,
   "monster": "Ground Squirrel",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 22.3,
+  "y": 17.6
  },
  {
   "class": "Conjurer",
   "rank": 1,
   "monster": "Forest Funguar",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 24.7,
+  "y": 18.6
  },
  {
   "class": "Conjurer",
   "rank": 1,
   "monster": "Miteling",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 25.0,
+  "y": 27.0
  },
  {
   "class": "Conjurer",
   "rank": 1,
   "monster": "Chigoe",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 27.0,
+  "y": 22.0
  },
  {
   "class": "Conjurer",
   "rank": 1,
   "monster": "Water Sprite",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 23.0,
+  "y": 23.0
  },
  {
   "class": "Conjurer",
   "rank": 1,
   "monster": "Midge Swarm",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 25.6,
+  "y": 21.8
  },
  {
   "class": "Conjurer",
   "rank": 1,
   "monster": "Microchu",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 27.0,
+  "y": 22.0
  },
  {
   "class": "Conjurer",
   "rank": 1,
   "monster": "Syrphid Swarm",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 27.8,
+  "y": 24.3
  },
  {
   "class": "Conjurer",
   "rank": 1,
   "monster": "Northern Vulture",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 12.0,
+  "y": 25.0
  },
  {
   "class": "Conjurer",
   "rank": 2,
   "monster": "Tree Slug",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 25.0,
+  "y": 29.0
  },
  {
   "class": "Conjurer",
   "rank": 2,
   "monster": "Arbor Buzzard",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 28.0,
+  "y": 29.0
  },
  {
   "class": "Conjurer",
   "rank": 2,
   "monster": "Goblin Hunter",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 13.0,
+  "y": 27.0
  },
  {
   "class": "Conjurer",
   "rank": 2,
   "monster": "Firefly",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 24.0,
+  "y": 29.0
  },
  {
   "class": "Conjurer",
   "rank": 2,
   "monster": "Firefly",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 19.0,
+  "y": 27.0
  },
  {
   "class": "Conjurer",
   "rank": 2,
   "monster": "Mandragora",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 14.0,
+  "y": 25.0
  },
  {
   "class": "Conjurer",
   "rank": 2,
   "monster": "Boring Weevil",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 20.0,
+  "y": 27.0
  },
  {
   "class": "Conjurer",
   "rank": 2,
   "monster": "Faerie Funguar",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 19.4,
+  "y": 28.6
  },
  {
   "class": "Conjurer",
   "rank": 2,
   "monster": "Giant Gnat",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 19.0,
+  "y": 27.0
  },
  {
   "class": "Conjurer",
   "rank": 2,
   "monster": "Wolf Poacher",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 19.6,
+  "y": 30.0
  },
  {
   "class": "Conjurer",
   "rank": 2,
   "monster": "Qiqirn Beater",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 15.0,
+  "y": 17.0
  },
  {
   "class": "Conjurer",
   "rank": 2,
   "monster": "Black Bat",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 14.7,
+  "y": 22.5
  },
  {
   "class": "Conjurer",
   "rank": 3,
   "monster": "Stoneshell",
   "zone": "Upper La Noscea",
-  "area": ""
+  "area": "Oakwood",
+  "x": 13.0,
+  "y": 24.0
  },
  {
   "class": "Conjurer",
   "rank": 3,
   "monster": "Laughing Toad",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "The Footfalls",
+  "x": 14.0,
+  "y": 6.0
  },
  {
   "class": "Conjurer",
   "rank": 3,
   "monster": "Diseased Treant",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 18.0,
+  "y": 25.0
  },
  {
   "class": "Conjurer",
   "rank": 3,
   "monster": "Lead Coblyn",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "The Footfalls",
+  "x": 14.0,
+  "y": 9.0
  },
  {
   "class": "Conjurer",
   "rank": 3,
   "monster": "Bark Eft",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Upper Paths",
+  "x": 17.8,
+  "y": 24.3
  },
  {
   "class": "Conjurer",
   "rank": 3,
   "monster": "Glowfly",
   "zone": "East Shroud",
-  "area": ""
+  "area": "The Bramble Patch",
+  "x": 15.0,
+  "y": 21.0
  },
  {
   "class": "Conjurer",
   "rank": 3,
   "monster": "Antelope Stag",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Silent Arbor",
+  "x": 23.7,
+  "y": 20.2
  },
  {
   "class": "Conjurer",
   "rank": 3,
   "monster": "Sabotender",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "Broken Water",
+  "x": 13.4,
+  "y": 13.8
  },
  {
   "class": "Conjurer",
   "rank": 3,
   "monster": "Qiqirn Roerunner",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "Wellwick Wood",
+  "x": 24.0,
+  "y": 22.0
  },
  {
   "class": "Conjurer",
   "rank": 3,
   "monster": "Goblin Thug",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Silent Arbor",
+  "x": 26.0,
+  "y": 21.0
  },
  {
   "class": "Conjurer",
   "rank": 3,
   "monster": "Toadstool",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 15.4,
+  "y": 18.3
  },
  {
   "class": "Conjurer",
   "rank": 3,
   "monster": "Apkallu",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "Bloodshore",
+  "x": 27.2,
+  "y": 36.4
  },
  {
   "class": "Conjurer",
   "rank": 4,
   "monster": "Lindwurm",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "Sorrel Haven",
+  "x": 13.0,
+  "y": 20.0
  },
  {
   "class": "Conjurer",
   "rank": 4,
   "monster": "Gigantoad",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "Raincatcher Gully",
+  "x": 19.0,
+  "y": 26.0
  },
  {
   "class": "Conjurer",
   "rank": 4,
   "monster": "Bigmouth Orobon",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 17.4,
+  "y": 30.9
  },
  {
   "class": "Conjurer",
   "rank": 4,
   "monster": "Mamool Ja Infiltrator",
   "zone": "Upper La Noscea",
-  "area": ""
+  "area": "",
+  "x": 28.0,
+  "y": 21.0
  },
  {
   "class": "Conjurer",
   "rank": 4,
   "monster": "Sandworm",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "Sagolii Desert",
+  "x": 13.2,
+  "y": 34.3
  },
  {
   "class": "Conjurer",
   "rank": 4,
   "monster": "Revenant",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 11.8,
+  "y": 20.2
  },
  {
   "class": "Conjurer",
   "rank": 4,
   "monster": "Bloodshore Bell",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 31.0,
+  "y": 26.5
  },
  {
   "class": "Conjurer",
   "rank": 4,
   "monster": "Ornery Karakul",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 26.5,
+  "y": 20.1
  },
  {
   "class": "Conjurer",
   "rank": 4,
   "monster": "Deepvoid Deathmouse",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 22.1,
+  "y": 27.4
  },
  {
   "class": "Conjurer",
   "rank": 4,
   "monster": "Dryad",
   "zone": "North Shroud",
-  "area": ""
+  "area": "Proud Creek",
+  "x": 22.0,
+  "y": 23.0
  },
  {
   "class": "Conjurer",
   "rank": 4,
   "monster": "Downy Aevis",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 26.9,
+  "y": 10.2
  },
  {
   "class": "Conjurer",
   "rank": 4,
   "monster": "Will-o'-the-wisp",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 23.2,
+  "y": 24.2
  },
  {
   "class": "Conjurer",
   "rank": 4,
   "monster": "Dragonfly",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 9.0,
+  "y": 14.0
  },
  {
   "class": "Conjurer",
   "rank": 5,
   "monster": "Golden Fleece",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 30.0,
+  "y": 24.0
  },
  {
   "class": "Conjurer",
   "rank": 5,
   "monster": "Grenade",
   "zone": "Outer La Noscea",
-  "area": ""
+  "area": "Iron Lake",
+  "x": 21.4,
+  "y": 14.6
  },
  {
   "class": "Conjurer",
   "rank": 5,
   "monster": "Hippocerf",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Whitebrim",
+  "x": 12.0,
+  "y": 18.5
  },
  {
   "class": "Conjurer",
   "rank": 5,
   "monster": "Lammergeyer",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "The Isles of Umbra",
+  "x": 12.0,
+  "y": 35.0
  },
  {
   "class": "Conjurer",
   "rank": 5,
   "monster": "Dead Man's Moan",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "The Isles of Umbra",
+  "x": 14.5,
+  "y": 35.9
  },
  {
   "class": "Conjurer",
   "rank": 5,
   "monster": "3rd Cohort Hoplomachus",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 28.0,
+  "y": 20.0
  },
  {
   "class": "Conjurer",
   "rank": 5,
   "monster": "Lesser Kalong",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 22.0,
+  "y": 27.0
  },
  {
   "class": "Conjurer",
   "rank": 5,
   "monster": "Snow Wolf",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Boulder Downs",
+  "x": 16.4,
+  "y": 33.9
  },
  {
   "class": "Conjurer",
   "rank": 5,
   "monster": "5th Cohort Eques",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "",
+  "x": 11.9,
+  "y": 12.6
  },
  {
   "class": "Conjurer",
   "rank": 5,
   "monster": "Sea Wasp",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "",
+  "x": 13.6,
+  "y": 17.4
  },
  {
   "class": "Conjurer",
   "rank": 5,
   "monster": "Sylph Bonnet",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 23.0,
+  "y": 14.0
  },
  {
   "class": "Conjurer",
   "rank": 5,
   "monster": "Ahriman",
   "zone": "Northern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 24.0,
+  "y": 21.0
  },
  {
   "class": "Conjurer",
   "rank": 5,
   "monster": "2nd Cohort Vanguard",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 28.5,
+  "y": 19.6
  },
  {
   "class": "Gladiator",
   "rank": 1,
   "monster": "Little Ladybug",
   "zone": "Western Thanalan",
-  "area": "The Eighty Sins of Sasamo"
+  "area": "The Eighty Sins of Sasamo",
+  "x": 29.0,
+  "y": 25.0
  },
  {
   "class": "Gladiator",
   "rank": 1,
   "monster": "Star Marmot",
   "zone": "Central Thanalan",
-  "area": "Spineless Basin"
+  "area": "Spineless Basin",
+  "x": 18.6,
+  "y": 26.8
  },
  {
   "class": "Gladiator",
   "rank": 1,
   "monster": "Cactuar",
   "zone": "Western Thanalan",
-  "area": "The Eighty Sins of Sasamo"
+  "area": "The Eighty Sins of Sasamo",
+  "x": 23.0,
+  "y": 25.0
  },
  {
   "class": "Gladiator",
   "rank": 1,
   "monster": "Snapping Shrew",
   "zone": "Central Thanalan",
-  "area": "Spineless Basin"
+  "area": "Spineless Basin",
+  "x": 21.9,
+  "y": 25.7
  },
  {
   "class": "Gladiator",
   "rank": 1,
   "monster": "Hammer Beak",
   "zone": "Western Thanalan",
-  "area": "Hammerlea"
+  "area": "Hammerlea",
+  "x": 24.2,
+  "y": 25.0
  },
  {
   "class": "Gladiator",
   "rank": 1,
   "monster": "Antling Worker",
   "zone": "Central Thanalan",
-  "area": "Black Brush"
+  "area": "Black Brush",
+  "x": 22.0,
+  "y": 18.0
  },
  {
   "class": "Gladiator",
   "rank": 1,
   "monster": "Earth Sprite",
   "zone": "Western Thanalan",
-  "area": "Hammerlea"
+  "area": "Hammerlea",
+  "x": 22.4,
+  "y": 26.2
  },
  {
   "class": "Gladiator",
   "rank": 1,
   "monster": "Spriggan Graverobber",
   "zone": "Central Thanalan",
-  "area": "Black Brush"
+  "area": "Black Brush",
+  "x": 17.0,
+  "y": 23.0
  },
  {
   "class": "Gladiator",
   "rank": 1,
   "monster": "Qiqirn Shellsweeper",
   "zone": "Central Thanalan",
-  "area": "Black Brush"
+  "area": "Black Brush",
+  "x": 16.0,
+  "y": 19.0
  },
  {
   "class": "Gladiator",
   "rank": 1,
   "monster": "Antling Soldier",
   "zone": "Central Thanalan",
-  "area": "The Clutch"
+  "area": "The Clutch",
+  "x": 22.3,
+  "y": 19.7
  },
  {
   "class": "Gladiator",
   "rank": 1,
   "monster": "Dusty Mongrel",
   "zone": "Western Thanalan",
-  "area": "Horizon's Edge"
+  "area": "Horizon's Edge",
+  "x": 25.0,
+  "y": 19.0
  },
  {
   "class": "Gladiator",
   "rank": 2,
   "monster": "Bomb",
   "zone": "Western Thanalan",
-  "area": "Horizon's Edge"
+  "area": "Horizon's Edge",
+  "x": 27.4,
+  "y": 16.9
  },
  {
   "class": "Gladiator",
   "rank": 2,
   "monster": "Copper Coblyn",
   "zone": "Western Thanalan",
-  "area": "Horizon's Edge"
+  "area": "Horizon's Edge",
+  "x": 26.7,
+  "y": 17.0
  },
  {
   "class": "Gladiator",
   "rank": 2,
   "monster": "Cochineal Cactuar",
   "zone": "Central Thanalan",
-  "area": "The Clutch"
+  "area": "The Clutch",
+  "x": 24.0,
+  "y": 20.0
  },
  {
   "class": "Gladiator",
   "rank": 2,
   "monster": "Quiveron Guard",
   "zone": "Central Thanalan",
-  "area": "The Clutch"
+  "area": "The Clutch",
+  "x": 24.0,
+  "y": 21.0
  },
  {
   "class": "Gladiator",
   "rank": 2,
   "monster": "Giant Tortoise",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "",
+  "x": 26.0,
+  "y": 24.0
  },
  {
   "class": "Gladiator",
   "rank": 2,
   "monster": "Giant Tortoise",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "",
+  "x": 24.0,
+  "y": 30.0
  },
  {
   "class": "Gladiator",
   "rank": 2,
   "monster": "Thickshell",
   "zone": "Western Thanalan",
-  "area": "The Footfalls"
+  "area": "The Footfalls",
+  "x": 15.0,
+  "y": 15.0
  },
  {
   "class": "Gladiator",
   "rank": 2,
   "monster": "Scaphite",
   "zone": "Western Thanalan",
-  "area": "The Footfalls"
+  "area": "The Footfalls",
+  "x": 17.0,
+  "y": 14.0
  },
  {
   "class": "Gladiator",
   "rank": 2,
   "monster": "Tuco-tuco",
   "zone": "Eastern Thanalan",
-  "area": "Drybone"
+  "area": "Drybone",
+  "x": 10.8,
+  "y": 18.2
  },
  {
   "class": "Gladiator",
   "rank": 2,
   "monster": "Myotragus Billy",
   "zone": "Eastern Thanalan",
-  "area": "Drybone"
+  "area": "Drybone",
+  "x": 17.4,
+  "y": 21.5
  },
  {
   "class": "Gladiator",
   "rank": 2,
   "monster": "Vandalous Imp",
   "zone": "Eastern Thanalan",
-  "area": "Drybone"
+  "area": "Drybone",
+  "x": 14.4,
+  "y": 18.7
  },
  {
   "class": "Gladiator",
   "rank": 2,
   "monster": "Rotting Noble",
   "zone": "Eastern Thanalan",
-  "area": "Drybone"
+  "area": "Drybone",
+  "x": 14.0,
+  "y": 17.0
  },
  {
   "class": "Gladiator",
   "rank": 2,
   "monster": "Bloated Bogy",
   "zone": "Western Thanalan",
-  "area": "The Footfalls"
+  "area": "The Footfalls",
+  "x": 13.0,
+  "y": 11.0
  },
  {
   "class": "Gladiator",
   "rank": 3,
   "monster": "Stoneshell",
   "zone": "Upper La Noscea",
-  "area": "Oakwood"
+  "area": "Oakwood",
+  "x": 13.0,
+  "y": 24.0
  },
  {
   "class": "Gladiator",
   "rank": 3,
   "monster": "Kedtrap",
   "zone": "South Shroud",
-  "area": "Upper Paths"
+  "area": "Upper Paths",
+  "x": 22.0,
+  "y": 21.0
  },
  {
   "class": "Gladiator",
   "rank": 3,
   "monster": "Lead Coblyn",
   "zone": "Western Thanalan",
-  "area": "The Footfalls"
+  "area": "The Footfalls",
+  "x": 14.0,
+  "y": 9.0
  },
  {
   "class": "Gladiator",
   "rank": 3,
   "monster": "Overgrown Offering",
   "zone": "South Shroud",
-  "area": "Upper Paths"
+  "area": "Upper Paths",
+  "x": 18.0,
+  "y": 19.0
  },
  {
   "class": "Gladiator",
   "rank": 3,
   "monster": "Coeurl Pup",
   "zone": "Upper La Noscea",
-  "area": "Oakwood"
+  "area": "Oakwood",
+  "x": 9.5,
+  "y": 21.6
  },
  {
   "class": "Gladiator",
   "rank": 3,
   "monster": "Balloon",
   "zone": "North Shroud",
-  "area": "Alder Springs"
+  "area": "Alder Springs",
+  "x": 15.5,
+  "y": 27.5
  },
  {
   "class": "Gladiator",
   "rank": 3,
   "monster": "Sabotender",
   "zone": "Southern Thanalan",
-  "area": "Broken Water"
+  "area": "Broken Water",
+  "x": 13.4,
+  "y": 13.8
  },
  {
   "class": "Gladiator",
   "rank": 3,
   "monster": "Qiqirn Roerunner",
   "zone": "Eastern Thanalan",
-  "area": "Wellwick Wood"
+  "area": "Wellwick Wood",
+  "x": 24.0,
+  "y": 22.0
  },
  {
   "class": "Gladiator",
   "rank": 3,
   "monster": "Goblin Thug",
   "zone": "South Shroud",
-  "area": "Silent Arbor"
+  "area": "Silent Arbor",
+  "x": 26.0,
+  "y": 21.0
  },
  {
   "class": "Gladiator",
   "rank": 3,
   "monster": "Coeurlclaw Cutter",
   "zone": "South Shroud",
-  "area": "Silent Arbor"
+  "area": "Silent Arbor",
+  "x": 26.0,
+  "y": 21.0
  },
  {
   "class": "Gladiator",
   "rank": 3,
   "monster": "Apkallu",
   "zone": "Eastern La Noscea",
-  "area": "Bloodshore"
+  "area": "Bloodshore",
+  "x": 27.2,
+  "y": 36.4
  },
  {
   "class": "Gladiator",
   "rank": 3,
   "monster": "Pteroc",
   "zone": "Outer La Noscea",
-  "area": "The Long Climb"
+  "area": "The Long Climb",
+  "x": 14.6,
+  "y": 18.3
  },
  {
   "class": "Gladiator",
   "rank": 4,
   "monster": "Floating Eye",
   "zone": "Central Shroud",
-  "area": "Sorrel Haven"
+  "area": "Sorrel Haven",
+  "x": 11.0,
+  "y": 22.0
  },
  {
   "class": "Gladiator",
   "rank": 4,
   "monster": "Mamool Ja Sophist",
   "zone": "Upper La Noscea",
-  "area": "Bronze Lake"
+  "area": "Bronze Lake",
+  "x": 35.4,
+  "y": 24.0
  },
  {
   "class": "Gladiator",
   "rank": 4,
   "monster": "Uragnite",
   "zone": "Upper La Noscea",
-  "area": "Bronze Lake"
+  "area": "Bronze Lake",
+  "x": 29.0,
+  "y": 24.5
  },
  {
   "class": "Gladiator",
   "rank": 4,
   "monster": "Adamantoise",
   "zone": "South Shroud",
-  "area": "Lower Paths"
+  "area": "Lower Paths",
+  "x": 20.0,
+  "y": 27.0
  },
  {
   "class": "Gladiator",
   "rank": 4,
   "monster": "Sandworm",
   "zone": "Southern Thanalan",
-  "area": "Sagolii Desert"
+  "area": "Sagolii Desert",
+  "x": 13.2,
+  "y": 34.3
  },
  {
   "class": "Gladiator",
   "rank": 4,
   "monster": "Deathgaze",
   "zone": "Central Shroud",
-  "area": "Sorrel Haven"
+  "area": "Sorrel Haven",
+  "x": 17.0,
+  "y": 22.0
  },
  {
   "class": "Gladiator",
   "rank": 4,
   "monster": "Velociraptor",
   "zone": "Outer La Noscea",
-  "area": "The Long Climb"
+  "area": "The Long Climb",
+  "x": 18.6,
+  "y": 15.2
  },
  {
   "class": "Gladiator",
   "rank": 4,
   "monster": "Fallen Wizard",
   "zone": "Southern Thanalan",
-  "area": "Sagolii Desert"
+  "area": "Sagolii Desert",
+  "x": 21.0,
+  "y": 38.0
  },
  {
   "class": "Gladiator",
   "rank": 4,
   "monster": "Snow Wolf Pup",
   "zone": "Coerthas Central Highlands",
-  "area": "Dragonhead"
+  "area": "Dragonhead",
+  "x": 22.0,
+  "y": 27.0
  },
  {
   "class": "Gladiator",
   "rank": 4,
   "monster": "Treant",
   "zone": "South Shroud",
-  "area": "Snakemolt"
+  "area": "Snakemolt",
+  "x": 26.1,
+  "y": 36.8
  },
  {
   "class": "Gladiator",
   "rank": 4,
   "monster": "Vodoriga",
   "zone": "Coerthas Central Highlands",
-  "area": "Providence Point"
+  "area": "Providence Point",
+  "x": 27.0,
+  "y": 14.0
  },
  {
   "class": "Gladiator",
   "rank": 4,
   "monster": "Hippocerf",
   "zone": "Coerthas Central Highlands",
-  "area": "Whitebrim"
+  "area": "Whitebrim",
+  "x": 12.0,
+  "y": 18.5
  },
  {
   "class": "Gladiator",
   "rank": 4,
   "monster": "Grenade",
   "zone": "Outer La Noscea",
-  "area": "Iron Lake"
+  "area": "Iron Lake",
+  "x": 21.4,
+  "y": 14.6
  },
  {
   "class": "Gladiator",
   "rank": 5,
   "monster": "Preying Mantis",
   "zone": "Western La Noscea",
-  "area": "The Isles of Umbra"
+  "area": "The Isles of Umbra",
+  "x": 16.0,
+  "y": 33.0
  },
  {
   "class": "Gladiator",
   "rank": 5,
   "monster": "Lammergeyer",
   "zone": "Western La Noscea",
-  "area": "The Isles of Umbra"
+  "area": "The Isles of Umbra",
+  "x": 12.0,
+  "y": 35.0
  },
  {
   "class": "Gladiator",
   "rank": 5,
   "monster": "Oldgrowth Treant",
   "zone": "East Shroud",
-  "area": "Larkscall"
+  "area": "Larkscall",
+  "x": 27.0,
+  "y": 22.0
  },
  {
   "class": "Gladiator",
   "rank": 5,
   "monster": "3rd Cohort Eques",
   "zone": "East Shroud",
-  "area": "Larkscall"
+  "area": "Larkscall",
+  "x": 29.0,
+  "y": 21.0
  },
  {
   "class": "Gladiator",
   "rank": 5,
   "monster": "Dead Man's Moan",
   "zone": "Western La Noscea",
-  "area": "The Isles of Umbra"
+  "area": "The Isles of Umbra",
+  "x": 14.5,
+  "y": 35.9
  },
  {
   "class": "Gladiator",
   "rank": 5,
   "monster": "Morbol",
   "zone": "East Shroud",
-  "area": "Larkscall"
+  "area": "Larkscall",
+  "x": 22.9,
+  "y": 20.5
  },
  {
   "class": "Gladiator",
   "rank": 5,
   "monster": "Mudpuppy",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "Fogfens",
+  "x": 12.9,
+  "y": 11.2
  },
  {
   "class": "Gladiator",
   "rank": 5,
   "monster": "Mudpuppy",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Boulder Downs",
+  "x": 10.2,
+  "y": 29.4
  },
  {
   "class": "Gladiator",
   "rank": 5,
   "monster": "Lake Cobra",
   "zone": "Mor Dhona",
-  "area": "North Silvertear"
+  "area": "North Silvertear",
+  "x": 25.1,
+  "y": 9.5
  },
  {
   "class": "Gladiator",
   "rank": 5,
   "monster": "Giant Lugger",
   "zone": "Coerthas Central Highlands",
-  "area": "Boulder Downs"
+  "area": "Boulder Downs",
+  "x": 12.0,
+  "y": 26.0
  },
  {
   "class": "Gladiator",
   "rank": 5,
   "monster": "Tempered Orator",
   "zone": "Southern Thanalan",
-  "area": "Zanr'ak"
+  "area": "Zanr'ak",
+  "x": 21.2,
+  "y": 19.4
  },
  {
   "class": "Gladiator",
   "rank": 5,
   "monster": "Dullahan",
   "zone": "North Shroud",
-  "area": "Proud Creek"
+  "area": "Proud Creek",
+  "x": 23.0,
+  "y": 20.0
  },
  {
   "class": "Gladiator",
   "rank": 5,
   "monster": "Basilisk",
   "zone": "Northern Thanalan",
-  "area": "Bluefog"
+  "area": "Bluefog",
+  "x": 20.0,
+  "y": 26.0
  },
  {
   "class": "Gladiator",
   "rank": 5,
   "monster": "Gigas Bhikkhu",
   "zone": "Mor Dhona",
-  "area": "North Silvertear"
+  "area": "North Silvertear",
+  "x": 33.0,
+  "y": 15.0
  },
  {
   "class": "Gladiator",
   "rank": 5,
   "monster": "2nd Cohort Hoplomachus",
   "zone": "Eastern La Noscea",
-  "area": "Agelyss Wise"
+  "area": "Agelyss Wise",
+  "x": 27.0,
+  "y": 21.0
  },
  {
   "class": "Lancer",
   "rank": 1,
   "monster": "Little Ladybug",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 24.7,
+  "y": 18.6
  },
  {
   "class": "Lancer",
   "rank": 1,
   "monster": "Ground Squirrel",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 22.3,
+  "y": 17.6
  },
  {
   "class": "Lancer",
   "rank": 1,
   "monster": "Forest Funguar",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 24.7,
+  "y": 18.6
  },
  {
   "class": "Lancer",
   "rank": 1,
   "monster": "Miteling",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 25.0,
+  "y": 27.0
  },
  {
   "class": "Lancer",
   "rank": 1,
   "monster": "Opo-opo",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 25.0,
+  "y": 28.0
  },
  {
   "class": "Lancer",
   "rank": 1,
   "monster": "Microchu",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 27.0,
+  "y": 22.0
  },
  {
   "class": "Lancer",
   "rank": 1,
   "monster": "Microchu",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 29.4,
+  "y": 19.6
  },
  {
   "class": "Lancer",
   "rank": 1,
   "monster": "Black Eft",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Lancer",
   "rank": 1,
   "monster": "Bog Yarzon",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 24.0,
+  "y": 24.0
  },
  {
   "class": "Lancer",
   "rank": 1,
   "monster": "Hoglet",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 28.9,
+  "y": 23.1
  },
  {
   "class": "Lancer",
   "rank": 1,
   "monster": "Anole",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 30.0,
+  "y": 19.0
  },
  {
   "class": "Lancer",
   "rank": 1,
   "monster": "Diremite",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 19.6,
+  "y": 18.7
  },
  {
   "class": "Lancer",
   "rank": 1,
   "monster": "Tree Slug",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 13.0,
+  "y": 25.0
  },
  {
   "class": "Lancer",
   "rank": 1,
   "monster": "Tree Slug",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 25.0,
+  "y": 29.0
  },
  {
   "class": "Lancer",
   "rank": 2,
   "monster": "Arbor Buzzard",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 28.0,
+  "y": 29.0
  },
  {
   "class": "Lancer",
   "rank": 2,
   "monster": "Treant Sapling",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 27.0,
+  "y": 15.0
  },
  {
   "class": "Lancer",
   "rank": 2,
   "monster": "Mandragora",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 14.0,
+  "y": 25.0
  },
  {
   "class": "Lancer",
   "rank": 2,
   "monster": "Wild Hoglet",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 12.7,
+  "y": 23.2
  },
  {
   "class": "Lancer",
   "rank": 2,
   "monster": "Lemur",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 14.9,
+  "y": 27.5
  },
  {
   "class": "Lancer",
   "rank": 2,
   "monster": "Boring Weevil",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 20.0,
+  "y": 27.0
  },
  {
   "class": "Lancer",
   "rank": 2,
   "monster": "Faerie Funguar",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 19.4,
+  "y": 28.6
  },
  {
   "class": "Lancer",
   "rank": 2,
   "monster": "Giant Gnat",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 19.0,
+  "y": 27.0
  },
  {
   "class": "Lancer",
   "rank": 2,
   "monster": "Boar Poacher",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 19.6,
+  "y": 30.0
  },
  {
   "class": "Lancer",
   "rank": 2,
   "monster": "Ziz Gorlin",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 19.9,
+  "y": 25.4
  },
  {
   "class": "Lancer",
   "rank": 2,
   "monster": "Black Bat",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 14.7,
+  "y": 22.5
  },
  {
   "class": "Lancer",
   "rank": 2,
   "monster": "Qiqirn Beater",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 15.0,
+  "y": 17.0
  },
  {
   "class": "Lancer",
   "rank": 2,
   "monster": "Antelope Doe",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 17.0,
+  "y": 22.0
  },
  {
   "class": "Lancer",
   "rank": 3,
   "monster": "Stoneshell",
   "zone": "Upper La Noscea",
-  "area": ""
+  "area": "Oakwood",
+  "x": 13.0,
+  "y": 24.0
  },
  {
   "class": "Lancer",
   "rank": 3,
   "monster": "Smallmouth Orobon",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 15.3,
+  "y": 18.7
  },
  {
   "class": "Lancer",
   "rank": 3,
   "monster": "Yarzon Scavenger",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 21.0,
+  "y": 30.0
  },
  {
   "class": "Lancer",
   "rank": 3,
   "monster": "Yarzon Scavenger",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "Cape Westwind",
+  "x": 14.0,
+  "y": 9.0
  },
  {
   "class": "Lancer",
   "rank": 3,
   "monster": "Redbelly Lookout",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 15.4,
+  "y": 23.0
  },
  {
   "class": "Lancer",
   "rank": 3,
   "monster": "Antelope Stag",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Silent Arbor",
+  "x": 23.7,
+  "y": 20.2
  },
  {
   "class": "Lancer",
   "rank": 3,
   "monster": "Moondrip Piledriver",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "",
+  "x": 17.8,
+  "y": 6.7
  },
  {
   "class": "Lancer",
   "rank": 3,
   "monster": "Sabotender",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "Broken Water",
+  "x": 13.4,
+  "y": 13.8
  },
  {
   "class": "Lancer",
   "rank": 3,
   "monster": "Goblin Thug",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Silent Arbor",
+  "x": 26.0,
+  "y": 21.0
  },
  {
   "class": "Lancer",
   "rank": 3,
   "monster": "Sandskin Peiste",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 15.0,
+  "y": 13.0
  },
  {
   "class": "Lancer",
   "rank": 3,
   "monster": "Corpse Brigade Firedancer",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 23.0,
+  "y": 8.0
  },
  {
   "class": "Lancer",
   "rank": 3,
   "monster": "Coeurlclaw Poacher",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 15.0,
+  "y": 33.6
  },
  {
   "class": "Lancer",
   "rank": 3,
   "monster": "Apkallu",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "Bloodshore",
+  "x": 27.2,
+  "y": 36.4
  },
  {
   "class": "Lancer",
   "rank": 3,
   "monster": "Midland Condor",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 16.1,
+  "y": 32.5
  },
  {
   "class": "Lancer",
   "rank": 4,
   "monster": "Floating Eye",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "Sorrel Haven",
+  "x": 11.0,
+  "y": 22.0
  },
  {
   "class": "Lancer",
   "rank": 4,
   "monster": "Large Buffalo",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 27.1,
+  "y": 34.6
  },
  {
   "class": "Lancer",
   "rank": 4,
   "monster": "Smoke Bomb",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 20.0,
+  "y": 35.0
  },
  {
   "class": "Lancer",
   "rank": 4,
   "monster": "Sundrake",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "Sagolii Desert",
+  "x": 25.0,
+  "y": 38.0
  },
  {
   "class": "Lancer",
   "rank": 4,
   "monster": "Spriggan",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 11.8,
+  "y": 15.8
  },
  {
   "class": "Lancer",
   "rank": 4,
   "monster": "Basalt Golem",
   "zone": "Outer La Noscea",
-  "area": ""
+  "area": "",
+  "x": 15.7,
+  "y": 15.7
  },
  {
   "class": "Lancer",
   "rank": 4,
   "monster": "Ringtail",
   "zone": "Outer La Noscea",
-  "area": ""
+  "area": "",
+  "x": 15.0,
+  "y": 12.5
  },
  {
   "class": "Lancer",
   "rank": 4,
   "monster": "Ornery Karakul",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 26.5,
+  "y": 20.1
  },
  {
   "class": "Lancer",
   "rank": 4,
   "monster": "Lesser Kalong",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 23.0,
+  "y": 25.0
  },
  {
   "class": "Lancer",
   "rank": 4,
   "monster": "Snow Wolf Pup",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Dragonhead",
+  "x": 22.0,
+  "y": 27.0
  },
  {
   "class": "Lancer",
   "rank": 4,
   "monster": "Dryad",
   "zone": "North Shroud",
-  "area": ""
+  "area": "Proud Creek",
+  "x": 22.0,
+  "y": 23.0
  },
  {
   "class": "Lancer",
   "rank": 4,
   "monster": "Bateleur",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 18.5,
+  "y": 17.5
  },
  {
   "class": "Lancer",
   "rank": 4,
   "monster": "Downy Aevis",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 26.9,
+  "y": 10.2
  },
  {
   "class": "Lancer",
   "rank": 4,
   "monster": "Mirrorknight",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 31.2,
+  "y": 23.6
  },
  {
   "class": "Lancer",
   "rank": 5,
   "monster": "Dragonfly",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 9.0,
+  "y": 14.0
  },
  {
   "class": "Lancer",
   "rank": 5,
   "monster": "Baritine Croc",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 4.9,
+  "y": 22.0
  },
  {
   "class": "Lancer",
   "rank": 5,
   "monster": "Dead Man's Moan",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "The Isles of Umbra",
+  "x": 14.5,
+  "y": 35.9
  },
  {
   "class": "Lancer",
   "rank": 5,
   "monster": "3rd Cohort Signifer",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 32.0,
+  "y": 20.0
  },
  {
   "class": "Lancer",
   "rank": 5,
   "monster": "Morbol",
   "zone": "East Shroud",
-  "area": ""
+  "area": "Larkscall",
+  "x": 22.9,
+  "y": 20.5
  },
  {
   "class": "Lancer",
   "rank": 5,
   "monster": "Wild Hog",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Urth's Gift",
+  "x": 29.5,
+  "y": 23.6
  },
  {
   "class": "Lancer",
   "rank": 5,
   "monster": "Daring Harrier",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "",
+  "x": 16.0,
+  "y": 15.0
  },
  {
   "class": "Lancer",
   "rank": 5,
   "monster": "Lake Cobra",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "North Silvertear",
+  "x": 25.1,
+  "y": 9.5
  },
  {
   "class": "Lancer",
   "rank": 5,
   "monster": "Snow Wolf",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Boulder Downs",
+  "x": 16.4,
+  "y": 33.9
  },
  {
   "class": "Lancer",
   "rank": 5,
   "monster": "Sea Wasp",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "",
+  "x": 13.6,
+  "y": 17.4
  },
  {
   "class": "Lancer",
   "rank": 5,
   "monster": "5th Cohort Vanguard",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "",
+  "x": 9.1,
+  "y": 13.0
  },
  {
   "class": "Lancer",
   "rank": 5,
   "monster": "Natalan Watchwolf",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Natalan",
+  "x": 33.0,
+  "y": 20.8
  },
  {
   "class": "Lancer",
   "rank": 5,
   "monster": "Sylphlands Sentinel",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 24.0,
+  "y": 11.0
  },
  {
   "class": "Lancer",
   "rank": 5,
   "monster": "Basilisk",
   "zone": "Northern Thanalan",
-  "area": ""
+  "area": "Bluefog",
+  "x": 20.0,
+  "y": 26.0
  },
  {
   "class": "Lancer",
   "rank": 5,
   "monster": "2nd Cohort Eques",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 26.0,
+  "y": 20.0
  },
  {
   "class": "Marauder",
   "rank": 1,
   "monster": "Little Ladybug",
   "zone": "Middle La Noscea",
-  "area": "Zephyr Drift"
+  "area": "Zephyr Drift",
+  "x": 24.0,
+  "y": 26.0
  },
  {
   "class": "Marauder",
   "rank": 1,
   "monster": "Wharf Rat",
   "zone": "Middle La Noscea",
-  "area": "Zephyr Drift"
+  "area": "Zephyr Drift",
+  "x": 24.0,
+  "y": 23.0
  },
  {
   "class": "Marauder",
   "rank": 1,
   "monster": "Aurelia",
   "zone": "Lower La Noscea",
-  "area": "Moraby Bay"
+  "area": "Moraby Bay",
+  "x": 25.0,
+  "y": 25.0
  },
  {
   "class": "Marauder",
   "rank": 1,
   "monster": "Bee Cloud",
   "zone": "Middle La Noscea",
-  "area": "Summerford"
+  "area": "Summerford",
+  "x": 17.2,
+  "y": 18.4
  },
  {
   "class": "Marauder",
   "rank": 1,
   "monster": "Wild Dodo",
   "zone": "Lower La Noscea",
-  "area": "Cedarwood"
+  "area": "Cedarwood",
+  "x": 29.0,
+  "y": 20.5
  },
  {
   "class": "Marauder",
   "rank": 1,
   "monster": "Tiny Mandragora",
   "zone": "Middle La Noscea",
-  "area": "Summerford"
+  "area": "Summerford",
+  "x": 23.0,
+  "y": 18.0
  },
  {
   "class": "Marauder",
   "rank": 1,
   "monster": "Bogy",
   "zone": "Middle La Noscea",
-  "area": "Summerford"
+  "area": "Summerford",
+  "x": 20.0,
+  "y": 19.0
  },
  {
   "class": "Marauder",
   "rank": 1,
   "monster": "Wounded Aurochs",
   "zone": "Middle La Noscea",
-  "area": "Summerford"
+  "area": "Summerford",
+  "x": 18.0,
+  "y": 17.0
  },
  {
   "class": "Marauder",
   "rank": 1,
   "monster": "Grounded Raider",
   "zone": "Middle La Noscea",
-  "area": "Summerford"
+  "area": "Summerford",
+  "x": 20.2,
+  "y": 16.9
  },
  {
   "class": "Marauder",
   "rank": 1,
   "monster": "Megalocrab",
   "zone": "Middle La Noscea",
-  "area": "Three-malm Bend"
+  "area": "Three-malm Bend",
+  "x": 17.0,
+  "y": 14.5
  },
  {
   "class": "Marauder",
   "rank": 2,
   "monster": "Firefly",
   "zone": "Lower La Noscea",
-  "area": ""
+  "area": "",
+  "x": 26.0,
+  "y": 37.0
  },
  {
   "class": "Marauder",
   "rank": 2,
   "monster": "Mossless Goobbue",
   "zone": "Lower La Noscea",
-  "area": ""
+  "area": "",
+  "x": 25.0,
+  "y": 26.0
  },
  {
   "class": "Marauder",
   "rank": 2,
   "monster": "Fat Dodo",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "Quarterstone",
+  "x": 33.0,
+  "y": 28.0
  },
  {
   "class": "Marauder",
   "rank": 2,
   "monster": "Moraby Mole",
   "zone": "Lower La Noscea",
-  "area": ""
+  "area": "",
+  "x": 20.3,
+  "y": 34.7
  },
  {
   "class": "Marauder",
   "rank": 2,
   "monster": "Qiqirn Eggdigger",
   "zone": "Lower La Noscea",
-  "area": ""
+  "area": "The Gods' Grip",
+  "x": 18.0,
+  "y": 35.0
  },
  {
   "class": "Marauder",
   "rank": 2,
   "monster": "Rhotano Buccaneer",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "",
+  "x": 33.0,
+  "y": 27.0
  },
  {
   "class": "Marauder",
   "rank": 2,
   "monster": "Dusk Bat",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "Skull Valley",
+  "x": 21.5,
+  "y": 22.5
  },
  {
   "class": "Marauder",
   "rank": 2,
   "monster": "Puk Hatchling",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "Skull Valley",
+  "x": 28.0,
+  "y": 25.0
  },
  {
   "class": "Marauder",
   "rank": 2,
   "monster": "Hedgemole",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "Skull Valley",
+  "x": 25.8,
+  "y": 23.5
  },
  {
   "class": "Marauder",
   "rank": 2,
   "monster": "Rothlyt Pelican",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "Skull Valley",
+  "x": 23.1,
+  "y": 24.0
  },
  {
   "class": "Marauder",
   "rank": 2,
   "monster": "Killer Mantis",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "Skull Valley",
+  "x": 22.0,
+  "y": 23.0
  },
  {
   "class": "Marauder",
   "rank": 2,
   "monster": "Wild Wolf",
   "zone": "Upper La Noscea",
-  "area": ""
+  "area": "",
+  "x": 13.0,
+  "y": 25.0
  },
  {
   "class": "Marauder",
   "rank": 3,
   "monster": "Stoneshell",
   "zone": "Upper La Noscea",
-  "area": ""
+  "area": "Oakwood",
+  "x": 13.0,
+  "y": 24.0
  },
  {
   "class": "Marauder",
   "rank": 3,
   "monster": "Diseased Treant",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 18.0,
+  "y": 25.0
  },
  {
   "class": "Marauder",
   "rank": 3,
   "monster": "Yarzon Scavenger",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "Cape Westwind",
+  "x": 14.0,
+  "y": 9.0
  },
  {
   "class": "Marauder",
   "rank": 3,
   "monster": "Yarzon Scavenger",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 21.0,
+  "y": 30.0
  },
  {
   "class": "Marauder",
   "rank": 3,
   "monster": "Redbelly Larcener",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 15.0,
+  "y": 23.0
  },
  {
   "class": "Marauder",
   "rank": 3,
   "monster": "Shroud Hare",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 17.0,
+  "y": 27.0
  },
  {
   "class": "Marauder",
   "rank": 3,
   "monster": "Sabotender",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "Broken Water",
+  "x": 13.4,
+  "y": 13.8
  },
  {
   "class": "Marauder",
   "rank": 3,
   "monster": "Balloon",
   "zone": "North Shroud",
-  "area": ""
+  "area": "Alder Springs",
+  "x": 15.5,
+  "y": 27.5
  },
  {
   "class": "Marauder",
   "rank": 3,
   "monster": "Phurble",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "Wellwick Wood",
+  "x": 23.0,
+  "y": 20.0
  },
  {
   "class": "Marauder",
   "rank": 3,
   "monster": "Sandskin Peiste",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 15.0,
+  "y": 13.0
  },
  {
   "class": "Marauder",
   "rank": 3,
   "monster": "Axe Beak",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "Wellwick Wood",
+  "x": 23.7,
+  "y": 18.6
  },
  {
   "class": "Marauder",
   "rank": 3,
   "monster": "Toadstool",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 15.4,
+  "y": 18.3
  },
  {
   "class": "Marauder",
   "rank": 3,
   "monster": "Floating Eye",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "Sorrel Haven",
+  "x": 11.0,
+  "y": 22.0
  },
  {
   "class": "Marauder",
   "rank": 4,
   "monster": "Stroper",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 16.0,
+  "y": 29.0
  },
  {
   "class": "Marauder",
   "rank": 4,
   "monster": "Stroper",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "Sorrel Haven",
+  "x": 13.6,
+  "y": 22.5
  },
  {
   "class": "Marauder",
   "rank": 4,
   "monster": "Adamantoise",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Lower Paths",
+  "x": 20.0,
+  "y": 27.0
  },
  {
   "class": "Marauder",
   "rank": 4,
   "monster": "Smoke Bomb",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 20.0,
+  "y": 35.0
  },
  {
   "class": "Marauder",
   "rank": 4,
   "monster": "Grass Raptor",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "Raincatcher Gully",
+  "x": 16.0,
+  "y": 25.0
  },
  {
   "class": "Marauder",
   "rank": 4,
   "monster": "Snipper",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 30.7,
+  "y": 35.3
  },
  {
   "class": "Marauder",
   "rank": 4,
   "monster": "Bloodshore Bell",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 31.0,
+  "y": 26.5
  },
  {
   "class": "Marauder",
   "rank": 4,
   "monster": "Jungle Coeurl",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 18.4,
+  "y": 28.1
  },
  {
   "class": "Marauder",
   "rank": 4,
   "monster": "Snow Wolf Pup",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Dragonhead",
+  "x": 22.0,
+  "y": 27.0
  },
  {
   "class": "Marauder",
   "rank": 4,
   "monster": "Redhorn Ogre",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 25.0,
+  "y": 12.3
  },
  {
   "class": "Marauder",
   "rank": 4,
   "monster": "Ornery Karakul",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 26.5,
+  "y": 20.1
  },
  {
   "class": "Marauder",
   "rank": 4,
   "monster": "Highland Goobbue",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 24.0,
+  "y": 20.0
  },
  {
   "class": "Marauder",
   "rank": 4,
   "monster": "Downy Aevis",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 26.9,
+  "y": 10.2
  },
  {
   "class": "Marauder",
   "rank": 4,
   "monster": "Snowstorm Goobbue",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 19.7,
+  "y": 18.2
  },
  {
   "class": "Marauder",
   "rank": 4,
   "monster": "Grenade",
   "zone": "Outer La Noscea",
-  "area": ""
+  "area": "Iron Lake",
+  "x": 21.4,
+  "y": 14.6
  },
  {
   "class": "Marauder",
   "rank": 5,
   "monster": "Molted Ziz",
   "zone": "East Shroud",
-  "area": "Larkscall"
+  "area": "Larkscall",
+  "x": 25.3,
+  "y": 23.9
  },
  {
   "class": "Marauder",
   "rank": 5,
   "monster": "Quartz Doblyn",
   "zone": "Eastern Thanalan",
-  "area": "The Burning Wall"
+  "area": "The Burning Wall",
+  "x": 27.3,
+  "y": 26.0
  },
  {
   "class": "Marauder",
   "rank": 5,
   "monster": "Dead Man's Moan",
   "zone": "Western La Noscea",
-  "area": "The Isles of Umbra"
+  "area": "The Isles of Umbra",
+  "x": 14.5,
+  "y": 35.9
  },
  {
   "class": "Marauder",
   "rank": 5,
   "monster": "Morbol",
   "zone": "East Shroud",
-  "area": "Larkscall"
+  "area": "Larkscall",
+  "x": 22.9,
+  "y": 20.5
  },
  {
   "class": "Marauder",
   "rank": 5,
   "monster": "Crater Golem",
   "zone": "Central Shroud",
-  "area": "The Standing Corses"
+  "area": "The Standing Corses",
+  "x": 10.0,
+  "y": 17.8
  },
  {
   "class": "Marauder",
   "rank": 5,
   "monster": "Wild Hog",
   "zone": "South Shroud",
-  "area": "Urth's Gift"
+  "area": "Urth's Gift",
+  "x": 29.5,
+  "y": 23.6
  },
  {
   "class": "Marauder",
   "rank": 5,
   "monster": "Biast",
   "zone": "Coerthas Central Highlands",
-  "area": "Boulder Downs"
+  "area": "Boulder Downs",
+  "x": 11.8,
+  "y": 29.0
  },
  {
   "class": "Marauder",
   "rank": 5,
   "monster": "5th Cohort Signifer",
   "zone": "Mor Dhona",
-  "area": "Fogfens"
+  "area": "Fogfens",
+  "x": 10.0,
+  "y": 14.0
  },
  {
   "class": "Marauder",
   "rank": 5,
   "monster": "Synthetic Doblyn",
   "zone": "Outer La Noscea",
-  "area": "U'Ghamaro Mines"
+  "area": "U'Ghamaro Mines",
+  "x": 21.8,
+  "y": 6.0
  },
  {
   "class": "Marauder",
   "rank": 5,
   "monster": "Watchwolf",
   "zone": "North Shroud",
-  "area": "Proud Creek"
+  "area": "Proud Creek",
+  "x": 21.0,
+  "y": 20.0
  },
  {
   "class": "Marauder",
   "rank": 5,
   "monster": "Iron Tortoise",
   "zone": "Southern Thanalan",
-  "area": "Zanr'ak"
+  "area": "Zanr'ak",
+  "x": 16.0,
+  "y": 24.0
  },
  {
   "class": "Marauder",
   "rank": 5,
   "monster": "Milkroot Cluster",
   "zone": "East Shroud",
-  "area": "Sylphlands"
+  "area": "Sylphlands",
+  "x": 24.2,
+  "y": 16.8
  },
  {
   "class": "Marauder",
   "rank": 5,
   "monster": "4th Cohort Secutor",
   "zone": "Western Thanalan",
-  "area": "Cape Westwind"
+  "area": "Cape Westwind",
+  "x": 11.0,
+  "y": 6.0
  },
  {
   "class": "Marauder",
   "rank": 5,
   "monster": "2nd Cohort Laquearius",
   "zone": "Eastern La Noscea",
-  "area": "Agelyss Wise"
+  "area": "Agelyss Wise",
+  "x": 25.0,
+  "y": 21.0
  },
  {
   "class": "Pugilist",
   "rank": 1,
   "monster": "Huge Hornet",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "",
+  "x": 18.3,
+  "y": 26.5
  },
  {
   "class": "Pugilist",
   "rank": 1,
   "monster": "Star Marmot",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "Spineless Basin",
+  "x": 18.6,
+  "y": 26.8
  },
  {
   "class": "Pugilist",
   "rank": 1,
   "monster": "Cactuar",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "The Eighty Sins of Sasamo",
+  "x": 23.0,
+  "y": 25.0
  },
  {
   "class": "Pugilist",
   "rank": 1,
   "monster": "Snapping Shrew",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "Spineless Basin",
+  "x": 21.9,
+  "y": 25.7
  },
  {
   "class": "Pugilist",
   "rank": 1,
   "monster": "Orobon",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "",
+  "x": 21.4,
+  "y": 24.4
  },
  {
   "class": "Pugilist",
   "rank": 1,
   "monster": "Nesting Buzzard",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "",
+  "x": 21.0,
+  "y": 25.0
  },
  {
   "class": "Pugilist",
   "rank": 1,
   "monster": "Spriggan Graverobber",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "Black Brush",
+  "x": 17.0,
+  "y": 23.0
  },
  {
   "class": "Pugilist",
   "rank": 1,
   "monster": "Goblin Mugger",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "",
+  "x": 19.0,
+  "y": 26.0
  },
  {
   "class": "Pugilist",
   "rank": 1,
   "monster": "Sandtoad",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "",
+  "x": 20.9,
+  "y": 23.5
  },
  {
   "class": "Pugilist",
   "rank": 1,
   "monster": "Eft",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "",
+  "x": 21.0,
+  "y": 23.0
  },
  {
   "class": "Pugilist",
   "rank": 1,
   "monster": "Sun Midge Swarm",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "",
+  "x": 15.5,
+  "y": 15.0
  },
  {
   "class": "Pugilist",
   "rank": 1,
   "monster": "Desert Peiste",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "",
+  "x": 23.0,
+  "y": 20.0
  },
  {
   "class": "Pugilist",
   "rank": 2,
   "monster": "Bomb",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "Horizon's Edge",
+  "x": 27.4,
+  "y": 16.9
  },
  {
   "class": "Pugilist",
   "rank": 2,
   "monster": "Cochineal Cactuar",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "The Clutch",
+  "x": 24.0,
+  "y": 20.0
  },
  {
   "class": "Pugilist",
   "rank": 2,
   "monster": "Antling Sentry",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "",
+  "x": 16.0,
+  "y": 14.0
  },
  {
   "class": "Pugilist",
   "rank": 2,
   "monster": "Giant Tortoise",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "",
+  "x": 26.0,
+  "y": 24.0
  },
  {
   "class": "Pugilist",
   "rank": 2,
   "monster": "Arbor Buzzard",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "",
+  "x": 17.0,
+  "y": 16.0
  },
  {
   "class": "Pugilist",
   "rank": 2,
   "monster": "Scaphite",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "The Footfalls",
+  "x": 17.0,
+  "y": 14.0
  },
  {
   "class": "Pugilist",
   "rank": 2,
   "monster": "Thickshell",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "The Footfalls",
+  "x": 15.0,
+  "y": 15.0
  },
  {
   "class": "Pugilist",
   "rank": 2,
   "monster": "Tuco-tuco",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "Drybone",
+  "x": 10.8,
+  "y": 18.2
  },
  {
   "class": "Pugilist",
   "rank": 2,
   "monster": "Myotragus Nanny",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 18.0,
+  "y": 22.0
  },
  {
   "class": "Pugilist",
   "rank": 2,
   "monster": "Blowfly Swarm",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 10.4,
+  "y": 23.1
  },
  {
   "class": "Pugilist",
   "rank": 2,
   "monster": "Vandalous Imp",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "Drybone",
+  "x": 14.4,
+  "y": 18.7
  },
  {
   "class": "Pugilist",
   "rank": 2,
   "monster": "Bloated Bogy",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "The Footfalls",
+  "x": 13.0,
+  "y": 11.0
  },
  {
   "class": "Pugilist",
   "rank": 2,
   "monster": "Rotting Corpse",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 14.0,
+  "y": 16.0
  },
  {
   "class": "Pugilist",
   "rank": 2,
   "monster": "Rotting Noble",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "Drybone",
+  "x": 14.0,
+  "y": 17.0
  },
  {
   "class": "Pugilist",
   "rank": 3,
   "monster": "Overgrown Ivy",
   "zone": "East Shroud",
-  "area": ""
+  "area": "Nine Ivies",
+  "x": 20.0,
+  "y": 29.0
  },
  {
   "class": "Pugilist",
   "rank": 3,
   "monster": "Smallmouth Orobon",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 15.3,
+  "y": 18.7
  },
  {
   "class": "Pugilist",
   "rank": 3,
   "monster": "Forest Yarzon",
   "zone": "Upper La Noscea",
-  "area": ""
+  "area": "Oakwood",
+  "x": 11.1,
+  "y": 21.2
  },
  {
   "class": "Pugilist",
   "rank": 3,
   "monster": "Coeurl Pup",
   "zone": "Upper La Noscea",
-  "area": ""
+  "area": "Oakwood",
+  "x": 9.5,
+  "y": 21.6
  },
  {
   "class": "Pugilist",
   "rank": 3,
   "monster": "Shroud Hare",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 17.0,
+  "y": 27.0
  },
  {
   "class": "Pugilist",
   "rank": 3,
   "monster": "Bark Eft",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Upper Paths",
+  "x": 17.8,
+  "y": 24.3
  },
  {
   "class": "Pugilist",
   "rank": 3,
   "monster": "Fallen Mage",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 19.4,
+  "y": 16.6
  },
  {
   "class": "Pugilist",
   "rank": 3,
   "monster": "Ziz",
   "zone": "North Shroud",
-  "area": ""
+  "area": "",
+  "x": 18.0,
+  "y": 26.0
  },
  {
   "class": "Pugilist",
   "rank": 3,
   "monster": "Corpse Brigade Knuckledancer",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "Broken Water",
+  "x": 24.0,
+  "y": 10.0
  },
  {
   "class": "Pugilist",
   "rank": 3,
   "monster": "Clay Golem",
   "zone": "North Shroud",
-  "area": ""
+  "area": "Alder Springs",
+  "x": 16.5,
+  "y": 29.4
  },
  {
   "class": "Pugilist",
   "rank": 3,
   "monster": "Coeurlclaw Hunter",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 15.0,
+  "y": 17.0
  },
  {
   "class": "Pugilist",
   "rank": 3,
   "monster": "Lindwurm",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "Sorrel Haven",
+  "x": 13.0,
+  "y": 20.0
  },
  {
   "class": "Pugilist",
   "rank": 3,
   "monster": "Bigmouth Orobon",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 17.4,
+  "y": 30.9
  },
  {
   "class": "Pugilist",
   "rank": 3,
   "monster": "Apkallu",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "Bloodshore",
+  "x": 27.2,
+  "y": 36.4
  },
  {
   "class": "Pugilist",
   "rank": 4,
   "monster": "Mamool Ja Breeder",
   "zone": "Upper La Noscea",
-  "area": ""
+  "area": "",
+  "x": 35.0,
+  "y": 24.0
  },
  {
   "class": "Pugilist",
   "rank": 4,
   "monster": "Russet Yarzon",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 13.0,
+  "y": 32.0
  },
  {
   "class": "Pugilist",
   "rank": 4,
   "monster": "Smoke Bomb",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 20.0,
+  "y": 35.0
  },
  {
   "class": "Pugilist",
   "rank": 4,
   "monster": "Deathgaze",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "Sorrel Haven",
+  "x": 17.0,
+  "y": 22.0
  },
  {
   "class": "Pugilist",
   "rank": 4,
   "monster": "Jungle Coeurl",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 18.4,
+  "y": 28.1
  },
  {
   "class": "Pugilist",
   "rank": 4,
   "monster": "Goobbue",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 16.0,
+  "y": 28.1
  },
  {
   "class": "Pugilist",
   "rank": 4,
   "monster": "Basalt Golem",
   "zone": "Outer La Noscea",
-  "area": ""
+  "area": "",
+  "x": 15.7,
+  "y": 15.7
  },
  {
   "class": "Pugilist",
   "rank": 4,
   "monster": "Velociraptor",
   "zone": "Outer La Noscea",
-  "area": ""
+  "area": "The Long Climb",
+  "x": 18.6,
+  "y": 15.2
  },
  {
   "class": "Pugilist",
   "rank": 4,
   "monster": "Highland Goobbue",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 24.0,
+  "y": 20.0
  },
  {
   "class": "Pugilist",
   "rank": 4,
   "monster": "Feral Croc",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Dragonhead",
+  "x": 27.0,
+  "y": 24.0
  },
  {
   "class": "Pugilist",
   "rank": 4,
   "monster": "Redhorn Ogre",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 25.0,
+  "y": 12.3
  },
  {
   "class": "Pugilist",
   "rank": 4,
   "monster": "Ochu",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 13.0,
+  "y": 25.0
  },
  {
   "class": "Pugilist",
   "rank": 4,
   "monster": "Molted Ziz",
   "zone": "East Shroud",
-  "area": ""
+  "area": "Larkscall",
+  "x": 25.3,
+  "y": 23.9
  },
  {
   "class": "Pugilist",
   "rank": 4,
   "monster": "Snowstorm Goobbue",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 19.7,
+  "y": 18.2
  },
  {
   "class": "Pugilist",
   "rank": 5,
   "monster": "Quartz Doblyn",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "The Burning Wall",
+  "x": 27.3,
+  "y": 26.0
  },
  {
   "class": "Pugilist",
   "rank": 5,
   "monster": "Dead Man's Moan",
   "zone": "Western La Noscea",
-  "area": "The Isles of Umbra"
+  "area": "The Isles of Umbra",
+  "x": 14.5,
+  "y": 35.9
  },
  {
   "class": "Pugilist",
   "rank": 5,
   "monster": "3rd Cohort Signifer",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 32.0,
+  "y": 20.0
  },
  {
   "class": "Pugilist",
   "rank": 5,
   "monster": "Wild Hog",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Urth's Gift",
+  "x": 29.5,
+  "y": 23.6
  },
  {
   "class": "Pugilist",
   "rank": 5,
   "monster": "Raging Harrier",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "",
+  "x": 17.0,
+  "y": 15.0
  },
  {
   "class": "Pugilist",
   "rank": 5,
   "monster": "Biast",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Boulder Downs",
+  "x": 11.8,
+  "y": 29.0
  },
  {
   "class": "Pugilist",
   "rank": 5,
   "monster": "Gigas Shramana",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "",
+  "x": 28.2,
+  "y": 11.8
  },
  {
   "class": "Pugilist",
   "rank": 5,
   "monster": "Snow Wolf",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Boulder Downs",
+  "x": 16.4,
+  "y": 33.9
  },
  {
   "class": "Pugilist",
   "rank": 5,
   "monster": "5th Cohort Hoplomachus",
   "zone": "Mor Dhona",
-  "area": "Fogfens"
+  "area": "Fogfens",
+  "x": 12.0,
+  "y": 12.0
  },
  {
   "class": "Pugilist",
   "rank": 5,
   "monster": "Dreamtoad",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 28.0,
+  "y": 17.0
  },
  {
   "class": "Pugilist",
   "rank": 5,
   "monster": "Hapalit",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "",
+  "x": 30.0,
+  "y": 6.0
  },
  {
   "class": "Pugilist",
   "rank": 5,
   "monster": "Zahar'ak Battle Drake",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "Zahar'ak",
+  "x": 29.5,
+  "y": 19.7
  },
  {
   "class": "Pugilist",
   "rank": 5,
   "monster": "Basilisk",
   "zone": "Northern Thanalan",
-  "area": ""
+  "area": "Bluefog",
+  "x": 20.0,
+  "y": 26.0
  },
  {
   "class": "Pugilist",
   "rank": 5,
   "monster": "Shelfclaw Reaver",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "",
+  "x": 13.0,
+  "y": 17.0
  },
  {
   "class": "Rogue",
   "rank": 1,
   "monster": "Wharf Rat",
   "zone": "Middle La Noscea",
-  "area": ""
+  "area": "Zephyr Drift",
+  "x": 24.0,
+  "y": 23.0
  },
  {
   "class": "Rogue",
   "rank": 1,
   "monster": "Lost Lamb",
   "zone": "Middle La Noscea",
-  "area": "Zephyr Drift"
+  "area": "Zephyr Drift",
+  "x": 22.2,
+  "y": 25.6
  },
  {
   "class": "Rogue",
   "rank": 1,
   "monster": "Aurelia",
   "zone": "Lower La Noscea",
-  "area": ""
+  "area": "Moraby Bay",
+  "x": 25.0,
+  "y": 25.0
  },
  {
   "class": "Rogue",
   "rank": 1,
   "monster": "Wild Dodo",
   "zone": "Lower La Noscea",
-  "area": ""
+  "area": "Cedarwood",
+  "x": 29.0,
+  "y": 20.5
  },
  {
   "class": "Rogue",
   "rank": 1,
   "monster": "Pugil",
   "zone": "Middle La Noscea",
-  "area": "Summerford"
+  "area": "Summerford",
+  "x": 21.7,
+  "y": 22.3
  },
  {
   "class": "Rogue",
   "rank": 1,
   "monster": "Goblin Fisher",
   "zone": "Middle La Noscea",
-  "area": "Summerford"
+  "area": "Summerford",
+  "x": 23.0,
+  "y": 21.0
  },
  {
   "class": "Rogue",
   "rank": 1,
   "monster": "Tiny Mandragora",
   "zone": "Middle La Noscea",
-  "area": ""
+  "area": "Summerford",
+  "x": 23.0,
+  "y": 18.0
  },
  {
   "class": "Rogue",
   "rank": 1,
   "monster": "Tiny Mandragora",
   "zone": "Lower La Noscea",
-  "area": ""
+  "area": "",
+  "x": 30.0,
+  "y": 19.0
  },
  {
   "class": "Rogue",
   "rank": 1,
   "monster": "Cave Bat",
   "zone": "Lower La Noscea",
-  "area": "Cedarwood"
+  "area": "Cedarwood",
+  "x": 27.0,
+  "y": 15.9
  },
  {
   "class": "Rogue",
   "rank": 1,
   "monster": "Galago",
   "zone": "Lower La Noscea",
-  "area": "Cedarwood"
+  "area": "Cedarwood",
+  "x": 29.3,
+  "y": 14.9
  },
  {
   "class": "Rogue",
   "rank": 1,
   "monster": "Grounded Pirate",
   "zone": "Middle La Noscea",
-  "area": "Summerford"
+  "area": "Summerford",
+  "x": 20.0,
+  "y": 17.0
  },
  {
   "class": "Rogue",
   "rank": 1,
   "monster": "Grounded Raider",
   "zone": "Middle La Noscea",
-  "area": "Summerford"
+  "area": "Summerford",
+  "x": 20.2,
+  "y": 16.9
  },
  {
   "class": "Rogue",
   "rank": 1,
   "monster": "Megalocrab",
   "zone": "Middle La Noscea",
-  "area": ""
+  "area": "Three-malm Bend",
+  "x": 17.0,
+  "y": 14.5
  },
  {
   "class": "Rogue",
   "rank": 2,
   "monster": "Wild Jackal",
   "zone": "Lower La Noscea",
-  "area": ""
+  "area": "",
+  "x": 21.0,
+  "y": 33.0
  },
  {
   "class": "Rogue",
   "rank": 2,
   "monster": "Roseling",
   "zone": "Western La Noscea",
-  "area": "Quarterstone"
+  "area": "Quarterstone",
+  "x": 34.8,
+  "y": 30.0
  },
  {
   "class": "Rogue",
   "rank": 2,
   "monster": "Sewer Mole",
   "zone": "Western La Noscea",
-  "area": "Quarterstone"
+  "area": "Quarterstone",
+  "x": 33.2,
+  "y": 28.4
  },
  {
   "class": "Rogue",
   "rank": 2,
   "monster": "Fat Dodo",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "Quarterstone",
+  "x": 33.0,
+  "y": 28.0
  },
  {
   "class": "Rogue",
   "rank": 2,
   "monster": "Moraby Mole",
   "zone": "Lower La Noscea",
-  "area": ""
+  "area": "",
+  "x": 20.3,
+  "y": 34.7
  },
  {
   "class": "Rogue",
   "rank": 2,
   "monster": "Qiqirn Eggdigger",
   "zone": "Lower La Noscea",
-  "area": ""
+  "area": "The Gods' Grip",
+  "x": 18.0,
+  "y": 35.0
  },
  {
   "class": "Rogue",
   "rank": 2,
   "monster": "Puk Hatchling",
   "zone": "Western La Noscea",
-  "area": "Skull Valley"
+  "area": "Skull Valley",
+  "x": 28.0,
+  "y": 25.0
  },
  {
   "class": "Rogue",
   "rank": 2,
   "monster": "Rothlyt Pelican",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "Skull Valley",
+  "x": 23.1,
+  "y": 24.0
  },
  {
   "class": "Rogue",
   "rank": 2,
   "monster": "Killer Mantis",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "Skull Valley",
+  "x": 22.0,
+  "y": 23.0
  },
  {
   "class": "Rogue",
   "rank": 2,
   "monster": "Hedgemole",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "Skull Valley",
+  "x": 25.8,
+  "y": 23.5
  },
  {
   "class": "Rogue",
   "rank": 2,
   "monster": "Wild Wolf",
   "zone": "Upper La Noscea",
-  "area": ""
+  "area": "",
+  "x": 13.0,
+  "y": 25.0
  },
  {
   "class": "Rogue",
   "rank": 2,
   "monster": "Bumble Beetle",
   "zone": "Upper La Noscea",
-  "area": "Poor Maid's Mill"
+  "area": "Poor Maid's Mill",
+  "x": 12.5,
+  "y": 26.5
  },
  {
   "class": "Rogue",
   "rank": 3,
   "monster": "Black Bat",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 14.7,
+  "y": 22.5
  },
  {
   "class": "Rogue",
   "rank": 3,
   "monster": "Gall Gnat",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 23.0,
+  "y": 30.0
  },
  {
   "class": "Rogue",
   "rank": 3,
   "monster": "Overgrown Ivy",
   "zone": "East Shroud",
-  "area": ""
+  "area": "Nine Ivies",
+  "x": 20.0,
+  "y": 29.0
  },
  {
   "class": "Rogue",
   "rank": 3,
   "monster": "Bark Eft",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Upper Paths",
+  "x": 17.8,
+  "y": 24.3
  },
  {
   "class": "Rogue",
   "rank": 3,
   "monster": "Redbelly Lookout",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 15.4,
+  "y": 23.0
  },
  {
   "class": "Rogue",
   "rank": 3,
   "monster": "Redbelly Larcener",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 15.0,
+  "y": 23.0
  },
  {
   "class": "Rogue",
   "rank": 3,
   "monster": "Antelope Stag",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Silent Arbor",
+  "x": 23.7,
+  "y": 20.2
  },
  {
   "class": "Rogue",
   "rank": 3,
   "monster": "River Yarzon",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Silent Arbor",
+  "x": 22.2,
+  "y": 22.9
  },
  {
   "class": "Rogue",
   "rank": 3,
   "monster": "Corpse Brigade Knuckledancer",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "Broken Water",
+  "x": 24.0,
+  "y": 10.0
  },
  {
   "class": "Rogue",
   "rank": 3,
   "monster": "Corpse Brigade Firedancer",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 23.0,
+  "y": 8.0
  },
  {
   "class": "Rogue",
   "rank": 3,
   "monster": "Coeurlclaw Hunter",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 15.0,
+  "y": 17.0
  },
  {
   "class": "Rogue",
   "rank": 3,
   "monster": "Coeurlclaw Cutter",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Silent Arbor",
+  "x": 26.0,
+  "y": 21.0
  },
  {
   "class": "Rogue",
   "rank": 3,
   "monster": "Sandstone Golem",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "Broken Water",
+  "x": 22.1,
+  "y": 11.7
  },
  {
   "class": "Rogue",
   "rank": 4,
   "monster": "Large Buffalo",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 27.1,
+  "y": 34.6
  },
  {
   "class": "Rogue",
   "rank": 4,
   "monster": "Grass Raptor",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "Raincatcher Gully",
+  "x": 16.0,
+  "y": 25.0
  },
  {
   "class": "Rogue",
   "rank": 4,
   "monster": "Qiqirn Gullroaster",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "Bloodshore",
+  "x": 26.0,
+  "y": 32.0
  },
  {
   "class": "Rogue",
   "rank": 4,
   "monster": "Colibri",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "Bloodshore",
+  "x": 30.0,
+  "y": 25.0
  },
  {
   "class": "Rogue",
   "rank": 4,
   "monster": "Coeurl",
   "zone": "Outer La Noscea",
-  "area": ""
+  "area": "The Long Climb",
+  "x": 14.0,
+  "y": 14.0
  },
  {
   "class": "Rogue",
   "rank": 4,
   "monster": "Highland Condor",
   "zone": "Outer La Noscea",
-  "area": ""
+  "area": "",
+  "x": 16.5,
+  "y": 16.5
  },
  {
   "class": "Rogue",
   "rank": 4,
   "monster": "Basalt Golem",
   "zone": "Outer La Noscea",
-  "area": ""
+  "area": "",
+  "x": 15.7,
+  "y": 15.7
  },
  {
   "class": "Rogue",
   "rank": 4,
   "monster": "Velociraptor",
   "zone": "Outer La Noscea",
-  "area": ""
+  "area": "The Long Climb",
+  "x": 18.6,
+  "y": 15.2
  },
  {
   "class": "Rogue",
   "rank": 4,
   "monster": "Feral Croc",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Dragonhead",
+  "x": 27.0,
+  "y": 24.0
  },
  {
   "class": "Rogue",
   "rank": 4,
   "monster": "Highland Goobbue",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 24.0,
+  "y": 20.0
  },
  {
   "class": "Rogue",
   "rank": 4,
   "monster": "Redhorn Ogre",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 25.0,
+  "y": 12.3
  },
  {
   "class": "Rogue",
   "rank": 4,
   "monster": "Taurus",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Providence Point",
+  "x": 32.0,
+  "y": 12.0
  },
  {
   "class": "Rogue",
   "rank": 4,
   "monster": "Bateleur",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 18.5,
+  "y": 17.5
  },
  {
   "class": "Rogue",
   "rank": 4,
   "monster": "Chinchilla",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 16.3,
+  "y": 20.0
  },
  {
   "class": "Rogue",
   "rank": 5,
   "monster": "Golden Fleece",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 30.0,
+  "y": 24.0
  },
  {
   "class": "Rogue",
   "rank": 5,
   "monster": "Quartz Doblyn",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "The Burning Wall",
+  "x": 27.3,
+  "y": 26.0
  },
  {
   "class": "Rogue",
   "rank": 5,
   "monster": "Nix",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "Fogfens",
+  "x": 19.0,
+  "y": 9.0
  },
  {
   "class": "Rogue",
   "rank": 5,
   "monster": "Mudpuppy",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "Fogfens",
+  "x": 12.9,
+  "y": 11.2
  },
  {
   "class": "Rogue",
   "rank": 5,
   "monster": "Mudpuppy",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Boulder Downs",
+  "x": 10.2,
+  "y": 29.4
  },
  {
   "class": "Rogue",
   "rank": 5,
   "monster": "Daring Harrier",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "",
+  "x": 16.0,
+  "y": 15.0
  },
  {
   "class": "Rogue",
   "rank": 5,
   "monster": "Raging Harrier",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "",
+  "x": 17.0,
+  "y": 15.0
  },
  {
   "class": "Rogue",
   "rank": 5,
   "monster": "Gigas Shramana",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "",
+  "x": 28.2,
+  "y": 11.8
  },
  {
   "class": "Rogue",
   "rank": 5,
   "monster": "Gigas Sozu",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "",
+  "x": 29.0,
+  "y": 16.0
  },
  {
   "class": "Rogue",
   "rank": 5,
   "monster": "Hippogryph",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "",
+  "x": 24.6,
+  "y": 9.4
  },
  {
   "class": "Rogue",
   "rank": 5,
   "monster": "Hapalit",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "",
+  "x": 30.0,
+  "y": 6.0
  },
  {
   "class": "Rogue",
   "rank": 5,
   "monster": "2nd Cohort Eques",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 26.0,
+  "y": 20.0
  },
  {
   "class": "Rogue",
   "rank": 5,
   "monster": "2nd Cohort Signifer",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 25.7,
+  "y": 21.1
  },
  {
   "class": "Rogue",
   "rank": 5,
   "monster": "2nd Cohort Secutor",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 26.0,
+  "y": 21.0
  },
  {
   "class": "Rogue",
   "rank": 5,
   "monster": "2nd Cohort Vanguard",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 28.5,
+  "y": 19.6
  },
  {
   "class": "Thaumaturge",
   "rank": 1,
   "monster": "Little Ladybug",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "The Eighty Sins of Sasamo",
+  "x": 29.0,
+  "y": 25.0
  },
  {
   "class": "Thaumaturge",
   "rank": 1,
   "monster": "Huge Hornet",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "",
+  "x": 18.3,
+  "y": 26.5
  },
  {
   "class": "Thaumaturge",
   "rank": 1,
   "monster": "Cactuar",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "The Eighty Sins of Sasamo",
+  "x": 23.0,
+  "y": 25.0
  },
  {
   "class": "Thaumaturge",
   "rank": 1,
   "monster": "Snapping Shrew",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "Spineless Basin",
+  "x": 21.9,
+  "y": 25.7
  },
  {
   "class": "Thaumaturge",
   "rank": 1,
   "monster": "Syrphid Cloud",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "",
+  "x": 19.0,
+  "y": 17.0
  },
  {
   "class": "Thaumaturge",
   "rank": 1,
   "monster": "Yarzon Feeder",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "",
+  "x": 23.0,
+  "y": 26.0
  },
  {
   "class": "Thaumaturge",
   "rank": 1,
   "monster": "Rusty Coblyn",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "",
+  "x": 23.0,
+  "y": 25.0
  },
  {
   "class": "Thaumaturge",
   "rank": 1,
   "monster": "Spriggan Graverobber",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "Black Brush",
+  "x": 17.0,
+  "y": 23.0
  },
  {
   "class": "Thaumaturge",
   "rank": 1,
   "monster": "Qiqirn Shellsweeper",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "Black Brush",
+  "x": 16.0,
+  "y": 19.0
  },
  {
   "class": "Thaumaturge",
   "rank": 1,
   "monster": "Sun Bat",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "",
+  "x": 22.6,
+  "y": 20.0
  },
  {
   "class": "Thaumaturge",
   "rank": 2,
   "monster": "Copper Coblyn",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "Horizon's Edge",
+  "x": 26.7,
+  "y": 17.0
  },
  {
   "class": "Thaumaturge",
   "rank": 2,
   "monster": "Bomb",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "Horizon's Edge",
+  "x": 27.4,
+  "y": 16.9
  },
  {
   "class": "Thaumaturge",
   "rank": 2,
   "monster": "Cochineal Cactuar",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "The Clutch",
+  "x": 24.0,
+  "y": 20.0
  },
  {
   "class": "Thaumaturge",
   "rank": 2,
   "monster": "Quiveron Attendant",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "",
+  "x": 23.0,
+  "y": 20.0
  },
  {
   "class": "Thaumaturge",
   "rank": 2,
   "monster": "Giant Tortoise",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "",
+  "x": 26.0,
+  "y": 24.0
  },
  {
   "class": "Thaumaturge",
   "rank": 2,
   "monster": "Antling Sentry",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "",
+  "x": 16.0,
+  "y": 14.0
  },
  {
   "class": "Thaumaturge",
   "rank": 2,
   "monster": "Thickshell",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "The Footfalls",
+  "x": 15.0,
+  "y": 15.0
  },
  {
   "class": "Thaumaturge",
   "rank": 2,
   "monster": "Toxic Toad",
   "zone": "Central Thanalan",
-  "area": ""
+  "area": "",
+  "x": 26.7,
+  "y": 19.8
  },
  {
   "class": "Thaumaturge",
   "rank": 2,
   "monster": "Tuco-tuco",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "Drybone",
+  "x": 10.8,
+  "y": 18.2
  },
  {
   "class": "Thaumaturge",
   "rank": 2,
   "monster": "Myotragus Nanny",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 18.0,
+  "y": 22.0
  },
  {
   "class": "Thaumaturge",
   "rank": 2,
   "monster": "Blowfly Swarm",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 10.4,
+  "y": 23.1
  },
  {
   "class": "Thaumaturge",
   "rank": 2,
   "monster": "Rotting Corpse",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 14.0,
+  "y": 16.0
  },
  {
   "class": "Thaumaturge",
   "rank": 2,
   "monster": "Bloated Bogy",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "The Footfalls",
+  "x": 13.0,
+  "y": 11.0
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "Kedtrap",
   "zone": "South Shroud",
-  "area": "Upper Paths"
+  "area": "Upper Paths",
+  "x": 22.0,
+  "y": 21.0
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "Overgrown Ivy",
   "zone": "East Shroud",
-  "area": "Nine Ivies"
+  "area": "Nine Ivies",
+  "x": 20.0,
+  "y": 29.0
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "Yarzon Scavenger",
   "zone": "Western Thanalan",
-  "area": "Cape Westwind"
+  "area": "Cape Westwind",
+  "x": 14.0,
+  "y": 9.0
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "Forest Yarzon",
   "zone": "Upper La Noscea",
-  "area": "Oakwood"
+  "area": "Oakwood",
+  "x": 11.1,
+  "y": 21.2
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "Laughing Toad",
   "zone": "Western Thanalan",
-  "area": "The Footfalls"
+  "area": "The Footfalls",
+  "x": 14.0,
+  "y": 6.0
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "Bark Eft",
   "zone": "South Shroud",
-  "area": "Upper Paths"
+  "area": "Upper Paths",
+  "x": 17.8,
+  "y": 24.3
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "Jumping Djigga",
   "zone": "East Shroud",
-  "area": "The Bramble Patch"
+  "area": "The Bramble Patch",
+  "x": 15.7,
+  "y": 20.4
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "Glowfly",
   "zone": "East Shroud",
-  "area": "The Bramble Patch"
+  "area": "The Bramble Patch",
+  "x": 15.0,
+  "y": 21.0
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "River Yarzon",
   "zone": "South Shroud",
-  "area": "Silent Arbor"
+  "area": "Silent Arbor",
+  "x": 22.2,
+  "y": 22.9
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "Potter Wasp Swarm",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 13.7,
+  "y": 13.9
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "Phurble",
   "zone": "Eastern Thanalan",
-  "area": "Wellwick Wood"
+  "area": "Wellwick Wood",
+  "x": 23.0,
+  "y": 20.0
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "Corpse Brigade Knuckledancer",
   "zone": "Southern Thanalan",
-  "area": "Broken Water"
+  "area": "Broken Water",
+  "x": 24.0,
+  "y": 10.0
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "Fire Sprite",
   "zone": "Southern Thanalan",
-  "area": "The Red Labyrinth"
+  "area": "The Red Labyrinth",
+  "x": 14.0,
+  "y": 20.0
  },
  {
   "class": "Thaumaturge",
   "rank": 3,
   "monster": "Stroper",
   "zone": "Central Shroud",
-  "area": "Sorrel Haven"
+  "area": "Sorrel Haven",
+  "x": 13.6,
+  "y": 22.5
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
   "monster": "Adamantoise",
   "zone": "South Shroud",
-  "area": ""
+  "area": "Lower Paths",
+  "x": 20.0,
+  "y": 27.0
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
   "monster": "Mamool Ja Executioner",
   "zone": "Upper La Noscea",
-  "area": ""
+  "area": "",
+  "x": 31.7,
+  "y": 17.1
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
   "monster": "Revenant",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 11.8,
+  "y": 20.2
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
   "monster": "Russet Yarzon",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 13.0,
+  "y": 32.0
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
   "monster": "Smoke Bomb",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 20.0,
+  "y": 35.0
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
   "monster": "Dung Midge Swarm",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 15.2,
+  "y": 30.7
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
   "monster": "Gigantoad",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "Raincatcher Gully",
+  "x": 19.0,
+  "y": 26.0
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
   "monster": "Spriggan",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "",
+  "x": 11.8,
+  "y": 15.8
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
   "monster": "Salamander",
   "zone": "Upper La Noscea",
-  "area": ""
+  "area": "",
+  "x": 27.2,
+  "y": 24.3
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
   "monster": "Plasmoid",
   "zone": "Outer La Noscea",
-  "area": ""
+  "area": "",
+  "x": 25.0,
+  "y": 18.0
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
   "monster": "Ice Sprite",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 25.0,
+  "y": 20.0
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
   "monster": "Feral Croc",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Dragonhead",
+  "x": 27.0,
+  "y": 24.0
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
   "monster": "Will-o'-the-wisp",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 23.2,
+  "y": 24.2
  },
  {
   "class": "Thaumaturge",
   "rank": 4,
   "monster": "Golden Fleece",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 30.0,
+  "y": 24.0
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
   "monster": "Oldgrowth Treant",
   "zone": "East Shroud",
-  "area": ""
+  "area": "Larkscall",
+  "x": 27.0,
+  "y": 22.0
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
   "monster": "Dragonfly",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 9.0,
+  "y": 14.0
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
   "monster": "Crater Golem",
   "zone": "Central Shroud",
-  "area": ""
+  "area": "The Standing Corses",
+  "x": 10.0,
+  "y": 17.8
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
   "monster": "Dead Man's Moan",
   "zone": "Western La Noscea",
-  "area": ""
+  "area": "The Isles of Umbra",
+  "x": 14.5,
+  "y": 35.9
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
   "monster": "3rd Cohort Secutor",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 27.0,
+  "y": 21.0
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
   "monster": "Morbol",
   "zone": "East Shroud",
-  "area": ""
+  "area": "Larkscall",
+  "x": 22.9,
+  "y": 20.5
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
   "monster": "Nix",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "Fogfens",
+  "x": 19.0,
+  "y": 9.0
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
   "monster": "Lesser Kalong",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 22.0,
+  "y": 27.0
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
   "monster": "Gigas Sozu",
   "zone": "Mor Dhona",
-  "area": ""
+  "area": "",
+  "x": 29.0,
+  "y": 16.0
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
   "monster": "Giant Logger",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 13.0,
+  "y": 25.0
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
   "monster": "Iron Tortoise",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "Zanr'ak",
+  "x": 16.0,
+  "y": 24.0
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
   "monster": "Synthetic Doblyn",
   "zone": "Outer La Noscea",
-  "area": ""
+  "area": "U'Ghamaro Mines",
+  "x": 21.8,
+  "y": 6.0
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
   "monster": "Ked",
   "zone": "South Shroud",
-  "area": ""
+  "area": "",
+  "x": 31.7,
+  "y": 24.0
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
   "monster": "4th Cohort Hoplomachus",
   "zone": "Western Thanalan",
-  "area": ""
+  "area": "",
+  "x": 12.0,
+  "y": 7.0
  },
  {
   "class": "Thaumaturge",
   "rank": 5,
   "monster": "2nd Cohort Signifer",
   "zone": "Eastern La Noscea",
-  "area": ""
+  "area": "",
+  "x": 25.7,
+  "y": 21.1
  },
  {
   "class": "Maelstrom",
   "rank": 1,
   "monster": "Amalj'aa Hunter",
   "zone": "Eastern Thanalan",
-  "area": "Sandgate"
+  "area": "Sandgate",
+  "x": 19.0,
+  "y": 28.0
  },
  {
   "class": "Maelstrom",
   "rank": 1,
   "monster": "Heckler Imp",
   "zone": "Halatali",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Maelstrom",
   "rank": 1,
   "monster": "Doctore",
   "zone": "Halatali",
-  "area": ""
+  "area": "",
+  "x": 14.0,
+  "y": 30.0
  },
  {
   "class": "Maelstrom",
   "rank": 1,
   "monster": "Firemane",
   "zone": "Halatali",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Maelstrom",
   "rank": 1,
   "monster": "Sylvan Groan",
   "zone": "East Shroud",
-  "area": "The Bramble Patch"
+  "area": "The Bramble Patch",
+  "x": 20.0,
+  "y": 21.0
  },
  {
   "class": "Maelstrom",
   "rank": 1,
   "monster": "Sylvan Sough",
   "zone": "East Shroud",
-  "area": "The Bramble Patch"
+  "area": "The Bramble Patch",
+  "x": 19.0,
+  "y": 21.0
  },
  {
   "class": "Maelstrom",
   "rank": 1,
   "monster": "Kobold Pickman",
   "zone": "Upper La Noscea",
-  "area": "Oakwood"
+  "area": "Oakwood",
+  "x": 12.0,
+  "y": 22.5
  },
  {
   "class": "Maelstrom",
   "rank": 1,
   "monster": "Amalj'aa Bruiser",
   "zone": "Southern Thanalan",
-  "area": "Broken Water"
+  "area": "Broken Water",
+  "x": 20.0,
+  "y": 15.0
  },
  {
   "class": "Maelstrom",
   "rank": 1,
   "monster": "Ixali Straightbeak",
   "zone": "North Shroud",
-  "area": "Alder Springs"
+  "area": "Alder Springs",
+  "x": 22.9,
+  "y": 28.2
  },
  {
   "class": "Maelstrom",
   "rank": 1,
   "monster": "Ixali Wildtalon",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 31.3,
+  "y": 27.7
  },
  {
   "class": "Maelstrom",
   "rank": 2,
   "monster": "Amalj'aa Divinator",
   "zone": "Southern Thanalan",
-  "area": "Sagolii Desert"
+  "area": "Sagolii Desert",
+  "x": 27.1,
+  "y": 35.0
  },
  {
   "class": "Maelstrom",
   "rank": 2,
   "monster": "Kobold Pitman",
   "zone": "Eastern La Noscea",
-  "area": "Bloodshore"
+  "area": "Bloodshore",
+  "x": 28.0,
+  "y": 25.0
  },
  {
   "class": "Maelstrom",
   "rank": 2,
   "monster": "Temple Bat",
   "zone": "The Sunken Temple of Qarn",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Maelstrom",
   "rank": 2,
   "monster": "The Condemned",
   "zone": "The Sunken Temple of Qarn",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Maelstrom",
   "rank": 2,
   "monster": "Teratotaur",
   "zone": "The Sunken Temple of Qarn",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Maelstrom",
   "rank": 2,
   "monster": "Kobold Bedesman",
   "zone": "Outer La Noscea",
-  "area": "Iron Lake"
+  "area": "Iron Lake",
+  "x": 24.0,
+  "y": 16.0
  },
  {
   "class": "Maelstrom",
   "rank": 2,
   "monster": "Kobold Priest",
   "zone": "Outer La Noscea",
-  "area": "Iron Lake"
+  "area": "Iron Lake",
+  "x": 20.0,
+  "y": 14.0
  },
  {
   "class": "Maelstrom",
   "rank": 2,
   "monster": "Sylvan Sigh",
   "zone": "East Shroud",
-  "area": "Larkscall"
+  "area": "Larkscall",
+  "x": 25.0,
+  "y": 21.4
  },
  {
   "class": "Maelstrom",
   "rank": 2,
   "monster": "Shelfscale Sahagin",
   "zone": "Western La Noscea",
-  "area": "Halfstone"
+  "area": "Halfstone",
+  "x": 19.7,
+  "y": 19.0
  },
  {
   "class": "Maelstrom",
   "rank": 2,
   "monster": "Amalj'aa Pugilist",
   "zone": "Southern Thanalan",
-  "area": "Zanr'ak"
+  "area": "Zanr'ak",
+  "x": 19.0,
+  "y": 20.0
  },
  {
   "class": "Maelstrom",
   "rank": 3,
   "monster": "Ixali Boldwing",
   "zone": "North Shroud",
-  "area": "Proud Creek"
+  "area": "Proud Creek",
+  "x": 22.6,
+  "y": 28.2
  },
  {
   "class": "Maelstrom",
   "rank": 3,
   "monster": "Sylpheed Screech",
   "zone": "East Shroud",
-  "area": "Sylphlands"
+  "area": "Sylphlands",
+  "x": 26.0,
+  "y": 18.0
  },
  {
   "class": "Maelstrom",
   "rank": 3,
   "monster": "U'Ghamaro Bedesman",
   "zone": "Outer La Noscea",
-  "area": "U'Ghamaro Mines"
+  "area": "U'Ghamaro Mines",
+  "x": 22.6,
+  "y": 7.0
  },
  {
   "class": "Maelstrom",
   "rank": 3,
   "monster": "Trenchtooth Sahagin",
   "zone": "Western La Noscea",
-  "area": "Halfstone"
+  "area": "Halfstone",
+  "x": 20.0,
+  "y": 20.0
  },
  {
   "class": "Maelstrom",
   "rank": 3,
   "monster": "Sapsa Shelfclaw",
   "zone": "Western La Noscea",
-  "area": "Sapsa Spawning Grounds"
+  "area": "Sapsa Spawning Grounds",
+  "x": 15.0,
+  "y": 14.0
  },
  {
   "class": "Maelstrom",
   "rank": 3,
   "monster": "Zahar'ak Archer",
   "zone": "Southern Thanalan",
-  "area": "Zahar'ak"
+  "area": "Zahar'ak",
+  "x": 23.0,
+  "y": 21.0
  },
  {
   "class": "Maelstrom",
   "rank": 3,
   "monster": "Natalan Fogcaller",
   "zone": "Coerthas Central Highlands",
-  "area": "Natalan"
+  "area": "Natalan",
+  "x": 31.2,
+  "y": 17.2
  },
  {
   "class": "Maelstrom",
   "rank": 3,
   "monster": "Natalan Boldwing",
   "zone": "Coerthas Central Highlands",
-  "area": "Natalan"
+  "area": "Natalan",
+  "x": 32.0,
+  "y": 18.0
  },
  {
   "class": "Maelstrom",
   "rank": 3,
   "monster": "Tonberry",
   "zone": "The Wanderer's Palace",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Maelstrom",
   "rank": 3,
   "monster": "Giant Bavarois",
   "zone": "The Wanderer's Palace",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 1,
   "monster": "Amalj'aa Javelinier",
   "zone": "Eastern Thanalan",
-  "area": "Sandgate"
+  "area": "Sandgate",
+  "x": 19.0,
+  "y": 27.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 1,
   "monster": "Heckler Imp",
   "zone": "Halatali",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 1,
   "monster": "Scythe Mantis",
   "zone": "Halatali",
-  "area": ""
+  "area": "",
+  "x": 13.0,
+  "y": 9.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 1,
   "monster": "Coliseum Python",
   "zone": "Halatali",
-  "area": ""
+  "area": "",
+  "x": 13.0,
+  "y": 9.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 1,
   "monster": "Sylvan Scream",
   "zone": "East Shroud",
-  "area": "The Bramble Patch"
+  "area": "The Bramble Patch",
+  "x": 19.0,
+  "y": 21.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 1,
   "monster": "Kobold Pickman",
   "zone": "Upper La Noscea",
-  "area": "Oakwood"
+  "area": "Oakwood",
+  "x": 12.0,
+  "y": 22.5
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 1,
   "monster": "Amalj'aa Bruiser",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "Broken Water",
+  "x": 20.0,
+  "y": 15.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 1,
   "monster": "Amalj'aa Bruiser",
   "zone": "Eastern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 25.0,
+  "y": 21.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 1,
   "monster": "Amalj'aa Ranger",
   "zone": "Eastern Thanalan",
-  "area": "Wellwick Wood"
+  "area": "Wellwick Wood",
+  "x": 25.0,
+  "y": 20.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 1,
   "monster": "Ixali Deftalon",
   "zone": "North Shroud",
-  "area": "Alder Springs"
+  "area": "Alder Springs",
+  "x": 22.9,
+  "y": 28.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 1,
   "monster": "Ixali Fearcaller",
   "zone": "Coerthas Central Highlands",
-  "area": "Dragonhead"
+  "area": "Dragonhead",
+  "x": 31.0,
+  "y": 28.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 2,
   "monster": "Amalj'aa Sniper",
   "zone": "Southern Thanalan",
-  "area": "Sagolii Desert"
+  "area": "Sagolii Desert",
+  "x": 26.0,
+  "y": 34.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 2,
   "monster": "Kobold Missionary",
   "zone": "Eastern La Noscea",
-  "area": "Bloodshore"
+  "area": "Bloodshore",
+  "x": 27.8,
+  "y": 26.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 2,
   "monster": "Kobold Sidesman",
   "zone": "Upper La Noscea",
-  "area": "Zelma's Run"
+  "area": "Zelma's Run",
+  "x": 28.0,
+  "y": 18.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 2,
   "monster": "Temple Bee",
   "zone": "The Sunken Temple of Qarn",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 2,
   "monster": "Temple Guardian",
   "zone": "The Sunken Temple of Qarn",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 2,
   "monster": "Kobold Roundsman",
   "zone": "Outer La Noscea",
-  "area": "Iron Lake"
+  "area": "Iron Lake",
+  "x": 22.0,
+  "y": 15.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 2,
   "monster": "Sylvan Snarl",
   "zone": "East Shroud",
-  "area": "Larkscall"
+  "area": "Larkscall",
+  "x": 21.5,
+  "y": 21.4
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 2,
   "monster": "Shelfclaw Sahagin",
   "zone": "Western La Noscea",
-  "area": "Halfstone"
+  "area": "Halfstone",
+  "x": 18.0,
+  "y": 20.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 2,
   "monster": "Amalj'aa Lancer",
   "zone": "Southern Thanalan",
-  "area": "Zanr'ak"
+  "area": "Zanr'ak",
+  "x": 22.0,
+  "y": 21.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 2,
   "monster": "U'Ghamaro Roundsman",
   "zone": "Outer La Noscea",
-  "area": "U'Ghamaro Mines"
+  "area": "U'Ghamaro Mines",
+  "x": 23.0,
+  "y": 9.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 3,
   "monster": "Ixali Windtalon",
   "zone": "North Shroud",
-  "area": "Proud Creek"
+  "area": "Proud Creek",
+  "x": 22.0,
+  "y": 23.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 3,
   "monster": "Sylpheed Snarl",
   "zone": "East Shroud",
-  "area": "Sylphlands"
+  "area": "Sylphlands",
+  "x": 27.0,
+  "y": 21.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 3,
   "monster": "U'Ghamaro Quarryman",
   "zone": "Outer La Noscea",
-  "area": "U'Ghamaro Mines"
+  "area": "U'Ghamaro Mines",
+  "x": 21.0,
+  "y": 5.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 3,
   "monster": "Sapsa Shelftooth",
   "zone": "Western La Noscea",
-  "area": "Sapsa Spawning Grounds"
+  "area": "Sapsa Spawning Grounds",
+  "x": 13.0,
+  "y": 14.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 3,
   "monster": "Zahar'ak Pugilist",
   "zone": "Southern Thanalan",
-  "area": ""
+  "area": "",
+  "x": 23.0,
+  "y": 21.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 3,
   "monster": "Natalan Swiftbeak",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 32.0,
+  "y": 18.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 3,
   "monster": "Natalan Boldwing",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "Natalan",
+  "x": 32.0,
+  "y": 18.0
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 3,
   "monster": "Tonberry",
   "zone": "The Wanderer's Palace",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 3,
   "monster": "Bronze Beetle",
   "zone": "The Wanderer's Palace",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Order of the Twin Adder",
   "rank": 3,
   "monster": "Keeper of Halidom",
   "zone": "The Wanderer's Palace",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Immortal Flames",
   "rank": 1,
   "monster": "Amalj'aa Hunter",
   "zone": "Eastern Thanalan",
-  "area": "Sandgate"
+  "area": "Sandgate",
+  "x": 19.0,
+  "y": 28.0
  },
  {
   "class": "Immortal Flames",
   "rank": 1,
   "monster": "Doctore",
   "zone": "Halatali",
-  "area": ""
+  "area": "",
+  "x": 14.0,
+  "y": 30.0
  },
  {
   "class": "Immortal Flames",
   "rank": 1,
   "monster": "Firemane",
   "zone": "Halatali",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Immortal Flames",
   "rank": 1,
   "monster": "Thunderclap Guivre",
   "zone": "Halatali",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Immortal Flames",
   "rank": 1,
   "monster": "Sylvan Sough",
   "zone": "East Shroud",
-  "area": "The Bramble Patch"
+  "area": "The Bramble Patch",
+  "x": 19.0,
+  "y": 21.0
  },
  {
   "class": "Immortal Flames",
   "rank": 1,
   "monster": "Kobold Footman",
   "zone": "Upper La Noscea",
-  "area": "Oakwood"
+  "area": "Oakwood",
+  "x": 12.0,
+  "y": 22.0
  },
  {
   "class": "Immortal Flames",
   "rank": 1,
   "monster": "Kobold Pickman",
   "zone": "Upper La Noscea",
-  "area": "Oakwood"
+  "area": "Oakwood",
+  "x": 12.0,
+  "y": 22.5
  },
  {
   "class": "Immortal Flames",
   "rank": 1,
   "monster": "Amalj'aa Seer",
   "zone": "Southern Thanalan",
-  "area": "Broken Water"
+  "area": "Broken Water",
+  "x": 20.0,
+  "y": 15.0
  },
  {
   "class": "Immortal Flames",
   "rank": 1,
   "monster": "Ixali Lightwing",
   "zone": "North Shroud",
-  "area": "Alder Springs"
+  "area": "Alder Springs",
+  "x": 22.0,
+  "y": 28.0
  },
  {
   "class": "Immortal Flames",
   "rank": 1,
   "monster": "Ixali Boundwing",
   "zone": "Coerthas Central Highlands",
-  "area": ""
+  "area": "",
+  "x": 32.3,
+  "y": 27.7
  },
  {
   "class": "Immortal Flames",
   "rank": 2,
   "monster": "Amalj'aa Halberdier",
   "zone": "Southern Thanalan",
-  "area": "Sagolii Desert"
+  "area": "Sagolii Desert",
+  "x": 21.5,
+  "y": 19.5
  },
  {
   "class": "Immortal Flames",
   "rank": 2,
   "monster": "Kobold Missionary",
   "zone": "Eastern La Noscea",
-  "area": "Bloodshore"
+  "area": "Bloodshore",
+  "x": 27.8,
+  "y": 26.0
  },
  {
   "class": "Immortal Flames",
   "rank": 2,
   "monster": "Kobold Sidesman",
   "zone": "Upper La Noscea",
-  "area": "Zelma's Run"
+  "area": "Zelma's Run",
+  "x": 28.0,
+  "y": 18.0
  },
  {
   "class": "Immortal Flames",
   "rank": 2,
   "monster": "Sand Bat",
   "zone": "Cutter's Cry",
-  "area": ""
+  "area": "",
+  "x": 16.0,
+  "y": 14.0
  },
  {
   "class": "Immortal Flames",
   "rank": 2,
   "monster": "Sabotender Desertor",
   "zone": "Cutter's Cry",
-  "area": ""
+  "area": "",
+  "x": 16.0,
+  "y": 14.0
  },
  {
   "class": "Immortal Flames",
   "rank": 2,
   "monster": "Myrmidon Princess",
   "zone": "Cutter's Cry",
-  "area": ""
+  "area": "",
+  "x": 16.0,
+  "y": 14.0
  },
  {
   "class": "Immortal Flames",
   "rank": 2,
   "monster": "Kobold Quarryman",
   "zone": "Outer La Noscea",
-  "area": "Iron Lake"
+  "area": "Iron Lake",
+  "x": 23.0,
+  "y": 16.0
  },
  {
   "class": "Immortal Flames",
   "rank": 2,
   "monster": "Sylvan Screech",
   "zone": "East Shroud",
-  "area": "Larkscall"
+  "area": "Larkscall",
+  "x": 28.5,
+  "y": 20.9
  },
  {
   "class": "Immortal Flames",
   "rank": 2,
   "monster": "Shelfspine Sahagin",
   "zone": "Western La Noscea",
-  "area": "Halfstone"
+  "area": "Halfstone",
+  "x": 19.0,
+  "y": 22.0
  },
  {
   "class": "Immortal Flames",
   "rank": 2,
   "monster": "Amalj'aa Archer",
   "zone": "Southern Thanalan",
-  "area": "Zanr'ak"
+  "area": "Zanr'ak",
+  "x": 20.8,
+  "y": 22.7
  },
  {
   "class": "Immortal Flames",
   "rank": 3,
   "monster": "Ixali Windtalon",
   "zone": "North Shroud",
-  "area": "Proud Creek"
+  "area": "Proud Creek",
+  "x": 22.0,
+  "y": 23.0
  },
  {
   "class": "Immortal Flames",
   "rank": 3,
   "monster": "Sylpheed Sigh",
   "zone": "East Shroud",
-  "area": ""
+  "area": "",
+  "x": 27.0,
+  "y": 21.0
  },
  {
   "class": "Immortal Flames",
   "rank": 3,
   "monster": "U'Ghamaro Priest",
   "zone": "Outer La Noscea",
-  "area": "U'Ghamaro Mines"
+  "area": "U'Ghamaro Mines",
+  "x": 22.0,
+  "y": 6.0
  },
  {
   "class": "Immortal Flames",
   "rank": 3,
   "monster": "Sapsa Shelfspine",
   "zone": "Western La Noscea",
-  "area": "Sapsa Spawning Grounds"
+  "area": "Sapsa Spawning Grounds",
+  "x": 15.6,
+  "y": 14.8
  },
  {
   "class": "Immortal Flames",
   "rank": 3,
   "monster": "Zahar'ak Thaumaturge",
   "zone": "Southern Thanalan",
-  "area": "Zahar'ak"
+  "area": "Zahar'ak",
+  "x": 29.7,
+  "y": 19.1
  },
  {
   "class": "Immortal Flames",
   "rank": 3,
   "monster": "Natalan Windtalon",
   "zone": "Coerthas Central Highlands",
-  "area": "Natalan"
+  "area": "Natalan",
+  "x": 34.7,
+  "y": 22.2
  },
  {
   "class": "Immortal Flames",
   "rank": 3,
   "monster": "Natalan Boldwing",
   "zone": "Coerthas Central Highlands",
-  "area": "Natalan"
+  "area": "Natalan",
+  "x": 32.0,
+  "y": 18.0
  },
  {
   "class": "Immortal Flames",
   "rank": 3,
   "monster": "Tonberry",
   "zone": "The Wanderer's Palace",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Immortal Flames",
   "rank": 3,
   "monster": "Corrupted Nymian",
   "zone": "The Wanderer's Palace",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  },
  {
   "class": "Immortal Flames",
   "rank": 3,
   "monster": "Soldier of Nym",
   "zone": "The Wanderer's Palace",
-  "area": ""
+  "area": "",
+  "x": null,
+  "y": null
  }
 ]
