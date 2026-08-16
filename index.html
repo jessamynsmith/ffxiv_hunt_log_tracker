@@ -454,9 +454,13 @@ footer {
     <div class="progress-row">
       <span class="progress-text" id="progress-text">0 / 679 done</span>
       <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
-      <label class="hide-toggle">
+      <label class="hide-toggle" title="Hide entries you've already marked done">
         <input type="checkbox" id="hide-done" autocomplete="off">
         Hide done
+      </label>
+      <label class="hide-toggle" title="Hide ranks you can't access yet in-game (a class/company's ranks unlock in order, so a rank stays hidden until every entry in the rank below it is done)">
+        <input type="checkbox" id="hide-locked" autocomplete="off">
+        Hide locked
       </label>
     </div>
     <div class="search-row">
@@ -520,6 +524,7 @@ footer {
   const tbody = document.getElementById('log-body');
   const emptyState = document.getElementById('empty-state');
   const hideDoneToggle = document.getElementById('hide-done');
+  const hideLockedToggle = document.getElementById('hide-locked');
   const progressText = document.getElementById('progress-text');
   const progressFill = document.getElementById('progress-fill');
   let allRows = [];
@@ -529,6 +534,7 @@ footer {
   const activeRanks = new Set();
   const activeZones = new Set();
   let hideDone = false;
+  let hideLocked = false;
   let currentSort = { key: null, dir: 'asc' };
 
   // One-time migration: row IDs used to be "class|zone|rank|monster|area",
@@ -586,6 +592,7 @@ footer {
   function saveFilters() {
     localStorage.setItem(FILTERS_STORAGE_KEY, JSON.stringify({
       hideDone: hideDone,
+      hideLocked: hideLocked,
       search: search.value,
       classes: Array.from(activeClasses),
       gc: Array.from(activeGc),
@@ -775,8 +782,36 @@ footer {
     updateProgress();
   }
 
+  // In-game, a class/Grand Company's hunting log ranks unlock in order: rank
+  // N+1 is locked until every rank-N entry is done. This finds, per class,
+  // the lowest rank that isn't fully done yet (the rank currently being
+  // worked on); any higher rank is still locked. A class with no incomplete
+  // rank (everything done) has nothing locked.
+  function computeLockedThresholds() {
+    const rankStatus = new Map();
+    allRows.forEach(function (row) {
+      const cls = row.getAttribute('data-class');
+      const rank = row.getAttribute('data-rank');
+      const key = cls + '|' + rank;
+      if (!rankStatus.has(key)) rankStatus.set(key, { total: 0, done: 0 });
+      const s = rankStatus.get(key);
+      s.total++;
+      if (doneMap[row.getAttribute('data-id')]) s.done++;
+    });
+    const thresholds = {};
+    rankStatus.forEach(function (s, key) {
+      const parts = key.split('|');
+      const cls = parts[0], rank = Number(parts[1]);
+      if (s.done < s.total && (thresholds[cls] === undefined || rank < thresholds[cls])) {
+        thresholds[cls] = rank;
+      }
+    });
+    return thresholds;
+  }
+
   function applyFilter() {
     const q = search.value.trim().toLowerCase();
+    const lockedThresholds = hideLocked ? computeLockedThresholds() : null;
     let anyVisible = false;
     allRows.forEach(function (row) {
       const cls = row.getAttribute('data-class');
@@ -795,7 +830,9 @@ footer {
       const textOk = !q || monster.includes(q) || area.includes(q) ||
         zone.toLowerCase().includes(q) || cls.toLowerCase().includes(q);
       const doneOk = !(hideDone && row.classList.contains('done'));
-      const show = classOk && rankOk && zoneOk && textOk && doneOk;
+      const lockedOk = !lockedThresholds ||
+        lockedThresholds[cls] === undefined || Number(rank) <= lockedThresholds[cls];
+      const show = classOk && rankOk && zoneOk && textOk && doneOk && lockedOk;
       row.classList.toggle('hidden', !show);
       if (show) anyVisible = true;
     });
@@ -837,6 +874,9 @@ footer {
 
     hideDone = !!saved.hideDone;
     hideDoneToggle.checked = hideDone;
+
+    hideLocked = !!saved.hideLocked;
+    hideLockedToggle.checked = hideLocked;
 
     search.value = saved.search || '';
 
@@ -931,6 +971,12 @@ footer {
     hideDoneToggle.addEventListener('change', function () {
       hideDone = hideDoneToggle.checked;
       applyDoneState();
+      applyFilter();
+      saveFilters();
+    });
+
+    hideLockedToggle.addEventListener('change', function () {
+      hideLocked = hideLockedToggle.checked;
       applyFilter();
       saveFilters();
     });
